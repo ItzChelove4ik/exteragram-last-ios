@@ -23,8 +23,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check Telegram API configuration
         run: python3 scripts/build_configuration.py --check
-      - name: Test Telegram API configuration
-        run: python3 -m unittest discover -s tests -v
+      - name: Prepare Python tools
+        run: |
+          python3 -m venv .build/port-tools
+          .build/port-tools/bin/python -m pip install --disable-pip-version-check -r scripts/requirements.txt
+      - name: Test configuration and icon preparation
+        run: .build/port-tools/bin/python -m unittest discover -s tests -v
       - name: Select available Xcode 26
         run: |
           python3 - <<'PY'
@@ -43,10 +47,9 @@ jobs:
             swift test --package-path "$package"
           done
       - name: Fetch pinned Telegram and integrate port
-        run: |
-          python3 -m venv .build/port-tools
-          .build/port-tools/bin/python -m pip install --disable-pip-version-check -r scripts/requirements.txt
-          .build/port-tools/bin/python -u scripts/prepare_upstream.py
+        run: .build/port-tools/bin/python -u scripts/prepare_upstream.py
+      - name: Validate iOS asset catalogs with Xcode
+        run: .build/port-tools/bin/python -u scripts/check_ios_assets.py
       - name: Compile unsigned arm64 IPA
         run: python3 -u scripts/build_ipa.py --build-number "${{ github.run_number }}"
       - name: Upload IPA

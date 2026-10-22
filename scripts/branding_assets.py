@@ -5,12 +5,35 @@ import re
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
+IMAGE_SUFFIXES = {".png", ".pdf", ".jpg", ".jpeg", ".svg", ".heic", ".tiff", ".tif"}
 
 
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n",
                     encoding="utf-8", newline="\n")
+
+
+def install_imageset(directory, base_size, render, template=False):
+    directory.mkdir(parents=True, exist_ok=True)
+    entries = []
+    for scale in (1, 2, 3):
+        filename = f"GlowGram@{scale}x.png"
+        render(base_size * scale).save(directory / filename)
+        entries.append({"idiom": "universal", "filename": filename, "scale": f"{scale}x"})
+
+    # actool rejects leftover artwork even when Contents.json no longer lists it.
+    # These image sets are fully replaced by GlowGram; remove only obsolete image
+    # files directly inside the set, retaining metadata and unrelated files.
+    assigned = {entry["filename"] for entry in entries}
+    for path in directory.iterdir():
+        if path.is_file() and path.suffix.lower() in IMAGE_SUFFIXES and path.name not in assigned:
+            path.unlink()
+
+    manifest = {"images": entries, "info": {"author": "xcode", "version": 1}}
+    if template:
+        manifest["properties"] = {"template-rendering-intent": "template"}
+    write_json(directory / "Contents.json", manifest)
 
 
 def install_branding_assets(destination):
@@ -67,19 +90,7 @@ def install_branding_assets(destination):
             size = original.size
         icon.resize(size, resampling).save(path)
 
-    def imageset(directory, base_size, render, template=False):
-        directory.mkdir(parents=True, exist_ok=True)
-        entries = []
-        for scale in (1, 2, 3):
-            filename = f"GlowGram@{scale}x.png"
-            render(base_size * scale).save(directory / filename)
-            entries.append({"idiom": "universal", "filename": filename, "scale": f"{scale}x"})
-        manifest = {"images": entries, "info": {"author": "xcode", "version": 1}}
-        if template:
-            manifest["properties"] = {"template-rendering-intent": "template"}
-        write_json(directory / "Contents.json", manifest)
-
-    imageset(app / "Icons.xcassets/GlowGram.imageset", 60,
+    install_imageset(app / "Icons.xcassets/GlowGram.imageset", 60,
              lambda size: icon.resize((size, size), resampling))
 
     def shortcut_logo(size):
@@ -88,7 +99,7 @@ def install_branding_assets(destination):
         result.putalpha(mask)
         return result
 
-    imageset(app / "Icons.xcassets/Shortcuts/AppIcon.imageset", 24, shortcut_logo, template=True)
+    install_imageset(app / "Icons.xcassets/Shortcuts/AppIcon.imageset", 24, shortcut_logo, template=True)
 
     def settings_icon(size):
         result = icon.resize((size, size), resampling).convert("RGBA")
@@ -97,6 +108,6 @@ def install_branding_assets(destination):
         result.putalpha(mask)
         return result
 
-    imageset(destination / "submodules/TelegramUI/Images.xcassets/Settings/GlowGram.imageset",
+    install_imageset(destination / "submodules/TelegramUI/Images.xcassets/Settings/GlowGram.imageset",
              29, settings_icon)
     print("Installed GlowGram primary icon, raster variants, previews and shortcut logo", flush=True)

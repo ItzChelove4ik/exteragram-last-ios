@@ -36,6 +36,7 @@ export TELEGRAM_API_ID="<api_id своего приложения>"
 export TELEGRAM_API_HASH="<api_hash того же приложения>"
 python3 scripts/build_configuration.py --check
 python3 scripts/prepare_upstream.py
+python3 scripts/check_ios_assets.py
 python3 scripts/build_ipa.py --build-number 1
 ```
 
@@ -52,5 +53,6 @@ python3 scripts/build_ipa.py --build-number 1
 `assets/foreground.png` используется для прозрачного значка быстрых команд.
 Скрипт подготовки подключает иконку к Icon Composer, создаёт размеры для iPhone/iPad
 и обновляет превью в настройках. Имя файла будущей сборки — `GlowGram-unsigned.ipa`.
+Перед полной сборкой каталоги ресурсов проверяются компилятором Xcode `actool`.
 Bundle ID сохранён для обновления уже установленного приложения.
 Имена внутренних Swift-модулей и записи о происхождении Android-ресурсов сохранены.
