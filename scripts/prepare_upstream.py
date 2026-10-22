@@ -61,7 +61,7 @@ def install_modules(destination):
                       '    bundle_name = "ExteraResources",\n'
                       '    resources = glob(["Sources/ExteraResources/Resources/**"]),\n'
                       ')\n')
-            deps = '    deps = [":ExteraResourcesBundle"],\n'
+            deps = '    data = [":ExteraResourcesBundle"],\n'
             accessor = '''import Foundation
 private final class ExteraResourceBundleToken {}
 extension Bundle {
