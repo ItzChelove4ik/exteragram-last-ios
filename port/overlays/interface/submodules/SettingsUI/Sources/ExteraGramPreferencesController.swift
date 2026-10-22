@@ -123,7 +123,7 @@ public func exteraGramPreferencesController(context: AccountContext) -> ViewCont
     })
 
     let signal = combineLatest(queue: .mainQueue(), context.sharedContext.presentationData, reload.get())
-    |> map { presentationData, _ -> (ItemListControllerState, (ItemListNodeState, Any)) in
+    |> map { presentationData, _ -> (ItemListControllerState, (ItemListNodeState, ExteraPreferencesArguments)) in
         let state = ItemListControllerState(
             presentationData: ItemListPresentationData(presentationData),
             title: .text("exteraGram Lite"),
@@ -135,9 +135,9 @@ public func exteraGramPreferencesController(context: AccountContext) -> ViewCont
         var entries: [ExteraPreferencesEntry] = exteraToggles.enumerated().map { index, item in
             var title = ExteraLocalization.text(item.titleKey, languageCode: languageCode, table: item.table)
             if item.preference.key == ExteraSettings.replaceEditedWithIcon.key {
-                title = String(format: title, presentationData.strings.Conversation_Edited as NSString)
+                title = String(format: title, presentationData.strings.Conversation_MessageEditedLabel as NSString)
             } else if item.preference.key == ExteraSettings.hideShareButton.key {
-                title = String(format: title, presentationData.strings.Common_Share as NSString)
+                title = String(format: title, presentationData.strings.Conversation_ContextMenuShare as NSString)
             }
             return ExteraPreferencesEntry(
                 stableId: Int32(index),
