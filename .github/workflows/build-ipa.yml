@@ -44,8 +44,9 @@ jobs:
           done
       - name: Fetch pinned Telegram and integrate port
         run: |
-          python3 -m pip install --disable-pip-version-check -r scripts/requirements.txt
-          python3 -u scripts/prepare_upstream.py
+          python3 -m venv .build/port-tools
+          .build/port-tools/bin/python -m pip install --disable-pip-version-check -r scripts/requirements.txt
+          .build/port-tools/bin/python -u scripts/prepare_upstream.py
       - name: Compile unsigned arm64 IPA
         run: python3 -u scripts/build_ipa.py --build-number "${{ github.run_number }}"
       - name: Upload IPA

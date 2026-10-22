@@ -29,6 +29,8 @@ GitHub Actions **Build IPA** проверяет Swift-модули и собир
 ## Локальная сборка на Mac
 
 ```sh
+python3 -m venv .build/port-tools
+source .build/port-tools/bin/activate
 python3 -m pip install -r scripts/requirements.txt
 export TELEGRAM_API_ID="<api_id своего приложения>"
 export TELEGRAM_API_HASH="<api_hash того же приложения>"
