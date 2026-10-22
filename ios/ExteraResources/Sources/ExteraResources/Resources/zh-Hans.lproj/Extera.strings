@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram 设置";
+"Preferences" = "GlowGram 设置";
 "Links" = "链接";
 "AboutExteraDescription" = "基于 Telegram 官方源码制作的第三方客户端！";
 "Crowdin" = "翻译";
 "Website" = "官网";
 "Categories" = "设置分类";
-"Developer" = "**%1$@** 是 **exteraGram** 开发团队的成员。";
-"DeveloperCompact" = "**exteraGram** 开发团队的成员。";
-"Supporter" = "**%1$@** 支持 **exteraGram** 的开发并获得专属徽章。";
-"OfficialChannel" = "**%1$@** 是 **exteraGram** 的官方社群。";
+"Developer" = "**%1$@** 是 **GlowGram** 开发团队的成员。";
+"DeveloperCompact" = "**GlowGram** 开发团队的成员。";
+"Supporter" = "**%1$@** 支持 **GlowGram** 的开发并获得专属徽章。";
+"OfficialChannel" = "**%1$@** 是 **GlowGram** 的官方社群。";
 "NoSuchSetting" = "似乎不存在这种设置。";
 "SettingLinkToSavedMessages" = "设置链接已发送至 **已收藏消息** 。";
 "SettingLinkToUser" = "设置链接已发送至 **%1$@**。";
@@ -26,7 +26,7 @@
 "WeatherPill" = "天气";
 "WeatherSettingsInfo" = "选择如何确定在搜索中的天气的地理位置。";
 "WeatherLocation" = "位置检测";
-"WeatherLocationPermissionNo" = "exteraGram 需要访问您的位置以显示当前天气状况。";
+"WeatherLocationPermissionNo" = "GlowGram 需要访问您的位置以显示当前天气状况。";
 "WeatherLocationPermissionGrant" = "授予权限";
 "WeatherLocationServicesEnable" = "开启定位";
 "WeatherPillTopInfo" = "堆叠药丸按钮的天气小部件设置。";
@@ -356,7 +356,7 @@
 "PauseOnMinimizeVideo" = "视频";
 "PauseOnMinimizeVoice" = "语音";
 "PauseOnMinimizeRound" = "圆环视频";
-"PauseOnMinimizeInfo" = "当设备锁定或 exteraGram 应用界面最小化时暂停媒体播放。";
+"PauseOnMinimizeInfo" = "当设备锁定或 GlowGram 应用界面最小化时暂停媒体播放。";
 "SwipeToPip" = "滑动至画中画";
 "UnmuteWithVolumeButtons" = "使用音量按钮取消视频静音";
 "UnmuteWithVolumeButtonsInfo" = "按下音量键将取消视频静音而不是更改系统音量。";
@@ -381,8 +381,8 @@
 "ExportInvalid" = "抱歉，您已发起新的数据导出，因此本次数据导出已取消。";
 "DeleteAccount" = "删除账户";
 "ResetSettings" = "重置设置";
-"ResetPreferences" = "**exteraGram** 设置已重置。";
-"ResetPreferencesInfo" = "您确定要重置 **所有的** exteraGram 设置至默认状态吗？";
+"ResetPreferences" = "**GlowGram** 设置已重置。";
+"ResetPreferencesInfo" = "您确定要重置 **所有的** GlowGram 设置至默认状态吗？";
 "SupportDevelopment" = "支持开发";
 "SupportDevelopmentInfo" = "通过支持项目，您不仅可以为其开发做出贡献，还可以获得独特的徽章。";
 "MakeDonation" = "捐款";
@@ -403,9 +403,9 @@
 "BoostyPeopleCount_few" = "%1$d 人";
 "BoostyPeopleCount_many" = "%1$d 人";
 "BoostyPeopleCount_other" = "%1$d 人";
-"BoostyInfo" = "积极支持 **Boosty** 上的 **ExteraGram** 。";
+"BoostyInfo" = "积极支持 **Boosty** 上的 **GlowGram** 。";
 "BoostyInfo2" = "感谢您的支持！";
-"PluginsNotSupported" = "插件安装功能仅在 **exteraGram** **完整**版中可用。";
+"PluginsNotSupported" = "插件安装功能仅在 **GlowGram** **完整**版中可用。";
 "Plugins" = "插件";
 "PluginsEngine" = "插件引擎";
 "EnablePluginsEngine" = "启用插件引擎";
@@ -494,7 +494,7 @@
 "WifiSuccess" = "成功连接到无线网络。";
 "AreYouSureToLogin" = "您确定要在另一台设备上登录此帐户吗？";
 "PageBlocked" = "页面被阻止";
-"PageBlockedDescription" = "exteraGram 阻止了以下页面的加载：\n**%1$@**";
+"PageBlockedDescription" = "GlowGram 阻止了以下页面的加载：\n**%1$@**";
 "PageBlockedGoBack" = "返回";
 "PageBlockedProceed" = "进行";
 "SetAsBadge" = "设置为徽章";
@@ -521,7 +521,7 @@
 "EmojiSavedHint" = "表情符号保存到图库。";
 "GifGallerySavedHint" = "GIF 已保存到图库。";
 "MutualContactInfo" = "此为双向联系人。";
-"LocalPremiumEmojiHint" = "您没有 **Telegram Premium** 订阅，所以只有 **exteraGram** 用户可以看到此 emoji。";
+"LocalPremiumEmojiHint" = "您没有 **Telegram Premium** 订阅，所以只有 **GlowGram** 用户可以看到此 emoji。";
 "HideContactsTab" = "隐藏联系人标签页";
 "ShowContactsTab" = "显示联系人标签页";
 "ContactsTabWasShownTitle" = "**联系人** 标签页现已可见。";

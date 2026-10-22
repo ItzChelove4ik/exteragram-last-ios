@@ -1,6 +1,6 @@
 # ExteraSpeech
 
-File-based, on-device speech recognition for the exteraGram iOS port. The production backend uses Apple's Speech framework on iOS 15+, checks real on-device capability and forbids network recognition fallback. Other platforms have an explicit unsupported backend so coordinator tests can run without permission prompts.
+File-based, on-device speech recognition for GlowGram iOS. The production backend uses Apple's Speech framework on iOS 15+, checks real on-device capability and forbids network recognition fallback. Other platforms have an explicit unsupported backend so coordinator tests can run without permission prompts.
 
 ```swift
 let transcriber = ExteraSpeechTranscriber()

@@ -1,13 +1,13 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Preferències d'exteraGram";
+"Preferences" = "Preferències d'GlowGram";
 "Links" = "Enllaços";
 "AboutExteraDescription" = "Un client de Telegram experimental basat en el codi font oficial!";
 "Crowdin" = "Traduir";
 "Website" = "Lloc web";
-"Developer" = "**%1$@** és membre de l'equip de desenvolupament d'**exteraGram**.";
-"DeveloperCompact" = "Membre de l'equip de desenvolupament d'**exteraGram**.";
-"Supporter" = "**%1$@** ha donat suport al desenvolupament d'**exteraGram** i ha rebut una insígnia única.";
-"OfficialChannel" = "**%1$@** és el recurs oficial d'**exteraGram**.";
+"Developer" = "**%1$@** és membre de l'equip de desenvolupament d'**GlowGram**.";
+"DeveloperCompact" = "Membre de l'equip de desenvolupament d'**GlowGram**.";
+"Supporter" = "**%1$@** ha donat suport al desenvolupament d'**GlowGram** i ha rebut una insígnia única.";
+"OfficialChannel" = "**%1$@** és el recurs oficial d'**GlowGram**.";
 "NoSuchSetting" = "Sembla que aquesta opció no existeix.";
 "SettingLinkToSavedMessages" = "Enllaç de configuració enviat a **Missatges guardats**.";
 "SettingLinkToUser" = "Enllaç de configuració enviat a **%1$@**.";
@@ -25,7 +25,7 @@
 "WeatherPill" = "Temps";
 "WeatherSettingsInfo" = "Tria com determinar la ubicació per a la visualització del temps a la cerca.";
 "WeatherLocation" = "Detecció d'ubicació";
-"WeatherLocationPermissionNo" = "exteraGram necessita accés a la teva ubicació per mostrar el temps actual.";
+"WeatherLocationPermissionNo" = "GlowGram necessita accés a la teva ubicació per mostrar el temps actual.";
 "WeatherLocationPermissionGrant" = "Concedir permís";
 "WeatherLocationServicesEnable" = "Activa la ubicació";
 "WeatherPillTopInfo" = "Configuració del widget del temps per a la pila de pastilles.";
@@ -338,7 +338,7 @@
 "PauseOnMinimizeVideo" = "Vídeo";
 "PauseOnMinimizeVoice" = "Veu";
 "PauseOnMinimizeRound" = "Rodó";
-"PauseOnMinimizeInfo" = "Atura la reproducció multimèdia quan el dispositiu es bloqueja o exteraGram es minimitza.";
+"PauseOnMinimizeInfo" = "Atura la reproducció multimèdia quan el dispositiu es bloqueja o GlowGram es minimitza.";
 "SwipeToPip" = "Llisca per a PiP";
 "UnmuteWithVolumeButtons" = "Activa el so dels vídeos amb els botons de volum";
 "UnmuteWithVolumeButtonsInfo" = "En prémer un botó de volum s'activarà el so del vídeo en lloc de canviar el volum del sistema.";
@@ -363,8 +363,8 @@
 "ExportInvalid" = "Ho sentim, has iniciat una nova exportació de dades, de manera que aquesta exportació s'ha cancel·lat.";
 "DeleteAccount" = "Elimina el compte";
 "ResetSettings" = "Restableix la configuració";
-"ResetPreferences" = "Les preferències d'**exteraGram** s'han restablert.";
-"ResetPreferencesInfo" = "Segur que vols restablir **totes** les preferències d'exteraGram als valors predeterminats?";
+"ResetPreferences" = "Les preferències d'**GlowGram** s'han restablert.";
+"ResetPreferencesInfo" = "Segur que vols restablir **totes** les preferències d'GlowGram als valors predeterminats?";
 "SupportDevelopment" = "Dóna suport al desenvolupament";
 "SupportDevelopmentInfo" = "En donar suport al projecte, no només contribueixes al seu desenvolupament, sinó que també obtens una insígnia única.";
 "MakeDonation" = "Fes una donació";
@@ -385,9 +385,9 @@
 "BoostyPeopleCount_few" = "%1$d persones";
 "BoostyPeopleCount_many" = "%1$d persones";
 "BoostyPeopleCount_other" = "%1$d persones";
-"BoostyInfo" = "Dóna suport activament a **exteraGram** a **Boosty**.";
+"BoostyInfo" = "Dóna suport activament a **GlowGram** a **Boosty**.";
 "BoostyInfo2" = "Gràcies pel teu suport!";
-"PluginsNotSupported" = "La instal·lació de complements només està disponible a la versió **Completa** d'**exteraGram**.";
+"PluginsNotSupported" = "La instal·lació de complements només està disponible a la versió **Completa** d'**GlowGram**.";
 "Plugins" = "Complements";
 "PluginsEngine" = "Motor de complements";
 "EnablePluginsEngine" = "Activa el motor de complements";
@@ -476,7 +476,7 @@
 "WifiSuccess" = "Connectat correctament al Wi-Fi.";
 "AreYouSureToLogin" = "Segur que vols iniciar sessió en aquest compte en un altre dispositiu?";
 "PageBlocked" = "Pàgina bloquejada";
-"PageBlockedDescription" = "exteraGram ha impedit la càrrega de la pàgina següent:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram ha impedit la càrrega de la pàgina següent:\n**%1$@**";
 "PageBlockedGoBack" = "Torna enrere";
 "PageBlockedProceed" = "Continua";
 "SetAsBadge" = "Establir com a insígnia";
@@ -503,7 +503,7 @@
 "EmojiSavedHint" = "Emoji desat a la galeria.";
 "GifGallerySavedHint" = "GIF desat a la galeria.";
 "MutualContactInfo" = "Aquest contacte és mutu.";
-"LocalPremiumEmojiHint" = "No tens subscripció a **Telegram Premium**, per tant només els usuaris d'**exteraGram** podran veure aquest emoji.";
+"LocalPremiumEmojiHint" = "No tens subscripció a **Telegram Premium**, per tant només els usuaris d'**GlowGram** podran veure aquest emoji.";
 "HideContactsTab" = "Amaga la pestanya de contactes";
 "ShowContactsTab" = "Mostra la pestanya de contactes";
 "ContactsTabWasShownTitle" = "La pestanya **Contactes** ara és visible.";

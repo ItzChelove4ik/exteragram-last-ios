@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Налады exteraGram";
+"Preferences" = "Налады GlowGram";
 "Links" = "Спасылкі";
 "AboutExteraDescription" = "Эксперыментальны кліент Telegram, заснаваны на афіцыйным зыходным кодзе!";
 "Crowdin" = "Пераклад";
 "Website" = "Вэб-сайт";
 "Categories" = "Катэгорыі";
-"Developer" = "**%1$@** з'яўляецца членам каманды распрацоўшчыкаў **exteraGram**.";
-"DeveloperCompact" = "Член каманды распрацоўшчыкаў **exteraGram**.";
-"Supporter" = "**%1$@** падтрымаў распрацоўку **exteraGram** і атрымаў эксклюзіўны значок.";
-"OfficialChannel" = "**%1$@** — гэта афіцыйны рэсурс **exteraGram**.";
+"Developer" = "**%1$@** з'яўляецца членам каманды распрацоўшчыкаў **GlowGram**.";
+"DeveloperCompact" = "Член каманды распрацоўшчыкаў **GlowGram**.";
+"Supporter" = "**%1$@** падтрымаў распрацоўку **GlowGram** і атрымаў эксклюзіўны значок.";
+"OfficialChannel" = "**%1$@** — гэта афіцыйны рэсурс **GlowGram**.";
 "NoSuchSetting" = "Здаецца, што такой налады не існуе.";
 "SettingLinkToSavedMessages" = "Спасылка на наладу адпраўлена ў **Захаванае**.";
 "SettingLinkToUser" = "Спасылка на налады адпраўлена ў **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Надвор'е";
 "WeatherSettingsInfo" = "Выберыце спосаб вызначэння месцазнаходжання для паказу надвор’я ў пошуку.";
 "WeatherLocation" = "Вызначэнне месцазнаходжання";
-"WeatherLocationPermissionNo" = "Для паказу надвор'я exteraGram патрабуе доступу да вашага месцазнаходжання.";
+"WeatherLocationPermissionNo" = "Для паказу надвор'я GlowGram патрабуе доступу да вашага месцазнаходжання.";
 "WeatherLocationPermissionGrant" = "Выдаць дазвол";
 "WeatherLocationServicesEnable" = "Уключыць геалакацыю";
 "WeatherPillTopInfo" = "Налады віджэта надвор'я для чаркі.";
@@ -349,7 +349,7 @@
 "PauseOnMinimizeVideo" = "Відэа";
 "PauseOnMinimizeVoice" = "Галасавыя паведамленні";
 "PauseOnMinimizeRound" = "Відэапаведамленні";
-"PauseOnMinimizeInfo" = "Прыпыняе прайграванне мультымедыя, калі прылада заблакіравана або exteraGram згорнуты.";
+"PauseOnMinimizeInfo" = "Прыпыняе прайграванне мультымедыя, калі прылада заблакіравана або GlowGram згорнуты.";
 "SwipeToPip" = "Правядзіце пальцам да PiP";
 "UnmuteWithVolumeButtons" = "Уключэнне гуку відэа кнопкамі гучнасці";
 "UnmuteWithVolumeButtonsInfo" = "Націсканне кнопкі гучнасці ўключыць гук відэа замест змены сістэмнай гучнасці.";
@@ -374,8 +374,8 @@
 "ExportInvalid" = "На жаль, вы пачалі новы экспарт даных, таму папярэдні экспарт быў скасаваны.";
 "DeleteAccount" = "Выдаліць уліковы запіс";
 "ResetSettings" = "Скінуць налады";
-"ResetPreferences" = "**exteraGram** Налады былі скінуты.";
-"ResetPreferencesInfo" = "Вы ўпэўненыя, што хочаце скінуць **усе** налады exteraGram да значэнняў па змаўчанні?";
+"ResetPreferences" = "**GlowGram** Налады былі скінуты.";
+"ResetPreferencesInfo" = "Вы ўпэўненыя, што хочаце скінуць **усе** налады GlowGram да значэнняў па змаўчанні?";
 "SupportDevelopment" = "Падтрымаць распрацоўку";
 "SupportDevelopmentInfo" = "Падтрымліваючы праект, вы не толькі спрыяеце яго развіццю, але і атрымліваеце ўнікальны значок.";
 "MakeDonation" = "Зрабіць ахвяраванне";
@@ -396,9 +396,9 @@
 "BoostyPeopleCount_few" = "%1$d чалавекі";
 "BoostyPeopleCount_many" = "%1$d чалавек";
 "BoostyPeopleCount_other" = "%1$d чалавек";
-"BoostyInfo" = "Актыўна падтрымлівайце **exteraGram** на **Boosty**.";
+"BoostyInfo" = "Актыўна падтрымлівайце **GlowGram** на **Boosty**.";
 "BoostyInfo2" = "Дзякуй за вашу падтрымку!";
-"PluginsNotSupported" = "Усталёўвае плагінаў даступная толькі ў **Full** версіі **exteraGram**.";
+"PluginsNotSupported" = "Усталёўвае плагінаў даступная толькі ў **Full** версіі **GlowGram**.";
 "Plugins" = "Плагіны";
 "PluginsEngine" = "Рухавік плагінаў";
 "EnablePluginsEngine" = "Уключыць рухавік плагінаў";
@@ -488,7 +488,7 @@
 "WifiSuccess" = "Паспяхова падключана да Wi-Fi.";
 "AreYouSureToLogin" = "Вы ўпэўненыя, што жадаеце ўвайсці ў гэты ўліковы запіс на іншай прыладзе?";
 "PageBlocked" = "Старонка заблакіравана";
-"PageBlockedDescription" = "exteraGram прадухіліў загрузку наступнай старонкі:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram прадухіліў загрузку наступнай старонкі:\n**%1$@**";
 "PageBlockedGoBack" = "Вярнуцца";
 "PageBlockedProceed" = "Працягнуць";
 "SetAsBadge" = "Вызначыць як бэйдж";
@@ -515,7 +515,7 @@
 "EmojiSavedHint" = "Эмодзі захавана ў галерэю.";
 "GifGallerySavedHint" = "GIF захаваны ў галерэю.";
 "MutualContactInfo" = "Гэты кантакт узаемны.";
-"LocalPremiumEmojiHint" = "У вас няма падпіскі **Telegram Premium**, таму гэты эмодзі змогуць убачыць толькі карыстальнікі **exteraGram**.";
+"LocalPremiumEmojiHint" = "У вас няма падпіскі **Telegram Premium**, таму гэты эмодзі змогуць убачыць толькі карыстальнікі **GlowGram**.";
 "HideContactsTab" = "Схаваць укладку «Кантакты»";
 "ShowContactsTab" = "Паказаць укладку «Кантакты»";
 "ContactsTabWasShownTitle" = "Укладка «Кантакты» дададзена.";

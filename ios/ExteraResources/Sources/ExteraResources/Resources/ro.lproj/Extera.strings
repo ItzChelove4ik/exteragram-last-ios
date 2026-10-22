@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Preferințe exteraGram";
+"Preferences" = "Preferințe GlowGram";
 "Links" = "Link-uri";
 "AboutExteraDescription" = "Un client Telegram experimental bazat pe codul sursă oficial!";
 "Crowdin" = "Traduceți";
 "Website" = "Site web";
 "Categories" = "Categorii";
-"Developer" = "**%1$@** este membru al **exteraGram** echipă de dezvoltare.";
-"DeveloperCompact" = "Membru al echipei de dezvoltare **exteraGram**.";
-"Supporter" = "**%1$@** a susținut dezvoltarea **exteraGram** și a primit o insignă exclusivă.";
-"OfficialChannel" = "**%1$@** este resursa oficială a **exteraGram**.";
+"Developer" = "**%1$@** este membru al **GlowGram** echipă de dezvoltare.";
+"DeveloperCompact" = "Membru al echipei de dezvoltare **GlowGram**.";
+"Supporter" = "**%1$@** a susținut dezvoltarea **GlowGram** și a primit o insignă exclusivă.";
+"OfficialChannel" = "**%1$@** este resursa oficială a **GlowGram**.";
 "NoSuchSetting" = "Se pare că o astfel de configurație nu există.";
 "SettingLinkToSavedMessages" = "Link de setare trimis la **Mesaje salvate**.";
 "SettingLinkToUser" = "Link de setare trimis la **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Vreme";
 "WeatherSettingsInfo" = "Alegeți cum să determinați locația pentru afișarea vremii în căutare.";
 "WeatherLocation" = "Detectarea locației";
-"WeatherLocationPermissionNo" = "exteraGram are nevoie de acces la locația dvs. pentru a afișa vremea curentă.";
+"WeatherLocationPermissionNo" = "GlowGram are nevoie de acces la locația dvs. pentru a afișa vremea curentă.";
 "WeatherLocationPermissionGrant" = "Acordă permisiune";
 "WeatherLocationServicesEnable" = "Activează locația";
 "WeatherPillTopInfo" = "Setări widget vreme pentru Stiva de pilule.";
@@ -339,7 +339,7 @@
 "PauseOnMinimize" = "Auto Pauză";
 "PauseOnMinimizeVoice" = "Voce";
 "PauseOnMinimizeRound" = "Rotunjit";
-"PauseOnMinimizeInfo" = "Întrerupe redarea media atunci când dispozitivul este blocat sau exteraGram este minimizat.";
+"PauseOnMinimizeInfo" = "Întrerupe redarea media atunci când dispozitivul este blocat sau GlowGram este minimizat.";
 "SwipeToPip" = "Glisați către PiP";
 "UnmuteWithVolumeButtons" = "Dezmută videoclipurile cu butoanele de volum";
 "UnmuteWithVolumeButtonsInfo" = "Apăsarea unui buton de volum va dezmuți videoclipul în loc să schimbe volumul sistemului.";
@@ -364,8 +364,8 @@
 "ExportInvalid" = "Ne pare rău, ați început un nou export de date, așa că acest export de date a fost anulat.";
 "DeleteAccount" = "Șterge contul";
 "ResetSettings" = "Resetează setări";
-"ResetPreferences" = "Preferințele **exteraGram** au fost resetate.";
-"ResetPreferencesInfo" = "Sunteți sigur că doriți să resetați **toate** preferințele exteraGram la valorile implicite?";
+"ResetPreferences" = "Preferințele **GlowGram** au fost resetate.";
+"ResetPreferencesInfo" = "Sunteți sigur că doriți să resetați **toate** preferințele GlowGram la valorile implicite?";
 "SupportDevelopment" = "Suportă Dezvoltarea";
 "SupportDevelopmentInfo" = "Sprijinind proiectul, nu doar contribuiți la dezvoltarea acestuia, ci primiți și o insignă unică.";
 "MakeDonation" = "Fă o donație";
@@ -386,9 +386,9 @@
 "BoostyPeopleCount_few" = "%1$d persoane";
 "BoostyPeopleCount_many" = "%1$d persoane";
 "BoostyPeopleCount_other" = "%1$d persoane";
-"BoostyInfo" = "Susțineți activ **exteraGram** pe **Boosty**.";
+"BoostyInfo" = "Susțineți activ **GlowGram** pe **Boosty**.";
 "BoostyInfo2" = "Vă mulțumim pentru susținere!";
-"PluginsNotSupported" = "Instalarea pluginurilor este disponibilă doar în versiunea **Full** a **exteraGram**.";
+"PluginsNotSupported" = "Instalarea pluginurilor este disponibilă doar în versiunea **Full** a **GlowGram**.";
 "Plugins" = "Plugin-uri";
 "PluginsEngine" = "Motor Plugin-uri";
 "EnablePluginsEngine" = "Activează motorul pentru plugin-uri";
@@ -476,7 +476,7 @@
 "WifiSuccess" = "Conectare reușită la Wi-Fi.";
 "AreYouSureToLogin" = "Sunteți sigur că doriți să vă conectați la acest cont pe un alt dispozitiv?";
 "PageBlocked" = "Pagină blocată";
-"PageBlockedDescription" = "exteraGram a împiedicat încărcarea următoarei pagini:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram a împiedicat încărcarea următoarei pagini:\n**%1$@**";
 "PageBlockedGoBack" = "Înapoi";
 "PageBlockedProceed" = "Continuă";
 "SetAsBadge" = "Setează ca insignă";
@@ -502,7 +502,7 @@
 "EmojiSavedHint" = "Emoji salvat în galerie.";
 "GifGallerySavedHint" = "GIF salvat în galerie.";
 "MutualContactInfo" = "Acest contact este reciproc.";
-"LocalPremiumEmojiHint" = "Nu aveți un abonament **Telegram Premium**, așa că doar utilizatorii **exteraGram** vor putea vedea acest emoji.";
+"LocalPremiumEmojiHint" = "Nu aveți un abonament **Telegram Premium**, așa că doar utilizatorii **GlowGram** vor putea vedea acest emoji.";
 "HideContactsTab" = "Ascunde fila Contacte";
 "ShowContactsTab" = "Afișează fila Contacte";
 "ContactsTabWasShownTitle" = "Fila **Contacte** este acum vizibilă.";

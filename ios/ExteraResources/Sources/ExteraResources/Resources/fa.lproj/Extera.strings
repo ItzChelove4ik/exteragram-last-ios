@@ -1,5 +1,5 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "تنظیمات exteraGram";
+"Preferences" = "تنظیمات GlowGram";
 "Links" = "لینک‌ ها";
 "AboutExteraDescription" = "یک کلاینت آزمایشی تلگرام بر پایه کد منبع رسمی!";
 "Crowdin" = "ترجمه";
@@ -385,7 +385,7 @@
 "PauseOnMinimizeVideo" = "ویدیو";
 "PauseOnMinimizeVoice" = "صدا";
 "PauseOnMinimizeRound" = "گرد";
-"PauseOnMinimizeInfo" = "پخش رسانه را هنگام قفل شدن دستگاه یا کوچک‌سازی exteraGram متوقف می‌کند.";
+"PauseOnMinimizeInfo" = "پخش رسانه را هنگام قفل شدن دستگاه یا کوچک‌سازی GlowGram متوقف می‌کند.";
 "SwipeToPip" = "کشیدن به حالت تصویر در تصویر";
 "UnmuteWithVolumeButtons" = "فعال کردن صدای ویدیوها با دکمه‌های صدا";
 "UnmuteWithVolumeButtonsInfo" = "فشار دادن دکمه صدا به جای تغییر صدای سیستم، صدای ویدیو را فعال می‌کند.";
@@ -410,8 +410,8 @@
 "ExportInvalid" = "متأسفیم، شما یک صادرات داده جدید شروع کرده‌اید، بنابراین این صادرات داده لغو شده است.";
 "DeleteAccount" = "حذف حساب کاربری";
 "ResetSettings" = "بازنشانی تنظیمات";
-"ResetPreferences" = "تنظیمات **exteraGram** بازنشانی شد.";
-"ResetPreferencesInfo" = "آیا مطمئنید که می‌خواهید **همه** تنظیمات exteraGram را به پیش‌فرض بازنشانی کنید؟";
+"ResetPreferences" = "تنظیمات **GlowGram** بازنشانی شد.";
+"ResetPreferencesInfo" = "آیا مطمئنید که می‌خواهید **همه** تنظیمات GlowGram را به پیش‌فرض بازنشانی کنید؟";
 "SupportDevelopment" = "حمایت از توسعه";
 "SupportDevelopmentInfo" = "با حمایت از پروژه، نه تنها به توسعه آن کمک می‌کنید، بلکه نشان منحصر به فردی نیز دریافت می‌کنید.";
 "MakeDonation" = "کمک مالی کنید";
@@ -432,9 +432,9 @@
 "BoostyPeopleCount_few" = "%1$d نفر";
 "BoostyPeopleCount_many" = "%1$d نفر";
 "BoostyPeopleCount_other" = "%1$d نفر";
-"BoostyInfo" = "به طور فعال از **exteraGram** در **Boosty** حمایت کنید.";
+"BoostyInfo" = "به طور فعال از **GlowGram** در **Boosty** حمایت کنید.";
 "BoostyInfo2" = "از حمایت شما متشکریم!";
-"PluginsNotSupported" = "نصب افزونه فقط در نسخه **کامل** **exteraGram** در دسترس است.";
+"PluginsNotSupported" = "نصب افزونه فقط در نسخه **کامل** **GlowGram** در دسترس است.";
 "Plugins" = "افزونه‌ها";
 "PluginsEngine" = "موتور افزونه‌ها";
 "EnablePluginsEngine" = "فعال‌سازی موتور افزونه‌ها";
@@ -524,7 +524,7 @@
 "WifiSuccess" = "اتصال به وای‌فای با موفقیت انجام شد.";
 "AreYouSureToLogin" = "آیا مطمئن هستید که می‌خواهید در دستگاه دیگری وارد این حساب شوید؟";
 "PageBlocked" = "صفحه مسدود شده است";
-"PageBlockedDescription" = "exteraGram از بارگذاری صفحه زیر جلوگیری کرد:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram از بارگذاری صفحه زیر جلوگیری کرد:\n**%1$@**";
 "PageBlockedGoBack" = "بازگشت";
 "PageBlockedProceed" = "ادامه دادن";
 "BlockAds" = "مسدود کردن تبلیغات";
@@ -553,7 +553,7 @@
 "EmojiSavedHint" = "ایموجی در گالری ذخیره شد.";
 "GifGallerySavedHint" = "GIF در گالری ذخیره شد.";
 "MutualContactInfo" = "این تماس متقابل است.";
-"LocalPremiumEmojiHint" = "شما اشتراک **Telegram Premium** ندارید، بنابراین فقط کاربران **exteraGram** قادر به دیدن این ایموجی خواهند بود.";
+"LocalPremiumEmojiHint" = "شما اشتراک **Telegram Premium** ندارید، بنابراین فقط کاربران **GlowGram** قادر به دیدن این ایموجی خواهند بود.";
 "HideContactsTab" = "پنهان‌سازی برگه مخاطبین";
 "ShowContactsTab" = "نمایش برگه مخاطبین";
 "ContactsTabWasShownTitle" = "برگه **مخاطبین** اکنون قابل مشاهده است.";

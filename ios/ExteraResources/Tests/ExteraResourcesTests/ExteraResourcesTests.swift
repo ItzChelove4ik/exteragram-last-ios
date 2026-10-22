@@ -9,12 +9,12 @@ final class ExteraResourcesTests: XCTestCase {
     }
 
     func testDeterministicEnglishAndRussianLookup() {
-        XCTAssertEqual(ExteraLocalization.text("Preferences", languageCode: "en"), "exteraGram Preferences")
-        XCTAssertEqual(ExteraLocalization.text("Preferences", languageCode: "ru"), "Настройки exteraGram")
+        XCTAssertEqual(ExteraLocalization.text("Preferences", languageCode: "en"), "GlowGram Preferences")
+        XCTAssertEqual(ExteraLocalization.text("Preferences", languageCode: "ru"), "Настройки GlowGram")
     }
 
     func testUnknownLanguageFallsBackToEnglish() {
-        XCTAssertEqual(ExteraLocalization.text("Preferences", languageCode: "xx-unknown"), "exteraGram Preferences")
+        XCTAssertEqual(ExteraLocalization.text("Preferences", languageCode: "xx-unknown"), "GlowGram Preferences")
     }
 
     func testUnknownKeyReturnsTheKey() {

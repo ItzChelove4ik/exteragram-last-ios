@@ -7,6 +7,8 @@ import shutil
 import sys
 import zipfile
 
+from build_configuration import load_build_configuration
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -18,6 +20,10 @@ def main():
     args = parser.parse_args()
     source = args.source.resolve()
     output = args.output.resolve()
+    try:
+        configuration = load_build_configuration(source, os.environ)
+    except ValueError as error:
+        parser.exit(1, f"API configuration error: {error}\n")
     os.chdir(source)
     sys.path.insert(0, str(source / "build-system/Make"))
     from BazelLocation import locate_bazel
@@ -25,22 +31,9 @@ def main():
     from Make import BazelCommandLine
 
     bazel = locate_bazel(str(source), None, None)
-    configuration_path = source / "build-system/appstore-configuration.json"
-    configuration = json.loads(configuration_path.read_text())
-    configuration.update({
-        "bundle_id": "com.itzchelove4ik.exteragram.lite",
-        "team_id": "EXTERAGRAM",
-        "is_internal_build": "false", "is_appstore_build": "false",
-        "app_specific_url_scheme": "exteragram",
-        "enable_siri": False, "enable_icloud": False,
-    })
-    # Defaults are the credentials already published by upstream Telegram.
-    # Optional personal credentials stay in CI secrets, never in this repository.
-    configuration["api_id"] = os.environ.get("TELEGRAM_API_ID") or configuration["api_id"]
-    configuration["api_hash"] = os.environ.get("TELEGRAM_API_HASH") or configuration["api_hash"]
-    config_path = source / "build-input/extera-configuration.json"
+    config_path = source / "build-input/glowgram-configuration.json"
     config_path.parent.mkdir(parents=True, exist_ok=True)
-    config_path.write_text(json.dumps(configuration))
+    config_path.write_text(json.dumps(configuration), encoding="utf-8")
     repository = source / "build-input/configuration-repository"
     repository.mkdir(parents=True, exist_ok=True)
     (repository / "MODULE.bazel").write_text('module(name = "build_configuration")\n')
@@ -70,7 +63,7 @@ def main():
         if any(n.endswith("embedded.mobileprovision") for n in names):
             raise RuntimeError("Unexpected provisioning profile in unsigned IPA")
     output.mkdir(parents=True, exist_ok=True)
-    destination = output / "exteraGram-Lite-unsigned.ipa"
+    destination = output / "GlowGram-unsigned.ipa"
     shutil.copyfile(ipa, destination)
     print(f"IPA: {destination} ({destination.stat().st_size} bytes)", flush=True)
 

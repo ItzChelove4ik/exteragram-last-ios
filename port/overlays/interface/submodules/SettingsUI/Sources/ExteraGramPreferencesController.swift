@@ -126,7 +126,7 @@ public func exteraGramPreferencesController(context: AccountContext) -> ViewCont
     |> map { presentationData, _ -> (ItemListControllerState, (ItemListNodeState, ExteraPreferencesArguments)) in
         let state = ItemListControllerState(
             presentationData: ItemListPresentationData(presentationData),
-            title: .text("exteraGram Lite"),
+            title: .text("GlowGram"),
             leftNavigationButton: nil,
             rightNavigationButton: nil,
             backNavigationButton: ItemListBackButton(title: presentationData.strings.Common_Back)

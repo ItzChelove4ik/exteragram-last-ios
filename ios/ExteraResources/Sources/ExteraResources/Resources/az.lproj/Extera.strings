@@ -1,5 +1,5 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram tənzimləmələri";
+"Preferences" = "GlowGram tənzimləmələri";
 "Links" = "Bağlantılar";
 "AboutExteraDescription" = "Rəsmi mənbələrə əsaslanan eksperimental Telegram müştərisi!";
 "Crowdin" = "Tərcümə";
@@ -125,8 +125,8 @@
 "CopyInlineQuery" = "Daxili Sorğunu Kopyala";
 "CopyID" = "İstifadəçi ID-sini kopyala";
 "RestartRequired" = "Effektiv olmaq üçün Tətbiqi yenidən başladın.";
-"ResetPreferences" = "**exteraGram** tənzimləmələri sıfırlandı.";
-"ResetPreferencesInfo" = "**bütün** exteraGram tənzimləmələrini defolt olaraq sıfırlamaq istədiyinizə əminsiniz?";
+"ResetPreferences" = "**GlowGram** tənzimləmələri sıfırlandı.";
+"ResetPreferencesInfo" = "**bütün** GlowGram tənzimləmələrini defolt olaraq sıfırlamaq istədiyinizə əminsiniz?";
 "UserNotFound" = "Bu **ID** ilə istifadəçi tapılmadı.";
 "PhotoCopied" = "Foto buferə kopyalandı.";
 "MutualContactInfo" = "Bu əlaqə qarşılıqlıdır.";

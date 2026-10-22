@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Налаштування exteraGram";
+"Preferences" = "Налаштування GlowGram";
 "Links" = "Посилання";
 "AboutExteraDescription" = "Експериментальний клієнт Telegram на основі офіційного вихідного коду!";
 "Crowdin" = "Переклад";
 "Website" = "Вебсайт";
 "Categories" = "Категорії";
-"Developer" = "**%1$@** є членом команди розробників **exteraGram**.";
-"DeveloperCompact" = "Учасник команди розробників **exteraGram**.";
-"Supporter" = "**%1$@** підтримав(ла) розробку **exteraGram** та отримав(ла) унікальний значок.";
-"OfficialChannel" = "**%1$@** — офіційний ресурс **exteraGram**.";
+"Developer" = "**%1$@** є членом команди розробників **GlowGram**.";
+"DeveloperCompact" = "Учасник команди розробників **GlowGram**.";
+"Supporter" = "**%1$@** підтримав(ла) розробку **GlowGram** та отримав(ла) унікальний значок.";
+"OfficialChannel" = "**%1$@** — офіційний ресурс **GlowGram**.";
 "NoSuchSetting" = "Такого налаштування не існує.";
 "SettingLinkToSavedMessages" = "Посилання на налаштування відправлено у **Збережене**.";
 "SettingLinkToUser" = "Посилання на налаштування відправлено до **%1$@**.";
@@ -25,7 +25,7 @@
 "WeatherPill" = "Погода";
 "WeatherSettingsInfo" = "Виберіть спосіб визначення розташування для отримання даних о погоді.";
 "WeatherLocation" = "Визначення розташування";
-"WeatherLocationPermissionNo" = "Для показу погоди exteraGram потребує доступ до вашої геолокації.";
+"WeatherLocationPermissionNo" = "Для показу погоди GlowGram потребує доступ до вашої геолокації.";
 "WeatherLocationPermissionGrant" = "Надати дозвіл";
 "WeatherLocationServicesEnable" = "Увімкнути геолокацію";
 "WeatherPillTopInfo" = "Налаштування віджета погоди для Pill Stack.";
@@ -433,8 +433,8 @@
 "ExportInvalid" = "Вибачте, ви почали новий експорт даних, тому цей експорт даних було скасовано.";
 "DeleteAccount" = "Видалити акаунт";
 "ResetSettings" = "Скинути налаштування";
-"ResetPreferences" = "Налаштування **exteraGram** скинуто.";
-"ResetPreferencesInfo" = "Ви впевнені, що хочете скинути **всі** налаштування exteraGram до значень за замовчуванням?";
+"ResetPreferences" = "Налаштування **GlowGram** скинуто.";
+"ResetPreferencesInfo" = "Ви впевнені, що хочете скинути **всі** налаштування GlowGram до значень за замовчуванням?";
 "SupportDevelopment" = "Підтримати розробку";
 "SupportDevelopmentInfo" = "Підтримуючи проєкт, ви не тільки сприяєте його розвитку, але й отримуєте унікальний значок.";
 "MakeDonation" = "Зробити пожертву";
@@ -455,9 +455,9 @@
 "BoostyPeopleCount_few" = "%1$d людини";
 "BoostyPeopleCount_many" = "%1$d людей";
 "BoostyPeopleCount_other" = "%1$d людей";
-"BoostyInfo" = "Активно підтримують **exteraGram** на **Boosty**.";
+"BoostyInfo" = "Активно підтримують **GlowGram** на **Boosty**.";
 "BoostyInfo2" = "Дякую за вашу підтримку!";
-"PluginsNotSupported" = "Встановлення плагінів доступне лише в **Full**-версії **exteraGram**.";
+"PluginsNotSupported" = "Встановлення плагінів доступне лише в **Full**-версії **GlowGram**.";
 "Plugins" = "Плагіни";
 "PluginsEngine" = "Система плагінів";
 "EnablePluginsEngine" = "Увімкнути систему плагінів";
@@ -572,7 +572,7 @@
 "WifiSuccess" = "Успішно підключено до Wi-Fi.";
 "AreYouSureToLogin" = "Ви впевнені, що хочете увійти в цей акаунт на іншому пристрої?";
 "PageBlocked" = "Сторінка заблокована";
-"PageBlockedDescription" = "exteraGram зупинив завантаження сторінки:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram зупинив завантаження сторінки:\n**%1$@**";
 "PageBlockedGoBack" = "Назад";
 "PageBlockedProceed" = "Продовжити";
 "BlockAds" = "Блокування реклами";
@@ -606,7 +606,7 @@
 "EmojiSavedHint" = "Емодзі збережено до галереї.";
 "GifGallerySavedHint" = "GIF збережено до галереї.";
 "MutualContactInfo" = "Цей контакт є взаємним.";
-"LocalPremiumEmojiHint" = "У вас немає підписки **Telegram Premium**, тому цю емодзі зможуть бачити лише користувачі **exteraGram**.";
+"LocalPremiumEmojiHint" = "У вас немає підписки **Telegram Premium**, тому цю емодзі зможуть бачити лише користувачі **GlowGram**.";
 "HideContactsTab" = "Приховати вкладку «Контакти»";
 "ShowContactsTab" = "Показати вкладку «Контакти»";
 "ContactsTabWasShownTitle" = "Вкладка «Контакти» додана.";

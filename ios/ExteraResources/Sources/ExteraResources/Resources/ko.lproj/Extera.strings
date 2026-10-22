@@ -2,10 +2,10 @@
 "Crowdin" = "Немецкий ";
 "Website" = "웹 사이트";
 "Categories" = "범주";
-"Developer" = "**%1$@**님은 **exteraGram** 개발 팀의 멤버입니다.";
-"DeveloperCompact" = "**exteraGram** 개발 팀의 멤버입니다.";
-"Supporter" = "**%1$@**님은 **exteraGram**의 개발을 지원해주셨기에 특별한 배지를 받으셨습니다.";
-"OfficialChannel" = "**%1$@**은(는) **exteraGram**의 공식 리소스입니다.";
+"Developer" = "**%1$@**님은 **GlowGram** 개발 팀의 멤버입니다.";
+"DeveloperCompact" = "**GlowGram** 개발 팀의 멤버입니다.";
+"Supporter" = "**%1$@**님은 **GlowGram**의 개발을 지원해주셨기에 특별한 배지를 받으셨습니다.";
+"OfficialChannel" = "**%1$@**은(는) **GlowGram**의 공식 리소스입니다.";
 "NoSuchSetting" = "그런 설정은 없는 것 같습니다.";
 "SettingLinkToSavedMessages" = "설정 링크가 **저장된 메시지**로 전송되었습니다.";
 "SettingLinkToUser" = "설정 링크가 **%1$@**로 전송되었습니다.";
@@ -23,7 +23,7 @@
 "WeatherPill" = "날씨";
 "WeatherSettingsInfo" = "검색에서 날씨 표시를 위한 위치 결정 방법을 선택하세요.";
 "WeatherLocation" = "위치 감지";
-"WeatherLocationPermissionNo" = "현재 날씨를 표시하려면 exteraGram이 위치에 접근해야 합니다.";
+"WeatherLocationPermissionNo" = "현재 날씨를 표시하려면 GlowGram이 위치에 접근해야 합니다.";
 "WeatherLocationPermissionGrant" = "권한 부여";
 "WeatherLocationServicesEnable" = "위치 활성화";
 "WeatherPillTopInfo" = "Pill Stack을 위한 날씨 위젯 설정.";
@@ -344,7 +344,7 @@
 "PauseOnMinimizeVideo" = "비디오";
 "PauseOnMinimizeVoice" = "음성";
 "PauseOnMinimizeRound" = "원형";
-"PauseOnMinimizeInfo" = "기기가 잠기거나 exteraGram이 최소화되면 미디어 재생을 일시 중지합니다.";
+"PauseOnMinimizeInfo" = "기기가 잠기거나 GlowGram이 최소화되면 미디어 재생을 일시 중지합니다.";
 "SwipeToPip" = "스와이프로 PiP";
 "UnmuteWithVolumeButtons" = "볼륨 버튼으로 비디오 음소거 해제";
 "UnmuteWithVolumeButtonsInfo" = "볼륨 버튼을 누르면 시스템 볼륨을 변경하는 대신 비디오 음소거가 해제됩니다.";
@@ -369,8 +369,8 @@
 "ExportInvalid" = "죄송합니다. 새 데이터 내보내기를 시작했으므로 이 데이터 내보내기가 취소되었습니다.";
 "DeleteAccount" = "계정 삭제";
 "ResetSettings" = "설정 재설정";
-"ResetPreferences" = "**exteraGram** 기본 설정이 재설정되었습니다.";
-"ResetPreferencesInfo" = "**모든** exteraGram 기본 설정을 기본값으로 재설정하시겠습니까?";
+"ResetPreferences" = "**GlowGram** 기본 설정이 재설정되었습니다.";
+"ResetPreferencesInfo" = "**모든** GlowGram 기본 설정을 기본값으로 재설정하시겠습니까?";
 "SupportDevelopment" = "개발 지원";
 "SupportDevelopmentInfo" = "프로젝트를 지원하면 개발에 기여할 뿐만 아니라 고유한 배지를 받을 수 있습니다.";
 "MakeDonation" = "기부하기";
@@ -391,9 +391,9 @@
 "BoostyPeopleCount_few" = "%1$d명";
 "BoostyPeopleCount_many" = "%1$d명";
 "BoostyPeopleCount_other" = "%1$d명";
-"BoostyInfo" = "**Boosty**에서 **exteraGram**을 적극적으로 지원하세요.";
+"BoostyInfo" = "**Boosty**에서 **GlowGram**을 적극적으로 지원하세요.";
 "BoostyInfo2" = "지원해 주셔서 감사합니다!";
-"PluginsNotSupported" = "플러그인 설치는 **exteraGram**의 **풀** 버전에서만 가능합니다.";
+"PluginsNotSupported" = "플러그인 설치는 **GlowGram**의 **풀** 버전에서만 가능합니다.";
 "Plugins" = "플러그인";
 "PluginsEngine" = "플러그인 엔진";
 "EnablePluginsEngine" = "플러그인 엔진 활성화";
@@ -483,7 +483,7 @@
 "WifiSuccess" = "Wi-Fi에 성공적으로 연결되었습니다.";
 "AreYouSureToLogin" = "다른 기기에서 이 계정에 로그인하시겠습니까?";
 "PageBlocked" = "페이지 차단됨";
-"PageBlockedDescription" = "exteraGram이 다음 페이지 로드를 차단했습니다:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram이 다음 페이지 로드를 차단했습니다:\n**%1$@**";
 "PageBlockedGoBack" = "뒤로 가기";
 "PageBlockedProceed" = "계속";
 "SetAsBadge" = "배지로 설정";
@@ -511,7 +511,7 @@
 "EmojiSavedHint" = "이모지가 갤러리에 저장되었습니다.";
 "GifGallerySavedHint" = "GIF가 갤러리에 저장되었습니다.";
 "MutualContactInfo" = "이 연락처는 상호 연락처입니다.";
-"LocalPremiumEmojiHint" = "**Telegram Premium** 구독이 없으므로 **exteraGram** 사용자만 이 이모지를 볼 수 있습니다.";
+"LocalPremiumEmojiHint" = "**Telegram Premium** 구독이 없으므로 **GlowGram** 사용자만 이 이모지를 볼 수 있습니다.";
 "HideContactsTab" = "연락처 탭 숨기기";
 "ShowContactsTab" = "연락처 탭 표시";
 "ContactsTabWasShownTitle" = "**연락처** 탭이 이제 표시됩니다.";

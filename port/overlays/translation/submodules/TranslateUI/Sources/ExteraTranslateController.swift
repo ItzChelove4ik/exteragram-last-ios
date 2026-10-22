@@ -218,7 +218,7 @@ private final class ExteraTranslateController: UIViewController, UIAdaptivePrese
                 case .textTooLong:
                     self.fail(self.label("This text exceeds Telegram's translation limit.", "Текст превышает ограничение перевода Telegram."))
                 case .tryAlternative:
-                    self.fail(self.label("Telegram translation is unavailable for this request. Select another translator in exteraGram settings.", "Перевод Telegram недоступен для этого запроса. Выберите другой переводчик в настройках exteraGram."))
+                    self.fail(self.label("Telegram translation is unavailable for this request. Select another translator in GlowGram settings.", "Перевод Telegram недоступен для этого запроса. Выберите другой переводчик в настройках GlowGram."))
                 default:
                     self.fail(self.errorMessage(ExteraTranslationError.invalidResponse))
                 }
@@ -259,10 +259,10 @@ private final class ExteraTranslateController: UIViewController, UIAdaptivePrese
     private func errorMessage(_ error: Error) -> String {
         guard russian else { return error.localizedDescription }
         switch error as? ExteraTranslationError {
-        case .configurationRequired: return "Для этого переводчика нужен собственный ключ сервиса. Выберите Google или Yandex в настройках exteraGram."
+        case .configurationRequired: return "Для этого переводчика нужен собственный ключ сервиса. Выберите Google или Yandex в настройках GlowGram."
         case .rateLimited: return "Переводчик временно ограничил запросы. Повторите позже."
         case .unsupportedLanguage, .invalidLanguage: return "Переводчик не поддерживает выбранный язык."
-        default: return "Не удалось получить перевод. Проверьте подключение или выберите другой переводчик в настройках exteraGram."
+        default: return "Не удалось получить перевод. Проверьте подключение или выберите другой переводчик в настройках GlowGram."
         }
     }
 

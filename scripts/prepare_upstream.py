@@ -5,6 +5,8 @@ from pathlib import Path
 import shutil
 import subprocess
 
+from branding_assets import install_branding_assets
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -16,7 +18,7 @@ def apply_patches(destination):
     # Order is explicit because several patches extend the same BUILD/source file.
     order = ["branding", "interface", "message_features", "message_more",
              "composer", "profile_phone", "send_as", "reactions", "translation",
-             "speech", "export", "sideload", "unsigned_rules", "wasi_host"]
+             "speech", "export", "sideload", "authorization", "unsigned_rules", "wasi_host"]
     prepared = {}
     total = 0
     for name in order:
@@ -110,6 +112,7 @@ def main():
         run("git", "submodule", "update", "--init", "--recursive", "--depth=1", "--jobs=4", cwd=destination)
     apply_patches(destination)
     install_modules(destination)
+    install_branding_assets(destination)
     print(f"Prepared {destination} at {commit}", flush=True)
 
 

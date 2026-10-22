@@ -2,13 +2,25 @@
   {
     "path": "Telegram/BUILD",
     "old": "    <key>CFBundleDisplayName</key>\n    <string>Telegram</string>",
-    "new": "    <key>CFBundleDisplayName</key>\n    <string>exteraGram Lite</string>",
+    "new": "    <key>CFBundleDisplayName</key>\n    <string>GlowGram</string>",
     "occurrences": 2
   },
   {
     "path": "Telegram/BUILD",
     "old": "    <key>CFBundleIdentifier</key>\n    <string>{telegram_bundle_id}</string>\n    <key>CFBundleName</key>\n    <string>Telegram</string>",
-    "new": "    <key>CFBundleIdentifier</key>\n    <string>{telegram_bundle_id}</string>\n    <key>CFBundleName</key>\n    <string>exteraGram Lite</string>",
+    "new": "    <key>CFBundleIdentifier</key>\n    <string>{telegram_bundle_id}</string>\n    <key>CFBundleName</key>\n    <string>GlowGram</string>",
+    "occurrences": 1
+  },
+  {
+    "path": "Telegram/BUILD",
+    "old": "composer_icon_folders = [\"Telegram\"]",
+    "new": "composer_icon_folders = [\"GlowGram\"]",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "PresentationAppIcon(name: \"BlueIcon\", imageName: \"BlueIcon\", isDefault: buildConfig.isAppStoreBuild)",
+    "new": "PresentationAppIcon(name: \"BlueIcon\", imageName: \"GlowGram\", isDefault: true)",
     "occurrences": 1
   }
 ]

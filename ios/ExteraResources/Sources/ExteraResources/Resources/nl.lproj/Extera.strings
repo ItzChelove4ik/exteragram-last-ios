@@ -1,12 +1,12 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram Voorkeuren";
+"Preferences" = "GlowGram Voorkeuren";
 "AboutExteraDescription" = "Een experimentele Telegram-client gebaseerd op de officiële broncode!";
 "Crowdin" = "Vertalen";
 "Categories" = "Categorieën";
-"Developer" = "**%1$@** is lid van het **exteraGram**-ontwikkelingsteam.";
-"DeveloperCompact" = "Lid van het **exteraGram**-ontwikkelingsteam.";
-"Supporter" = "**%1$@** ondersteunde de ontwikkeling van **exteraGram** en ontving een unieke badge.";
-"OfficialChannel" = "**%1$@** is de officiële bron van **exteraGram**.";
+"Developer" = "**%1$@** is lid van het **GlowGram**-ontwikkelingsteam.";
+"DeveloperCompact" = "Lid van het **GlowGram**-ontwikkelingsteam.";
+"Supporter" = "**%1$@** ondersteunde de ontwikkeling van **GlowGram** en ontving een unieke badge.";
+"OfficialChannel" = "**%1$@** is de officiële bron van **GlowGram**.";
 "NoSuchSetting" = "Het lijkt erop dat zo'n instelling niet bestaat.";
 "SettingLinkToSavedMessages" = "Instellingslink verzonden naar **Opgeslagen berichten**.";
 "SettingLinkToUser" = "Instellingslink verzonden naar **%1$@**.";
@@ -24,7 +24,7 @@
 "WeatherPill" = "Weer";
 "WeatherSettingsInfo" = "Kies hoe de locatie voor de weergave van het weer in zoekopdrachten wordt bepaald.";
 "WeatherLocation" = "Locatiedetectie";
-"WeatherLocationPermissionNo" = "exteraGram heeft toegang tot je locatie nodig om het huidige weer weer te geven.";
+"WeatherLocationPermissionNo" = "GlowGram heeft toegang tot je locatie nodig om het huidige weer weer te geven.";
 "WeatherLocationPermissionGrant" = "Toestemming verlenen";
 "WeatherLocationServicesEnable" = "Locatie inschakelen";
 "WeatherPillTopInfo" = "Instellingen voor de weerwidget voor de Pillenstack.";
@@ -330,7 +330,7 @@
 "PauseOnMinimize" = "Automatisch pauzeren";
 "PauseOnMinimizeVoice" = "Spraak";
 "PauseOnMinimizeRound" = "Rond";
-"PauseOnMinimizeInfo" = "Pauzeert media-afspelen wanneer het apparaat is vergrendeld of exteraGram is geminimaliseerd.";
+"PauseOnMinimizeInfo" = "Pauzeert media-afspelen wanneer het apparaat is vergrendeld of GlowGram is geminimaliseerd.";
 "SwipeToPip" = "Veeg naar PiP";
 "UnmuteWithVolumeButtons" = "Video's dempen opheffen met volumeknoppen";
 "UnmuteWithVolumeButtonsInfo" = "Door op een volumeknop te drukken wordt de video gedempt in plaats van het systeemvolume te wijzigen.";
@@ -355,8 +355,8 @@
 "ExportInvalid" = "Sorry, je bent een nieuwe gegevensexport gestart, dus deze export is geannuleerd.";
 "DeleteAccount" = "Account verwijderen";
 "ResetSettings" = "Instellingen resetten";
-"ResetPreferences" = "**exteraGram**-voorkeuren zijn gereset.";
-"ResetPreferencesInfo" = "Weet je zeker dat je **alle** exteraGram-voorkeuren wilt resetten naar de standaardwaarden?";
+"ResetPreferences" = "**GlowGram**-voorkeuren zijn gereset.";
+"ResetPreferencesInfo" = "Weet je zeker dat je **alle** GlowGram-voorkeuren wilt resetten naar de standaardwaarden?";
 "SupportDevelopment" = "Ontwikkeling ondersteunen";
 "SupportDevelopmentInfo" = "Door het project te ondersteunen, draag je niet alleen bij aan de ontwikkeling, maar ontvang je ook een unieke badge.";
 "MakeDonation" = "Een donatie doen";
@@ -377,9 +377,9 @@
 "BoostyPeopleCount_few" = "%1$d personen";
 "BoostyPeopleCount_many" = "%1$d personen";
 "BoostyPeopleCount_other" = "%1$d personen";
-"BoostyInfo" = "Ondersteun **exteraGram** actief op **Boosty**.";
+"BoostyInfo" = "Ondersteun **GlowGram** actief op **Boosty**.";
 "BoostyInfo2" = "Bedankt voor je steun!";
-"PluginsNotSupported" = "Plugin-installatie is alleen beschikbaar in de **Volledige** versie van **exteraGram**.";
+"PluginsNotSupported" = "Plugin-installatie is alleen beschikbaar in de **Volledige** versie van **GlowGram**.";
 "PluginsEngine" = "Plugin-engine";
 "EnablePluginsEngine" = "Plugin-engine inschakelen";
 "PluginsInfo" = "Je kunt plugins vinden op @exteraPlugins.";
@@ -464,7 +464,7 @@
 "WifiSuccess" = "Succesvol verbonden met Wi-Fi.";
 "AreYouSureToLogin" = "Weet je zeker dat je op een ander apparaat wilt inloggen op dit account?";
 "PageBlocked" = "Pagina geblokkeerd";
-"PageBlockedDescription" = "exteraGram heeft het laden van de volgende pagina voorkomen:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram heeft het laden van de volgende pagina voorkomen:\n**%1$@**";
 "PageBlockedGoBack" = "Terug";
 "PageBlockedProceed" = "Doorgaan";
 "SetAsBadge" = "Instellen als badge";
@@ -492,7 +492,7 @@
 "EmojiSavedHint" = "Emoji opgeslagen in galerij.";
 "GifGallerySavedHint" = "GIF opgeslagen in galerij.";
 "MutualContactInfo" = "Dit contact is wederzijds.";
-"LocalPremiumEmojiHint" = "Je hebt geen **Telegram Premium**-abonnement, dus alleen **exteraGram**-gebruikers kunnen deze emoji zien.";
+"LocalPremiumEmojiHint" = "Je hebt geen **Telegram Premium**-abonnement, dus alleen **GlowGram**-gebruikers kunnen deze emoji zien.";
 "HideContactsTab" = "Tabblad Contacten verbergen";
 "ShowContactsTab" = "Tabblad Contacten tonen";
 "ContactsTabWasShownTitle" = "Tabblad **Contacten** is nu zichtbaar.";

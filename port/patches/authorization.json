@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TelegramCore/Sources/Network/Network.swift",
+    "old": "            apiEnvironment.langPack = arguments.languagesCategory",
+    "new": "            // Use an empty lang_pack in initConnection with the fork's API ID.\n            // App translations still use the existing iOS localization catalog.\n            apiEnvironment.langPack = \"\"",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/AuthorizationUI/Sources/AuthorizationSequenceController.swift",
+    "old": "                let authorizationPushConfiguration = self.sharedContext.authorizationPushConfiguration\n                |> take(1)\n                |> timeout(2.0, queue: .mainQueue(), alternate: .single(nil))",
+    "new": "                // This IPA is signed by the installer, so Telegram's APNS login\n                // verification is unavailable. Request the normal code delivery\n                // flow without advertising a push token for Firebase SMS.\n                let authorizationPushConfiguration: Signal<AuthorizationCodePushNotificationConfiguration?, NoError> = .single(nil)",
+    "occurrences": 1
+  }
+]

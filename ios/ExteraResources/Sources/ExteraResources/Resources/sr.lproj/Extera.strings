@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram преференцес";
+"Preferences" = "GlowGram преференцес";
 "Links" = "Линкови";
 "AboutExteraDescription" = "Експериментални Телеграм клијент базиран на званичном изворном коду!";
 "Crowdin" = "Преведи";
 "Website" = "Веб-сајт";
 "Categories" = "Категорије";
-"Developer" = "**%1$@** је члан развојног тима **exteraGram**.";
-"DeveloperCompact" = "Član **exteraGram** razvojnog tima.";
-"Supporter" = "**%1$@** је подржао развој **exteraGram** и добио је ексклузивну значку.";
-"OfficialChannel" = "**%1$@** је званични ресурс **exteraGram**";
+"Developer" = "**%1$@** је члан развојног тима **GlowGram**.";
+"DeveloperCompact" = "Član **GlowGram** razvojnog tima.";
+"Supporter" = "**%1$@** је подржао развој **GlowGram** и добио је ексклузивну значку.";
+"OfficialChannel" = "**%1$@** је званични ресурс **GlowGram**";
 "NoSuchSetting" = "Изгледа да такво подешавање не постоји.";
 "SettingLinkToSavedMessages" = "Link za podešavanje poslat u **Sačuvane poruke**.";
 "SettingLinkToUser" = "Link za podešavanje poslat **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Vreme";
 "WeatherSettingsInfo" = "Izaberite kako da se odredi lokacija za prikaz vremena u pretrazi.";
 "WeatherLocation" = "Detekcija lokacije";
-"WeatherLocationPermissionNo" = "exteraGram-u je potreban pristup vašoj lokaciji da bi prikazao trenutno vreme.";
+"WeatherLocationPermissionNo" = "GlowGram-u je potreban pristup vašoj lokaciji da bi prikazao trenutno vreme.";
 "WeatherLocationPermissionGrant" = "Dozvoli pristup";
 "WeatherLocationServicesEnable" = "Omogući lokaciju";
 "WeatherPillTopInfo" = "Podešavanja widgeta za vreme za Gomilu dugmića.";
@@ -335,7 +335,7 @@
 "PauseOnMinimize" = "Automatska pauza";
 "PauseOnMinimizeVoice" = "Glas";
 "PauseOnMinimizeRound" = "Kružno";
-"PauseOnMinimizeInfo" = "Pauzira reprodukciju medija kada je uređaj zaključan ili je exteraGram minimizovan.";
+"PauseOnMinimizeInfo" = "Pauzira reprodukciju medija kada je uređaj zaključan ili je GlowGram minimizovan.";
 "SwipeToPip" = "Prevucite za PiP";
 "UnmuteWithVolumeButtons" = "Uključi zvuk video zapisa dugmadima za jačinu";
 "UnmuteWithVolumeButtonsInfo" = "Pritiskom na dugme za jačinu zvuka će se uključiti zvuk videa umesto promene sistemske jačine.";
@@ -360,8 +360,8 @@
 "ExportInvalid" = "Izvinite, započeli ste novi izvoz podataka, pa je ovaj izvoz podataka otkazan.";
 "DeleteAccount" = "Obriši nalog";
 "ResetSettings" = "Resetuj podešavanja";
-"ResetPreferences" = "**exteraGram** podešavanja su resetovana.";
-"ResetPreferencesInfo" = "Da li ste sigurni da želite da resetujete **sva** exteraGram podešavanja na podrazumevana?";
+"ResetPreferences" = "**GlowGram** podešavanja su resetovana.";
+"ResetPreferencesInfo" = "Da li ste sigurni da želite da resetujete **sva** GlowGram podešavanja na podrazumevana?";
 "SupportDevelopment" = "Podrži razvoj";
 "SupportDevelopmentInfo" = "Podržavanjem projekta ne samo da doprinosite njegovom razvoju već dobijate i jedinstvenu značku.";
 "MakeDonation" = "Donirajte";
@@ -382,9 +382,9 @@
 "BoostyPeopleCount_few" = "%1$d osobe";
 "BoostyPeopleCount_many" = "%1$d osoba";
 "BoostyPeopleCount_other" = "%1$d osoba";
-"BoostyInfo" = "Aktivno podržite **exteraGram** na **Boosty**-ju.";
+"BoostyInfo" = "Aktivno podržite **GlowGram** na **Boosty**-ju.";
 "BoostyInfo2" = "Hvala na podršci!";
-"PluginsNotSupported" = "Instalacija dodataka je dostupna samo u **Full** verziji **exteraGram**-a.";
+"PluginsNotSupported" = "Instalacija dodataka je dostupna samo u **Full** verziji **GlowGram**-a.";
 "Plugins" = "Dodaci";
 "PluginsEngine" = "Pogon dodataka";
 "EnablePluginsEngine" = "Omogući pogon dodataka";
@@ -472,7 +472,7 @@
 "WifiSuccess" = "Uspešno povezano na Wi-Fi.";
 "AreYouSureToLogin" = "Da li ste sigurni da želite da se prijavite na ovaj nalog na drugom uređaju?";
 "PageBlocked" = "Stranica blokirana";
-"PageBlockedDescription" = "exteraGram je sprečio učitavanje sledeće stranice:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram je sprečio učitavanje sledeće stranice:\n**%1$@**";
 "PageBlockedGoBack" = "Nazad";
 "PageBlockedProceed" = "Nastavi";
 "SetAsBadge" = "Postavi kao značku";
@@ -500,7 +500,7 @@
 "EmojiSavedHint" = "Emoji sačuvan u galeriji.";
 "GifGallerySavedHint" = "GIF sačuvan u galeriji.";
 "MutualContactInfo" = "Ovaj kontakt je uzajaman.";
-"LocalPremiumEmojiHint" = "Nemate **Telegram Premium** pretplatu, pa će samo **exteraGram** korisnici moći da vide ovaj emoji.";
+"LocalPremiumEmojiHint" = "Nemate **Telegram Premium** pretplatu, pa će samo **GlowGram** korisnici moći da vide ovaj emoji.";
 "HideContactsTab" = "Sakrij karticu Kontakti";
 "ShowContactsTab" = "Prikaži karticu Kontakti";
 "ContactsTabWasShownTitle" = "Kartica **Kontakti** je sada vidljiva.";

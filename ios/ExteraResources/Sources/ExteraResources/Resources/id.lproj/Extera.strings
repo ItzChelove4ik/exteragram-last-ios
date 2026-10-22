@@ -1,5 +1,5 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Pengaturan exteraGram";
+"Preferences" = "Pengaturan GlowGram";
 "Links" = "Tautan";
 "AboutExteraDescription" = "Sebuah klien Telegram experimental berbasis kode sumber resmi!";
 "Website" = "Situs web";
@@ -21,7 +21,7 @@
 "WeatherPill" = "Cuaca";
 "WeatherSettingsInfo" = "Pilih cara menentukan lokasi untuk tampilan cuaca di pencarian.";
 "WeatherLocation" = "Deteksi Lokasi";
-"WeatherLocationPermissionNo" = "exteraGram memerlukan akses ke lokasi Anda untuk menampilkan cuaca saat ini.";
+"WeatherLocationPermissionNo" = "GlowGram memerlukan akses ke lokasi Anda untuk menampilkan cuaca saat ini.";
 "WeatherLocationPermissionGrant" = "Berikan Izin";
 "WeatherLocationServicesEnable" = "Aktifkan Lokasi";
 "WeatherPillTopInfo" = "Pengaturan widget Cuaca untuk Tumpukan Pil.";
@@ -325,7 +325,7 @@
 "PauseOnMinimize" = "Jeda Otomatis";
 "PauseOnMinimizeVoice" = "Suara";
 "PauseOnMinimizeRound" = "Lingkaran";
-"PauseOnMinimizeInfo" = "Menjeda pemutaran media saat perangkat dikunci atau exteraGram diminimalkan.";
+"PauseOnMinimizeInfo" = "Menjeda pemutaran media saat perangkat dikunci atau GlowGram diminimalkan.";
 "SwipeToPip" = "Geser ke PiP";
 "UnmuteWithVolumeButtons" = "Nyalakan Suara Video dengan Tombol Volume";
 "UnmuteWithVolumeButtonsInfo" = "Menekan tombol volume akan menyalakan suara video, bukan mengubah volume sistem.";
@@ -350,8 +350,8 @@
 "ExportInvalid" = "Maaf, Anda memulai ekspor data baru, sehingga ekspor data ini dibatalkan.";
 "DeleteAccount" = "Hapus Akun";
 "ResetSettings" = "Atur Ulang Pengaturan";
-"ResetPreferences" = "Preferensi **exteraGram** telah direset.";
-"ResetPreferencesInfo" = "Apakah Anda yakin ingin mereset **semua** preferensi exteraGram ke default?";
+"ResetPreferences" = "Preferensi **GlowGram** telah direset.";
+"ResetPreferencesInfo" = "Apakah Anda yakin ingin mereset **semua** preferensi GlowGram ke default?";
 "SupportDevelopment" = "Dukung Pengembangan";
 "SupportDevelopmentInfo" = "Dengan mendukung proyek ini, Anda tidak hanya berkontribusi pada pengembangannya tetapi juga mendapatkan lencana unik.";
 "MakeDonation" = "Buat Donasi";
@@ -372,9 +372,9 @@
 "BoostyPeopleCount_few" = "%1$d orang";
 "BoostyPeopleCount_many" = "%1$d orang";
 "BoostyPeopleCount_other" = "%1$d orang";
-"BoostyInfo" = "Dukung secara aktif **exteraGram** di **Boosty**.";
+"BoostyInfo" = "Dukung secara aktif **GlowGram** di **Boosty**.";
 "BoostyInfo2" = "Terima kasih atas dukungan Anda!";
-"PluginsNotSupported" = "Instalasi plugin hanya tersedia dalam versi **Penuh** dari **exteraGram**.";
+"PluginsNotSupported" = "Instalasi plugin hanya tersedia dalam versi **Penuh** dari **GlowGram**.";
 "Plugins" = "Plugin";
 "PluginsEngine" = "Mesin Plugin";
 "EnablePluginsEngine" = "Aktifkan Mesin Plugin";
@@ -461,7 +461,7 @@
 "WifiSuccess" = "Berhasil terhubung ke Wi-Fi.";
 "AreYouSureToLogin" = "Apakah Anda yakin ingin masuk ke akun ini di perangkat lain?";
 "PageBlocked" = "Halaman diblokir";
-"PageBlockedDescription" = "exteraGram telah mencegah pemuatan halaman berikut:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram telah mencegah pemuatan halaman berikut:\n**%1$@**";
 "PageBlockedGoBack" = "Kembali";
 "PageBlockedProceed" = "Lanjutkan";
 "SetAsBadge" = "Atur sebagai Lencana";
@@ -489,7 +489,7 @@
 "EmojiSavedHint" = "Emoji disimpan ke galeri.";
 "GifGallerySavedHint" = "GIF disimpan ke galeri.";
 "MutualContactInfo" = "Kontak ini saling mengenal.";
-"LocalPremiumEmojiHint" = "Anda tidak memiliki langganan **Telegram Premium**, sehingga hanya pengguna **exteraGram** yang dapat melihat emoji ini.";
+"LocalPremiumEmojiHint" = "Anda tidak memiliki langganan **Telegram Premium**, sehingga hanya pengguna **GlowGram** yang dapat melihat emoji ini.";
 "HideContactsTab" = "Sembunyikan Tab Kontak";
 "ShowContactsTab" = "Tampilkan Tab Kontak";
 "ContactsTabWasShownTitle" = "Tab **Kontak** sekarang terlihat.";

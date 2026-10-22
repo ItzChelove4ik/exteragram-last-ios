@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram Asetukset";
-"Links" = "exteraGram-asetukset";
+"Preferences" = "GlowGram Asetukset";
+"Links" = "GlowGram-asetukset";
 "AboutExteraDescription" = "Kokeellinen Telegram-asiakasohjelma, joka perustuu viralliseen lähdekoodiin!";
 "Crowdin" = "Käännä";
 "Website" = "Verkkosivusto";
 "Categories" = "Kategoriat";
-"Developer" = "**%1$@** on **exteraGramin** kehitystiimin jäsen.";
-"DeveloperCompact" = "**exteraGramin** kehitystiimin jäsen.";
-"Supporter" = "**%1$@** on tukenut **exteraGramin** kehitystä ja saanut ainutlaatuisen merkin.\t";
-"OfficialChannel" = "**%1$@** on **exteraGramin** virallinen resurssi.";
+"Developer" = "**%1$@** on **GlowGramin** kehitystiimin jäsen.";
+"DeveloperCompact" = "**GlowGramin** kehitystiimin jäsen.";
+"Supporter" = "**%1$@** on tukenut **GlowGramin** kehitystä ja saanut ainutlaatuisen merkin.\t";
+"OfficialChannel" = "**%1$@** on **GlowGramin** virallinen resurssi.";
 "NoSuchSetting" = "Näyttää siltä, ettei tällaista asetusta ole olemassa.";
 "SettingLinkToSavedMessages" = "Asetuslinkki lähetetty **Tallennettuihin viesteihin**.";
 "SettingLinkToUser" = "Asetuslinkki lähetetty käyttäjälle **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Sää";
 "WeatherSettingsInfo" = "Valitse, miten haun säänäytön sijainti määritetään.";
 "WeatherLocation" = "Sijainnin tunnistus";
-"WeatherLocationPermissionNo" = "exteraGram tarvitsee sijaintitietosi näyttääkseen nykyisen sään.";
+"WeatherLocationPermissionNo" = "GlowGram tarvitsee sijaintitietosi näyttääkseen nykyisen sään.";
 "WeatherLocationPermissionGrant" = "Myönnä lupa";
 "WeatherLocationServicesEnable" = "Ota sijainti käyttöön";
 "WeatherPillTopInfo" = "Sää-widgetin asetukset tunnistepinoa varten.";
@@ -343,7 +343,7 @@
 "PauseOnMinimize" = "Automaattinen keskeytys";
 "PauseOnMinimizeVoice" = "Ääni";
 "PauseOnMinimizeRound" = "Pyöreä";
-"PauseOnMinimizeInfo" = "Keskeyttää median toiston, kun laite lukitaan tai exteraGram pienennetään.";
+"PauseOnMinimizeInfo" = "Keskeyttää median toiston, kun laite lukitaan tai GlowGram pienennetään.";
 "SwipeToPip" = "Pyyhkäise PiP-tilaan";
 "UnmuteWithVolumeButtons" = "Poista videoista äänenvaiennus äänenvoimakkuuspainikkeilla";
 "UnmuteWithVolumeButtonsInfo" = "Äänenvoimakkuuspainikkeen painaminen poistaa videon äänenvaiennus tilan, eikä muuta järjestelmän äänenvoimakkuutta.";
@@ -368,8 +368,8 @@
 "ExportInvalid" = "Valitettavasti aloitit uuden tietojen viennin, joten tämä tietojen vienti on peruutettu.";
 "DeleteAccount" = "Poista tili";
 "ResetSettings" = "Nollaa asetukset";
-"ResetPreferences" = "**exteraGram**-asetukset on nollattu.";
-"ResetPreferencesInfo" = "Oletko varma, että haluat nollata **kaikki** exteraGram-asetukset oletusarvoihinsa?";
+"ResetPreferences" = "**GlowGram**-asetukset on nollattu.";
+"ResetPreferencesInfo" = "Oletko varma, että haluat nollata **kaikki** GlowGram-asetukset oletusarvoihinsa?";
 "SupportDevelopment" = "Tue kehitystä";
 "SupportDevelopmentInfo" = "Tukemalla projektia et vain edistä sen kehitystä, vaan saat myös ainutlaatuisen merkin.";
 "MakeDonation" = "Tee lahjoitus";
@@ -390,9 +390,9 @@
 "BoostyPeopleCount_few" = "%1$d henkilöä";
 "BoostyPeopleCount_many" = "%1$d henkilöä";
 "BoostyPeopleCount_other" = "%1$d henkilöä";
-"BoostyInfo" = "Tue aktiivisesti **exteraGramia** **Boosty**-alustalla.";
+"BoostyInfo" = "Tue aktiivisesti **GlowGramia** **Boosty**-alustalla.";
 "BoostyInfo2" = "Kiitos tuestasi!";
-"PluginsNotSupported" = "Laajennusten asennus on mahdollista vain **Full**-versiossa **exteraGram**.";
+"PluginsNotSupported" = "Laajennusten asennus on mahdollista vain **Full**-versiossa **GlowGram**.";
 "Plugins" = "Laajennukset";
 "PluginsEngine" = "Laajennusmoottori";
 "EnablePluginsEngine" = "Ota laajennusmoottori käyttöön";
@@ -482,7 +482,7 @@
 "WifiSuccess" = "Yhdistetty Wi-Fi-verkkoon onnistuneesti.";
 "AreYouSureToLogin" = "Oletko varma, että haluat kirjautua tälle tilille toisella laitteella?";
 "PageBlocked" = "Sivu estetty";
-"PageBlockedDescription" = "exteraGram esti seuraavan sivun latauksen:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram esti seuraavan sivun latauksen:\n**%1$@**";
 "PageBlockedGoBack" = "Palaa takaisin";
 "PageBlockedProceed" = "Jatka";
 "SetAsBadge" = "Aseta merkiksi";
@@ -510,7 +510,7 @@
 "EmojiSavedHint" = "Emoji tallennettu galleriaan.";
 "GifGallerySavedHint" = "GIF tallennettu galleriaan.";
 "MutualContactInfo" = "Tämä yhteystieto on molemminpuolinen.";
-"LocalPremiumEmojiHint" = "Sinulla ei ole **Telegram Premium** -tilausta, joten vain **exteraGram**-käyttäjät näkevät tämän emojin.";
+"LocalPremiumEmojiHint" = "Sinulla ei ole **Telegram Premium** -tilausta, joten vain **GlowGram**-käyttäjät näkevät tämän emojin.";
 "HideContactsTab" = "Piilota yhteystietovälilehti";
 "ShowContactsTab" = "Näytä yhteystietovälilehti";
 "ContactsTabWasShownTitle" = "**Yhteystiedot**-välilehti on nyt näkyvissä.";

@@ -1,13 +1,13 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram Innstillinger";
+"Preferences" = "GlowGram Innstillinger";
 "Links" = "Lenker";
 "AboutExteraDescription" = "En eksperimentell Telegram-klient basert på den offisielle kildekoden!";
 "Crowdin" = "Oversett";
 "Website" = "Nettside";
-"Developer" = "**%1$@** er medlem av utviklingsteamet **exteraGram**.";
-"DeveloperCompact" = "Medlem av utviklingsteamet til **exteraGram**.";
-"Supporter" = "*%1$@** støttet utviklingen av **exteraGram** og mottok et unikt merke.";
-"OfficialChannel" = "**%1$@** er den offisielle ressursen til **exteraGram**.";
+"Developer" = "**%1$@** er medlem av utviklingsteamet **GlowGram**.";
+"DeveloperCompact" = "Medlem av utviklingsteamet til **GlowGram**.";
+"Supporter" = "*%1$@** støttet utviklingen av **GlowGram** og mottok et unikt merke.";
+"OfficialChannel" = "**%1$@** er den offisielle ressursen til **GlowGram**.";
 "NoSuchSetting" = "Det ser ut til at en slik innstilling ikke finnes.";
 "SettingLinkToSavedMessages" = "Innstillingslenke sendt til **Lagrede meldinger**.";
 "SettingLinkToUser" = "Innstillingslenke sendt til **%1$@**.";
@@ -24,7 +24,7 @@
 "WeatherPill" = "Vær";
 "WeatherSettingsInfo" = "Velg hvordan du vil bestemme plasseringen for værmeldingen i søket.";
 "WeatherLocation" = "Posisjonsdeteksjon";
-"WeatherLocationPermissionNo" = "exteraGram trenger tilgang til posisjonen din for å vise gjeldende vær.";
+"WeatherLocationPermissionNo" = "GlowGram trenger tilgang til posisjonen din for å vise gjeldende vær.";
 "WeatherLocationPermissionGrant" = "Gi tillatelse";
 "WeatherLocationServicesEnable" = "Aktiver plassering";
 "WeatherPillTopInfo" = "Innstillinger for vær-widget for Pill Stack.";
@@ -340,7 +340,7 @@
 "PauseOnMinimize" = "Automatisk pause";
 "PauseOnMinimizeVoice" = "Stemme";
 "PauseOnMinimizeRound" = "Rund";
-"PauseOnMinimizeInfo" = "Setter avspillingen av media på pause når enheten er låst eller exteraGram er minimert.";
+"PauseOnMinimizeInfo" = "Setter avspillingen av media på pause når enheten er låst eller GlowGram er minimert.";
 "SwipeToPip" = "Sveip til PiP";
 "UnmuteWithVolumeButtons" = "Slå av lyden for videoer med volumknappene";
 "UnmuteWithVolumeButtonsInfo" = "Hvis du trykker på en volumknapp, slås videoen av i stedet for å endre systemvolumet.";
@@ -365,8 +365,8 @@
 "ExportInvalid" = "Beklager, du har startet en ny dataeksport, så denne dataeksporten er blitt kansellert.";
 "DeleteAccount" = "Slett konto";
 "ResetSettings" = "Tilbakestill innstillinger";
-"ResetPreferences" = "**exteraGram**-innstillingene er tilbakestilt.";
-"ResetPreferencesInfo" = "Er du sikker på at du vil tilbakestille **alle** exteraGram-innstillingene til standardinnstillingene?";
+"ResetPreferences" = "**GlowGram**-innstillingene er tilbakestilt.";
+"ResetPreferencesInfo" = "Er du sikker på at du vil tilbakestille **alle** GlowGram-innstillingene til standardinnstillingene?";
 "SupportDevelopment" = "Støtteutvikling";
 "SupportDevelopmentInfo" = "Ved å støtte prosjektet bidrar du ikke bare til utviklingen, men får også et unikt merke.";
 "MakeDonation" = "Gi en donasjon";
@@ -386,9 +386,9 @@
 "BoostyPeopleCount_few" = "%1$d personer";
 "BoostyPeopleCount_many" = "%1$d personer";
 "BoostyPeopleCount_other" = "%1$d personer";
-"BoostyInfo" = "Støtt aktivt **exteraGram** på **Boosty**.";
+"BoostyInfo" = "Støtt aktivt **GlowGram** på **Boosty**.";
 "BoostyInfo2" = "Takk for støtten!";
-"PluginsNotSupported" = "Installasjon av plugin er bare tilgjengelig i **fullversjonen** av **exteraGram**.";
+"PluginsNotSupported" = "Installasjon av plugin er bare tilgjengelig i **fullversjonen** av **GlowGram**.";
 "Plugins" = "Programtillegg";
 "PluginsEngine" = "Plugin-motor";
 "EnablePluginsEngine" = "Aktiver plugin-motor";
@@ -476,7 +476,7 @@
 "WifiSuccess" = "Koblet til Wi-Fi.";
 "AreYouSureToLogin" = "Er du sikker på at du vil logge på denne kontoen på en annen enhet?";
 "PageBlocked" = "Side blokkert";
-"PageBlockedDescription" = "exteraGram har forhindret at følgende side lastes inn:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram har forhindret at følgende side lastes inn:\n**%1$@**";
 "PageBlockedGoBack" = "Gå tilbake";
 "PageBlockedProceed" = "Fortsette";
 "SetAsBadge" = "Angi som merke";
@@ -504,7 +504,7 @@
 "EmojiSavedHint" = "Emojien er lagret i galleriet.";
 "GifGallerySavedHint" = "GIF lagret i galleriet.";
 "MutualContactInfo" = "Denne kontakten er gjensidig.";
-"LocalPremiumEmojiHint" = "Du har ikke et **Telegram Premium**-abonnement, så bare **exteraGram**-brukere vil kunne se denne emojien.";
+"LocalPremiumEmojiHint" = "Du har ikke et **Telegram Premium**-abonnement, så bare **GlowGram**-brukere vil kunne se denne emojien.";
 "HideContactsTab" = "Skjul Kontakter-fanen";
 "ShowContactsTab" = "Vis Kontakter-fanen";
 "ContactsTabWasShownTitle" = "**Kontakter**-fanen er nå synlig.";

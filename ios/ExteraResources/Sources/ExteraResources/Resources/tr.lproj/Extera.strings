@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram Ayarları";
+"Preferences" = "GlowGram Ayarları";
 "Links" = "Bağlantılar";
 "AboutExteraDescription" = "Resmi Kaynak Koduna dayanan deneysel bir Telegram istemcisi!";
 "Crowdin" = "Çeviri";
 "Website" = "Web Sitesi";
 "Categories" = "Kategoriler";
-"Developer" = "**%1$@**, **exteraGram** geliştirme ekibinin bir üyesidir.";
-"DeveloperCompact" = "**exteraGram** geliştirme ekibinin üyesi.";
-"Supporter" = "**%1$@**, **exteraGram** gelişimini destekledi ve benzersiz bir rozet kazandı.";
-"OfficialChannel" = "**%1$@**, **exteraGram** uygulamasının resmi kaynağıdır.";
+"Developer" = "**%1$@**, **GlowGram** geliştirme ekibinin bir üyesidir.";
+"DeveloperCompact" = "**GlowGram** geliştirme ekibinin üyesi.";
+"Supporter" = "**%1$@**, **GlowGram** gelişimini destekledi ve benzersiz bir rozet kazandı.";
+"OfficialChannel" = "**%1$@**, **GlowGram** uygulamasının resmi kaynağıdır.";
 "NoSuchSetting" = "Görünüşe göre böyle bir ayar bulunmuyor.";
 "SettingLinkToSavedMessages" = "Ayar bağlantısı **Kayıtlı Mesajlar**'a gönderildi.";
 "SettingLinkToUser" = "Ayar bağlantısı **%1$@** adlı kullanıcıya gönderildi.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Hava Durumu";
 "WeatherSettingsInfo" = "Aramada hava durumu gösterimi için konumun nasıl belirleneceğini seçin.";
 "WeatherLocation" = "Konum Tespiti";
-"WeatherLocationPermissionNo" = "exteraGram'ın mevcut hava durumunu gösterebilmesi için konumunuza erişmesi gerekiyor.";
+"WeatherLocationPermissionNo" = "GlowGram'ın mevcut hava durumunu gösterebilmesi için konumunuza erişmesi gerekiyor.";
 "WeatherLocationPermissionGrant" = "İzin Ver";
 "WeatherLocationServicesEnable" = "Konumu Etkinleştir";
 "WeatherPillTopInfo" = "Hap Yığını için hava durumu aracı ayarları.";
@@ -397,7 +397,7 @@
 "PauseOnMinimize" = "Otomatik Duraklat";
 "PauseOnMinimizeVoice" = "Ses";
 "PauseOnMinimizeRound" = "Video Mesaj";
-"PauseOnMinimizeInfo" = "Cihaz kilitlendiğinde veya exteraGram simge durumuna küçültüldüğünde medya oynatımını duraklatır.";
+"PauseOnMinimizeInfo" = "Cihaz kilitlendiğinde veya GlowGram simge durumuna küçültüldüğünde medya oynatımını duraklatır.";
 "SwipeToPip" = "Kaydırarak PiP (Pencere içinde Pencere)";
 "UnmuteWithVolumeButtons" = "Ses Düğmeleriyle Videoların Sesini Aç";
 "UnmuteWithVolumeButtonsInfo" = "Bir ses düğmesine basmak, sistem ses düzeyini değiştirmek yerine videonun sesini açacaktır.";
@@ -422,8 +422,8 @@
 "ExportInvalid" = "Üzgünüz, yeni bir veri dışa aktarma işlemi başlattığınız için bu dışa aktarma iptal edildi.";
 "DeleteAccount" = "Hesabı Sil";
 "ResetSettings" = "Ayarları Sıfırla";
-"ResetPreferences" = "**exteraGram** tercihleri sıfırlandı.";
-"ResetPreferencesInfo" = "**Tüm** exteraGram tercihlerini varsayılanlarına sıfırlamak istediğinize emin misiniz?";
+"ResetPreferences" = "**GlowGram** tercihleri sıfırlandı.";
+"ResetPreferencesInfo" = "**Tüm** GlowGram tercihlerini varsayılanlarına sıfırlamak istediğinize emin misiniz?";
 "SupportDevelopment" = "Geliştirmeyi Destekle";
 "SupportDevelopmentInfo" = "Projeyi destekleyerek sadece gelişimine katkıda bulunmakla kalmaz, aynı zamanda benzersiz bir rozet de alırsınız.";
 "MakeDonation" = "Bağış Yap";
@@ -444,9 +444,9 @@
 "BoostyPeopleCount_few" = "%1$d kişi";
 "BoostyPeopleCount_many" = "%1$d kişi";
 "BoostyPeopleCount_other" = "%1$d kişi";
-"BoostyInfo" = "**exteraGram** uygulamasını **Boosty** üzerinden aktif olarak destekleyin.";
+"BoostyInfo" = "**GlowGram** uygulamasını **Boosty** üzerinden aktif olarak destekleyin.";
 "BoostyInfo2" = "Desteğiniz için teşekkür ederiz!";
-"PluginsNotSupported" = "Eklenti kurulumu sadece **exteraGram** uygulamasının **Tam** sürümünde mevcuttur.";
+"PluginsNotSupported" = "Eklenti kurulumu sadece **GlowGram** uygulamasının **Tam** sürümünde mevcuttur.";
 "Plugins" = "Eklentiler";
 "PluginsEngine" = "Eklenti Motoru";
 "EnablePluginsEngine" = "Eklenti Motorunu Etkinleştir";
@@ -560,7 +560,7 @@
 "WifiSuccess" = "Wi-Fi ağına başarıyla bağlanıldı.";
 "AreYouSureToLogin" = "Başka bir cihazda bu hesaba giriş yapmak istediğinize emin misiniz?";
 "PageBlocked" = "Sayfa engellendi";
-"PageBlockedDescription" = "exteraGram aşağıdaki sayfanın yüklenmesini engelledi:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram aşağıdaki sayfanın yüklenmesini engelledi:\n**%1$@**";
 "PageBlockedGoBack" = "Geri dön";
 "PageBlockedProceed" = "Devam et";
 "SetAsBadge" = "Rozet Olarak Ayarla";
@@ -588,7 +588,7 @@
 "EmojiSavedHint" = "Emoji galeriye kaydedildi.";
 "GifGallerySavedHint" = "GIF galeriye kaydedildi.";
 "MutualContactInfo" = "Bu kişi karşılıklı kişidir.";
-"LocalPremiumEmojiHint" = "Bir **Telegram Premium** aboneliğine sahip değilsiniz, bu nedenle sadece **exteraGram** kullanıcıları bu emojiyi görebilecektir.";
+"LocalPremiumEmojiHint" = "Bir **Telegram Premium** aboneliğine sahip değilsiniz, bu nedenle sadece **GlowGram** kullanıcıları bu emojiyi görebilecektir.";
 "HideContactsTab" = "Kişiler Sekmesini Gizle";
 "ShowContactsTab" = "Kişiler Sekmesini Göster";
 "ContactsTabWasShownTitle" = "**Kişiler** Sekmesi artık görünür.";

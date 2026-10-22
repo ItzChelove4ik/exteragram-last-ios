@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram Параметрлері";
+"Preferences" = "GlowGram Параметрлері";
 "Links" = "Сілтемелер";
 "AboutExteraDescription" = "Ресми бастапқы кодқа негізделген эксперименталды Telegram клиенті!";
 "Crowdin" = "Аударма";
 "Website" = "Веб-сайт";
 "Categories" = "Санаттар";
-"Developer" = "**%1$@** exteraGram әзірлеу тобының мүшесі.";
-"DeveloperCompact" = "**exteraGram** әзірлеу тобының мүшесі.";
-"Supporter" = "**%1$@** exteraGram әзірлеуін қолдады және эксклюзивті белгіше алды.";
-"OfficialChannel" = "**%1$@** exteraGram-ның ресми ресурсы.";
+"Developer" = "**%1$@** GlowGram әзірлеу тобының мүшесі.";
+"DeveloperCompact" = "**GlowGram** әзірлеу тобының мүшесі.";
+"Supporter" = "**%1$@** GlowGram әзірлеуін қолдады және эксклюзивті белгіше алды.";
+"OfficialChannel" = "**%1$@** GlowGram-ның ресми ресурсы.";
 "NoSuchSetting" = "Мұндай параметр жоқ сияқты.";
 "SettingLinkToSavedMessages" = "**Сақталған хабарламаларға** сілтеме жіберілді.";
 "SettingLinkToUser" = "**%1$@** пайдаланушысына сілтеме жіберілді.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Ауа райы";
 "WeatherSettingsInfo" = "Іздеуде ауа райын көрсету үшін орналасуды анықтау тәсілін таңдаңыз.";
 "WeatherLocation" = "Орналасуды анықтау";
-"WeatherLocationPermissionNo" = "Ағымдағы ауа райын көрсету үшін exteraGram сіздің орналасуыңызға рұқсат қажет.";
+"WeatherLocationPermissionNo" = "Ағымдағы ауа райын көрсету үшін GlowGram сіздің орналасуыңызға рұқсат қажет.";
 "WeatherLocationPermissionGrant" = "Рұқсат беру";
 "WeatherLocationServicesEnable" = "Орналасуды қосу";
 "WeatherPillTopInfo" = "Pill Stack үшін ауа райы виджетінің параметрлері.";
@@ -350,7 +350,7 @@
 "PauseOnMinimizeVideo" = "Бейне";
 "PauseOnMinimizeVoice" = "Дауыс";
 "PauseOnMinimizeRound" = "Дөңгелек";
-"PauseOnMinimizeInfo" = "Құрылғы құлыпталғанда немесе exteraGram азайтылғанда медиа ойнатуды тоқтатады.";
+"PauseOnMinimizeInfo" = "Құрылғы құлыпталғанда немесе GlowGram азайтылғанда медиа ойнатуды тоқтатады.";
 "SwipeToPip" = "PiP-ке сырғанау";
 "UnmuteWithVolumeButtons" = "Бейнені дыбыс түймелерімен дыбыстап қосу";
 "UnmuteWithVolumeButtonsInfo" = "Дыбыс түймесін басқан жүйе дыбысын өзгертпей, бейнені дыбыстап қояды.";
@@ -375,8 +375,8 @@
 "ExportInvalid" = "Кешіріңіз, сіз жаңа деректер экспортын бастадыңыз, сондықтан бұл экспорт тоқтатылды.";
 "DeleteAccount" = "Аккаунтты жою";
 "ResetSettings" = "Параметрлерді қалпына келтіру";
-"ResetPreferences" = "**exteraGram** параметрлері қалпына келтірілді.";
-"ResetPreferencesInfo" = "**Барлық** exteraGram параметрлерін әдепкі күйге қалпына келтіруге сенімдісіз бе?";
+"ResetPreferences" = "**GlowGram** параметрлері қалпына келтірілді.";
+"ResetPreferencesInfo" = "**Барлық** GlowGram параметрлерін әдепкі күйге қалпына келтіруге сенімдісіз бе?";
 "SupportDevelopment" = "Әзірлеуді қолдау";
 "SupportDevelopmentInfo" = "Жобаны қолдау арқылы оның дамуына үлес қосасыз және бірегей белгіше аласыз.";
 "MakeDonation" = "Қайырымдылық жасау";
@@ -397,9 +397,9 @@
 "BoostyPeopleCount_few" = "%1$d адам";
 "BoostyPeopleCount_many" = "%1$d адам";
 "BoostyPeopleCount_other" = "%1$d адам";
-"BoostyInfo" = "**exteraGram**-ды **Boosty**-де белсенді қолдаңыз.";
+"BoostyInfo" = "**GlowGram**-ды **Boosty**-де белсенді қолдаңыз.";
 "BoostyInfo2" = "Қолдауыңыз үшін рахмет!";
-"PluginsNotSupported" = "Плагиндерді орнату **exteraGram** **Толық** нұсқасында ғана қолжетімді.";
+"PluginsNotSupported" = "Плагиндерді орнату **GlowGram** **Толық** нұсқасында ғана қолжетімді.";
 "Plugins" = "Плагиндер";
 "PluginsEngine" = "Плагиндер қозғалтқышы";
 "EnablePluginsEngine" = "Плагиндер қозғалтқышын қосу";
@@ -489,7 +489,7 @@
 "WifiSuccess" = "Wi-Fi-ға сәтті қосылды.";
 "AreYouSureToLogin" = "Бұл аккаунтқа басқа құрылғыда кіруге сенімдісіз бе?";
 "PageBlocked" = "Бет бұғатталды";
-"PageBlockedDescription" = "exteraGram келесі бетті жүктеуді болдырмады:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram келесі бетті жүктеуді болдырмады:\n**%1$@**";
 "PageBlockedGoBack" = "Артқа оралу";
 "PageBlockedProceed" = "Жалғастыру";
 "SetAsBadge" = "Белгіше ретінде орнату";
@@ -517,7 +517,7 @@
 "EmojiSavedHint" = "Эмодзи галереяға сақталды.";
 "GifGallerySavedHint" = "GIF галереяға сақталды.";
 "MutualContactInfo" = "Бұл контакт өзара.";
-"LocalPremiumEmojiHint" = "Сізде **Telegram Premium** жазылымы жоқ, сондықтан бұл эмодзиді тек **exteraGram** пайдаланушылары көре алады.";
+"LocalPremiumEmojiHint" = "Сізде **Telegram Premium** жазылымы жоқ, сондықтан бұл эмодзиді тек **GlowGram** пайдаланушылары көре алады.";
 "HideContactsTab" = "Контакттар қойындысын жасыру";
 "ShowContactsTab" = "Контакттар қойындысын көрсету";
 "ContactsTabWasShownTitle" = "**Контакттар** қойындысы енді көрінеді.";

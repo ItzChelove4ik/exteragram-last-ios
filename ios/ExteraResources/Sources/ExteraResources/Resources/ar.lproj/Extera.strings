@@ -1,5 +1,5 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "تفضيلات exteraGram";
+"Preferences" = "تفضيلات GlowGram";
 "Links" = "الروابط";
 "AboutExteraDescription" = "عميل تيليجرام تجريبي استناداً إلى شفرة المصدر الرسمي!";
 "Crowdin" = "ترجمة";
@@ -23,7 +23,7 @@
 "WeatherPill" = "الطقس ";
 "WeatherSettingsInfo" = "اختر كيفية تحديد الموقع لعرض الطقس في  البحت ";
 "WeatherLocation" = "اكتشاف الموقع ";
-"WeatherLocationPermissionNo" = "\nيحتاج تطبيق exteraGram إلى الوصول إلى موقعك لعرض الطقس الحالي";
+"WeatherLocationPermissionNo" = "\nيحتاج تطبيق GlowGram إلى الوصول إلى موقعك لعرض الطقس الحالي";
 "WeatherLocationPermissionGrant" = "منح الادن ";
 "WeatherLocationServicesEnable" = "تفعيل الموقع ";
 "WeatherPillTopInfo" = "اعدادات التطبيقات المصغرة ل مدكس بيل ";
@@ -278,9 +278,9 @@
 "BoostyPeopleCount_few" = "%1$d أشخاص";
 "BoostyPeopleCount_many" = "%1$d شخص";
 "BoostyPeopleCount_other" = "%1$d شخص";
-"BoostyInfo" = "ادعم **exteraGram** بنشاط على **Boosty**.";
+"BoostyInfo" = "ادعم **GlowGram** بنشاط على **Boosty**.";
 "BoostyInfo2" = "شكراً لدعمك!";
-"PluginsNotSupported" = "تثبيت الإضافات متاح فقط في النسخة **الكاملة** من **exteraGram**.";
+"PluginsNotSupported" = "تثبيت الإضافات متاح فقط في النسخة **الكاملة** من **GlowGram**.";
 "PluginsEngine" = "محرك الإضافات";
 "EnablePluginsEngine" = "تمكين محرك الإضافات";
 "PluginInstalledButFailedToEnable" = "**%1$@** مثبت ، ولكن حدث خطأ أثناء التمكين.";

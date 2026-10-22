@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Preferencias de exteraGram";
+"Preferences" = "Preferencias de GlowGram";
 "Links" = "Enlaces";
 "AboutExteraDescription" = "¡Un cliente de Telegram experimental basado en el código fuente oficial!";
 "Crowdin" = "Traducir";
 "Website" = "Sitio web";
 "Categories" = "Categorías";
-"Developer" = "**%1$@** es miembro del equipo de desarrollo de **exteraGram**.";
-"DeveloperCompact" = "Miembro del equipo de desarrollo de **exteraGram**.";
-"Supporter" = "**%1$@** apoyó el desarrollo de **exteraGram** y recibió una insignia exclusiva.";
-"OfficialChannel" = "**%1$@** es el recurso oficial de **exteraGram**.";
+"Developer" = "**%1$@** es miembro del equipo de desarrollo de **GlowGram**.";
+"DeveloperCompact" = "Miembro del equipo de desarrollo de **GlowGram**.";
+"Supporter" = "**%1$@** apoyó el desarrollo de **GlowGram** y recibió una insignia exclusiva.";
+"OfficialChannel" = "**%1$@** es el recurso oficial de **GlowGram**.";
 "NoSuchSetting" = "Parece que esa configuración no existe.";
 "SettingLinkToUser" = "Enlace de configuración enviado a **%1$@**.";
 "SettingLinkToChats" = "Enlace de configuración enviado a **%1$@**.";
@@ -25,7 +25,7 @@
 "WeatherPill" = "Clima";
 "WeatherSettingsInfo" = "Elija cómo determinar la ubicación de la pantalla meteorológica en la búsqueda.";
 "WeatherLocation" = "Detección de ubicación";
-"WeatherLocationPermissionNo" = "exteraGram necesita acceso a tu ubicación para mostrarte el clima actual.";
+"WeatherLocationPermissionNo" = "GlowGram necesita acceso a tu ubicación para mostrarte el clima actual.";
 "WeatherLocationPermissionGrant" = "Otorgar permiso";
 "WeatherLocationServicesEnable" = "Habilita tu ubicación";
 "WeatherPillTopInfo" = "Configuración del widget del tiempo para Pill Stack.";
@@ -335,7 +335,7 @@
 "PauseOnMinimize" = "Pausar automáticamente";
 "PauseOnMinimizeVoice" = "Voz";
 "PauseOnMinimizeRound" = "Ronda";
-"PauseOnMinimizeInfo" = "Pausa la reproducción multimedia cuando el dispositivo está bloqueado o exteraGram está minimizado.";
+"PauseOnMinimizeInfo" = "Pausa la reproducción multimedia cuando el dispositivo está bloqueado o GlowGram está minimizado.";
 "SwipeToPip" = "Deslizar hacia PiP";
 "UnmuteWithVolumeButtons" = "Activar el sonido de los vídeos con los botones de volumen";
 "UnmuteWithVolumeButtonsInfo" = "Al pulsar un botón de volumen, se activará el sonido del vídeo en lugar de cambiar el volumen del sistema.";
@@ -360,8 +360,8 @@
 "ExportInvalid" = "Lo sentimos, has iniciado una nueva exportación de datos, por lo que esta exportación de datos ha sido cancelada.";
 "DeleteAccount" = "Eliminar cuenta";
 "ResetSettings" = "Restablecer ajustes";
-"ResetPreferences" = "Se han restablecido las preferencias de **exteraGram**.";
-"ResetPreferencesInfo" = "¿Estás seguro de que deseas restablecer **todas** las preferencias de exteraGram a sus valores predeterminados?";
+"ResetPreferences" = "Se han restablecido las preferencias de **GlowGram**.";
+"ResetPreferencesInfo" = "¿Estás seguro de que deseas restablecer **todas** las preferencias de GlowGram a sus valores predeterminados?";
 "SupportDevelopment" = "Apoya el Desarrollo";
 "SupportDevelopmentInfo" = "Al apoyar el proyecto, no solo contribuyes a su desarrollo sino que también obtienes una insignia única.";
 "MakeDonation" = "Hacer una Donación";
@@ -382,9 +382,9 @@
 "BoostyPeopleCount_few" = "%1$d personas";
 "BoostyPeopleCount_many" = "%1$d personas";
 "BoostyPeopleCount_other" = "%1$d personas";
-"BoostyInfo" = "Apoya activamente a **exteraGram** en **Boosty**.";
+"BoostyInfo" = "Apoya activamente a **GlowGram** en **Boosty**.";
 "BoostyInfo2" = "¡Gracias por tu apoyo!";
-"PluginsNotSupported" = "La instalación de complementos solo está disponible en la versión **Completa** de **exteraGram**.";
+"PluginsNotSupported" = "La instalación de complementos solo está disponible en la versión **Completa** de **GlowGram**.";
 "Plugins" = "Complementos";
 "PluginsEngine" = "Motor de complementos";
 "EnablePluginsEngine" = "Habilitar el motor de complementos";
@@ -472,7 +472,7 @@
 "WifiSuccess" = "Conexión wifi establecida correctamente.";
 "AreYouSureToLogin" = "¿Está seguro de que desea iniciar sesión en esta cuenta en otro dispositivo?";
 "PageBlocked" = "Página bloqueada";
-"PageBlockedDescription" = "exteraGram ha impedido que se cargue la siguiente página:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram ha impedido que se cargue la siguiente página:\n**%1$@**";
 "PageBlockedGoBack" = "Volver";
 "PageBlockedProceed" = "Continuar";
 "SetAsBadge" = "Establecer como insignia";
@@ -498,7 +498,7 @@
 "EmojiSavedHint" = "Emoji guardado en la galería.";
 "GifGallerySavedHint" = "GIF guardado en la galería.";
 "MutualContactInfo" = "Este contacto es mutuo.";
-"LocalPremiumEmojiHint" = "No tienes una suscripción a **Telegram Premium**, por lo que solo los usuarios de **exteraGram** podrán ver este emoji.";
+"LocalPremiumEmojiHint" = "No tienes una suscripción a **Telegram Premium**, por lo que solo los usuarios de **GlowGram** podrán ver este emoji.";
 "HideContactsTab" = "Ocultar pestaña de contactos";
 "ShowContactsTab" = "Mostrar pestaña de contactos";
 "ContactsTabWasShownTitle" = "La pestaña **Contactos** ahora es visible.";

@@ -1,5 +1,5 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram 偏好設定";
+"Preferences" = "GlowGram 偏好設定";
 "Links" = "連結";
 "AboutExteraDescription" = "以官方來源為基礎的實驗性 Telegram 用戶端！";
 "Crowdin" = "翻譯";
@@ -125,8 +125,8 @@
 "CopyInlineQuery" = "複製內嵌查詢";
 "CopyID" = "複製使用者 ID";
 "RestartRequired" = "重新啟動應用程式以生效。";
-"ResetPreferences" = "已重置 **exteraGram** 設定";
-"ResetPreferencesInfo" = "您確定要重置**所有**的 exteraGram 設定？";
+"ResetPreferences" = "已重置 **GlowGram** 設定";
+"ResetPreferencesInfo" = "您確定要重置**所有**的 GlowGram 設定？";
 "UserNotFound" = "找不到該 **ID** 所對應的使用者。";
 "PhotoCopied" = "圖片已複製到剪貼簿";
 "MutualContactInfo" = "你們彼此有將對方加為聯絡人。";

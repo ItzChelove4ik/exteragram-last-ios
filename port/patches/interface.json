@@ -8,7 +8,7 @@
   {
     "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoSettingsItems.swift",
     "old": "    let notificationsWarning: Bool\n",
-    "new": "    items[.advanced]!.append(PeerInfoScreenDisclosureItem(id: 9001, text: \"exteraGram Lite\", icon: PresentationResourcesSettings.appearance, action: {\n        interaction.openSettings(.exteraGram)\n    }))\n\n    let notificationsWarning: Bool\n",
+    "new": "    items[.advanced]!.append(PeerInfoScreenDisclosureItem(id: 9001, text: \"GlowGram\", icon: UIImage(bundleImageName: \"Settings/GlowGram\"), action: {\n        interaction.openSettings(.exteraGram)\n    }))\n\n    let notificationsWarning: Bool\n",
     "occurrences": 1
   },
   {

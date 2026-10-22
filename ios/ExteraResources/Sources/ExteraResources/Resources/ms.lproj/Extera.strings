@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Keutamaan exteraGram";
+"Preferences" = "Keutamaan GlowGram";
 "Links" = "Pautan";
 "AboutExteraDescription" = "Pelanggan Telegram eksperimen berdasarkan Kod Sumber Rasmi!";
 "Crowdin" = "Terjemah";
 "Website" = "Laman Sesawang";
 "Categories" = "Kategori";
-"Developer" = "**%1$@** adalah ahli pasukan pembangunan **exteraGram**.";
-"DeveloperCompact" = "Ahli pasukan pembangun **exteraGram**.";
-"Supporter" = "**%1$@** menyokong pembangunan **exteraGram** dan menerima lencana unik.";
-"OfficialChannel" = "**%1$@** adalah sumber rasmi **exteraGram**.";
+"Developer" = "**%1$@** adalah ahli pasukan pembangunan **GlowGram**.";
+"DeveloperCompact" = "Ahli pasukan pembangun **GlowGram**.";
+"Supporter" = "**%1$@** menyokong pembangunan **GlowGram** dan menerima lencana unik.";
+"OfficialChannel" = "**%1$@** adalah sumber rasmi **GlowGram**.";
 "NoSuchSetting" = "Nampaknya, tetapan sebegitu tidak wujud.";
 "SettingLinkToSavedMessages" = "Pautan tetapan dihantar ke **Mesej Disimpan**.";
 "SettingLinkToUser" = "Pautan tetapan dihantar ke **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Cuaca";
 "WeatherSettingsInfo" = "Pilih cara menentukan lokasi untuk paparan cuaca dalam carian.";
 "WeatherLocation" = "Pengesanan Lokasi";
-"WeatherLocationPermissionNo" = "exteraGram memerlukan akses ke lokasi anda untuk memaparkan cuaca semasa.";
+"WeatherLocationPermissionNo" = "GlowGram memerlukan akses ke lokasi anda untuk memaparkan cuaca semasa.";
 "WeatherLocationPermissionGrant" = "Beri Kebenaran";
 "WeatherLocationServicesEnable" = "Dayakan Lokasi";
 "WeatherPillTopInfo" = "Tetapan widget cuaca untuk Tindanan Pil.";
@@ -336,7 +336,7 @@
 "PauseOnMinimize" = "Jeda Automatik";
 "PauseOnMinimizeVoice" = "Suara";
 "PauseOnMinimizeRound" = "Bulat";
-"PauseOnMinimizeInfo" = "Menjeda main balik media apabila peranti dikunci atau exteraGram diminimumkan.";
+"PauseOnMinimizeInfo" = "Menjeda main balik media apabila peranti dikunci atau GlowGram diminimumkan.";
 "SwipeToPip" = "Leret ke PiP";
 "UnmuteWithVolumeButtons" = "Nyahsenyap Video dengan Butang Volume";
 "UnmuteWithVolumeButtonsInfo" = "Menekan butang volume akan menyahsenyap video dan bukannya menukar volume sistem.";
@@ -361,8 +361,8 @@
 "ExportInvalid" = "Maaf, anda memulakan eksport data baharu, jadi eksport data ini telah dibatalkan.";
 "DeleteAccount" = "Padam Akaun";
 "ResetSettings" = "Tetapkan Semula Tetapan";
-"ResetPreferences" = "Keutamaan **exteraGram** telah ditetapkan semula.";
-"ResetPreferencesInfo" = "Adakah anda pasti mahu menetapkan semula **semua** keutamaan exteraGram kepada lalai?";
+"ResetPreferences" = "Keutamaan **GlowGram** telah ditetapkan semula.";
+"ResetPreferencesInfo" = "Adakah anda pasti mahu menetapkan semula **semua** keutamaan GlowGram kepada lalai?";
 "SupportDevelopment" = "Sokong Pembangunan";
 "SupportDevelopmentInfo" = "Dengan menyokong projek ini, anda bukan sahaja menyumbang kepada pembangunannya tetapi juga mendapat lencana unik.";
 "MakeDonation" = "Buat Derma";
@@ -383,9 +383,9 @@
 "BoostyPeopleCount_few" = "%1$d orang";
 "BoostyPeopleCount_many" = "%1$d orang";
 "BoostyPeopleCount_other" = "%1$d orang";
-"BoostyInfo" = "Sokong secara aktif **exteraGram** di **Boosty**.";
+"BoostyInfo" = "Sokong secara aktif **GlowGram** di **Boosty**.";
 "BoostyInfo2" = "Terima kasih atas sokongan anda!";
-"PluginsNotSupported" = "Pemasangan plugin hanya tersedia dalam versi **Penuh** **exteraGram**.";
+"PluginsNotSupported" = "Pemasangan plugin hanya tersedia dalam versi **Penuh** **GlowGram**.";
 "Plugins" = "Plugin";
 "PluginsEngine" = "Enjin Plugin";
 "EnablePluginsEngine" = "Dayakan Enjin Plugin";
@@ -473,7 +473,7 @@
 "WifiSuccess" = "Berjaya menyambung ke Wi-Fi.";
 "AreYouSureToLogin" = "Adakah anda pasti mahu log masuk ke akaun ini pada peranti lain?";
 "PageBlocked" = "Halaman disekat";
-"PageBlockedDescription" = "exteraGram telah menghalang halaman berikut daripada dimuatkan:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram telah menghalang halaman berikut daripada dimuatkan:\n**%1$@**";
 "PageBlockedGoBack" = "Kembali";
 "PageBlockedProceed" = "Teruskan";
 "SetAsBadge" = "Tetapkan sebagai Lencana";
@@ -501,7 +501,7 @@
 "EmojiSavedHint" = "Emoji disimpan ke galeri.";
 "GifGallerySavedHint" = "GIF disimpan ke galeri.";
 "MutualContactInfo" = "Hubungan ini adalah bersama.";
-"LocalPremiumEmojiHint" = "Anda tidak mempunyai langganan **Telegram Premium**, jadi hanya pengguna **exteraGram** yang akan dapat melihat emoji ini.";
+"LocalPremiumEmojiHint" = "Anda tidak mempunyai langganan **Telegram Premium**, jadi hanya pengguna **GlowGram** yang akan dapat melihat emoji ini.";
 "HideContactsTab" = "Sembunyi Tab Kenalan";
 "ShowContactsTab" = "Tunjuk Tab Kenalan";
 "ContactsTabWasShownTitle" = "Tab **Kenalan** kini kelihatan.";

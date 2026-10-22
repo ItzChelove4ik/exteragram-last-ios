@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram beállítások";
+"Preferences" = "GlowGram beállítások";
 "Links" = "Linkek";
 "AboutExteraDescription" = "Egy kísérleti Telegram kliens a hivatalos forráskód alapján!";
 "Crowdin" = "Fordítás";
 "Website" = "Weboldal";
 "Categories" = "Kategóriák";
-"Developer" = "**%1$@** tagja az **exteraGram** fejlesztői csapatának.";
-"DeveloperCompact" = "Az **exteraGram** fejlesztői csapatának tagja.";
-"Supporter" = "**%1$@** támogatta az **exteraGram** fejlesztését, és egyedi jelvényt kapott.";
-"OfficialChannel" = "**%1$@** az **exteraGram** hivatalos forrása.";
+"Developer" = "**%1$@** tagja az **GlowGram** fejlesztői csapatának.";
+"DeveloperCompact" = "Az **GlowGram** fejlesztői csapatának tagja.";
+"Supporter" = "**%1$@** támogatta az **GlowGram** fejlesztését, és egyedi jelvényt kapott.";
+"OfficialChannel" = "**%1$@** az **GlowGram** hivatalos forrása.";
 "NoSuchSetting" = "Úgy tűnik, hogy ilyen beállítás nem létezik.";
 "SettingLinkToSavedMessages" = "Beállítási hivatkozás elküldve a **Mentett üzenetek**-be.";
 "SettingLinkToUser" = "Beállítási hivatkozás elküldve **%1$@**-nek.";
@@ -25,7 +25,7 @@
 "WeatherPill" = "Időjárás";
 "WeatherSettingsInfo" = "Válaszd ki, hogyan határozd meg a helyet az időjárás megjelenítéséhez a keresésben.";
 "WeatherLocation" = "Helymeghatározás";
-"WeatherLocationPermissionNo" = "Az exteraGram hozzáférést igényel a helyzetedhez az aktuális időjárás megjelenítéséhez.";
+"WeatherLocationPermissionNo" = "Az GlowGram hozzáférést igényel a helyzetedhez az aktuális időjárás megjelenítéséhez.";
 "WeatherLocationPermissionGrant" = "Engedély megadása";
 "WeatherLocationServicesEnable" = "Hely engedélyezése";
 "WeatherPillTopInfo" = "Időjárás-widget beállítások a Pill Stack-hez.";
@@ -344,7 +344,7 @@
 "PauseOnMinimizeVideo" = "Videó";
 "PauseOnMinimizeVoice" = "Hang";
 "PauseOnMinimizeRound" = "Kör";
-"PauseOnMinimizeInfo" = "Szünetelteti a média lejátszását, amikor az eszköz zárolva van, vagy az exteraGram minimalizálva van.";
+"PauseOnMinimizeInfo" = "Szünetelteti a média lejátszását, amikor az eszköz zárolva van, vagy az GlowGram minimalizálva van.";
 "SwipeToPip" = "Csúsztatás a kép a képben módhoz";
 "UnmuteWithVolumeButtons" = "Videók némításának feloldása a hangerőgombokkal";
 "UnmuteWithVolumeButtonsInfo" = "A hangerőgomb megnyomása feloldja a videó némítását a rendszer hangerő módosítása helyett.";
@@ -369,8 +369,8 @@
 "ExportInvalid" = "Sajnáljuk, új adatexportot indítottál, így ez az adatexport megszakításra került.";
 "DeleteAccount" = "Fiók törlése";
 "ResetSettings" = "Beállítások visszaállítása";
-"ResetPreferences" = "Az **exteraGram** beállítások visszaállításra kerültek.";
-"ResetPreferencesInfo" = "Biztosan vissza szeretnéd állítani az **összes** exteraGram beállítást az alapértelmezettre?";
+"ResetPreferences" = "Az **GlowGram** beállítások visszaállításra kerültek.";
+"ResetPreferencesInfo" = "Biztosan vissza szeretnéd állítani az **összes** GlowGram beállítást az alapértelmezettre?";
 "SupportDevelopment" = "Fejlesztés támogatása";
 "SupportDevelopmentInfo" = "A projekt támogatásával nemcsak a fejlesztéséhez járulsz hozzá, hanem egyedi jelvényt is kapsz.";
 "MakeDonation" = "Adományozás";
@@ -391,9 +391,9 @@
 "BoostyPeopleCount_few" = "%1$d fő";
 "BoostyPeopleCount_many" = "%1$d fő";
 "BoostyPeopleCount_other" = "%1$d fő";
-"BoostyInfo" = "Aktívan támogasd az **exteraGram**-ot a **Boosty**-n.";
+"BoostyInfo" = "Aktívan támogasd az **GlowGram**-ot a **Boosty**-n.";
 "BoostyInfo2" = "Köszönjük a támogatásodat!";
-"PluginsNotSupported" = "A bővítmény telepítése csak az **exteraGram** **Teljes** verziójában érhető el.";
+"PluginsNotSupported" = "A bővítmény telepítése csak az **GlowGram** **Teljes** verziójában érhető el.";
 "Plugins" = "Bővítmények";
 "PluginsEngine" = "Bővítmény motor";
 "EnablePluginsEngine" = "Bővítmény motor engedélyezése";
@@ -482,7 +482,7 @@
 "WifiSuccess" = "Sikeresen csatlakozva a Wi-Fi-hez.";
 "AreYouSureToLogin" = "Biztosan be szeretnél jelentkezni ebbe a fiókba egy másik eszközön?";
 "PageBlocked" = "Oldal blokkolva";
-"PageBlockedDescription" = "Az exteraGram megakadályozta a következő oldal betöltését:\n**%1$@**";
+"PageBlockedDescription" = "Az GlowGram megakadályozta a következő oldal betöltését:\n**%1$@**";
 "PageBlockedGoBack" = "Vissza";
 "PageBlockedProceed" = "Tovább";
 "SetAsBadge" = "Beállítás jelvényként";
@@ -510,7 +510,7 @@
 "EmojiSavedHint" = "Emoji mentve a galériába.";
 "GifGallerySavedHint" = "GIF mentve a galériába.";
 "MutualContactInfo" = "Ez a kapcsolat kölcsönös.";
-"LocalPremiumEmojiHint" = "Nincs **Telegram Premium** előfizetésed, így csak az **exteraGram** felhasználók láthatják ezt az emojit.";
+"LocalPremiumEmojiHint" = "Nincs **Telegram Premium** előfizetésed, így csak az **GlowGram** felhasználók láthatják ezt az emojit.";
 "HideContactsTab" = "Névjegyek fül elrejtése";
 "ShowContactsTab" = "Névjegyek fül megjelenítése";
 "ContactsTabWasShownTitle" = "A **Névjegyek** fül most látható.";

@@ -1,5 +1,5 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram parametrlari";
+"Preferences" = "GlowGram parametrlari";
 "Links" = "Havolalar";
 "Categories" = "Turkum";
 "NoSuchSetting" = "Bunday sozlama topilmadi.";
@@ -18,7 +18,7 @@
 "WeatherPill" = "Ob-havo";
 "WeatherSettingsInfo" = "Ob-havo ma’lumotlarini olish uchun joylashuvni aniqlash usulini tanlang";
 "WeatherLocation" = "Joylashuvni aniqlash";
-"WeatherLocationPermissionNo" = "Ob-havoni koʻrsatish uchun exteraGram sizning joylashuvingizni talab qiladi";
+"WeatherLocationPermissionNo" = "Ob-havoni koʻrsatish uchun GlowGram sizning joylashuvingizni talab qiladi";
 "WeatherLocationPermissionGrant" = "Ruxsat berish";
 "WeatherLocationServicesEnable" = "Joylashuvni yoqish";
 "WeatherPillTopInfo" = "Vidjetlar yigʻini uchun ob-havo vidjetlari sozlamalari";
@@ -388,7 +388,7 @@
 "PauseOnMinimize" = "Avto-pauza";
 "PauseOnMinimizeVoice" = "Ovoz";
 "PauseOnMinimizeRound" = "Davra";
-"PauseOnMinimizeInfo" = "Qurilma qulflanganda yoki exteraGram minimallashtirilganda media ijrosini toʻxtatadi.";
+"PauseOnMinimizeInfo" = "Qurilma qulflanganda yoki GlowGram minimallashtirilganda media ijrosini toʻxtatadi.";
 "SwipeToPip" = "PiP ga o'zgartirish";
 "UnmuteWithVolumeButtons" = "Ovoz tugmalari bilan videolarni ovozini yoqish";
 "UnmuteWithVolumeButtonsInfo" = "Ovoz tugmasini bosish tizim ovozini oʻzgartirmay, video ovozini yoqadi.";
@@ -412,8 +412,8 @@
 "ExportInvalid" = "Kechirasiz, siz yangi maʼlumotlar eksportini boshladingiz, shuning uchun bu eksport bekor qilindi.";
 "DeleteAccount" = "Hisobni o‘chirish";
 "ResetSettings" = "Sozlamalarni asliga qaytarish";
-"ResetPreferences" = "**exteraGram** sozlanishlari tiklandi.";
-"ResetPreferencesInfo" = "**Barcha** exteraGram sozlamalarini standart holatga qaytarishni xohlaysizmi?";
+"ResetPreferences" = "**GlowGram** sozlanishlari tiklandi.";
+"ResetPreferencesInfo" = "**Barcha** GlowGram sozlamalarini standart holatga qaytarishni xohlaysizmi?";
 "SupportDevelopment" = "Loyihani qollab quvatlash";
 "SupportDevelopmentInfo" = "Loyihani qoʻllab-quvvatlash orqali siz nafaqat uning rivojlanishiga hissa qoʻshasiz, balki noyob belgiga ega boʻlasiz.";
 "MakeDonation" = "Xayriya qiling";
@@ -434,9 +434,9 @@
 "BoostyPeopleCount_few" = "%1$d kishi";
 "BoostyPeopleCount_many" = "%1$d kishi";
 "BoostyPeopleCount_other" = "%1$d kishi";
-"BoostyInfo" = "**exteraGram** ni **Boosty** da faol qoʻllab-quvvatlang.";
+"BoostyInfo" = "**GlowGram** ni **Boosty** da faol qoʻllab-quvvatlang.";
 "BoostyInfo2" = "Qoʻllab-quvvatlaganingiz uchun rahmat!";
-"PluginsNotSupported" = "Plagin oʻrnatish faqat **exteraGram** ning **Toʻliq** versiyasida mavjud.";
+"PluginsNotSupported" = "Plagin oʻrnatish faqat **GlowGram** ning **Toʻliq** versiyasida mavjud.";
 "Plugins" = "Plaginlar";
 "PluginsEngine" = "Plagin dvigateli";
 "EnablePluginsEngine" = "Plagin dvigatelini yoqish";
@@ -573,7 +573,7 @@
 "EmojiSavedHint" = "Emoji galereyaga saqlandi.";
 "GifGallerySavedHint" = "GIF galereyaga saqlandi.";
 "MutualContactInfo" = "Ushbu foydalanuvchining kontaktidasiz.";
-"LocalPremiumEmojiHint" = "Sizda **Telegram Premium** obunasi yoʻq, shuning uchun bu emojini faqat **exteraGram** foydalanuvchilari koʻra oladi.";
+"LocalPremiumEmojiHint" = "Sizda **Telegram Premium** obunasi yoʻq, shuning uchun bu emojini faqat **GlowGram** foydalanuvchilari koʻra oladi.";
 "HideContactsTab" = "Kontaktlar yorligʻini yashirish";
 "ShowContactsTab" = "Kontaktlar yorligʻini koʻrsatish";
 "ContactsTabWasShownTitle" = "**Kontaktlar** yorligʻi endi koʻrinadi.";

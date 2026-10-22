@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "העדפות של exteraGram";
+"Preferences" = "העדפות של GlowGram";
 "Links" = "קישורים";
 "AboutExteraDescription" = "לקוח טלגרם ניסיוני המבוסס על קוד המקור הרשמי!";
 "Crowdin" = "תרגום";
 "Website" = "אתר האינטרנט";
 "Categories" = "קטגוריות";
-"Developer" = "**%1$@** הוא חבר בצוות הפיתוח של **exteraGram**.";
+"Developer" = "**%1$@** הוא חבר בצוות הפיתוח של **GlowGram**.";
 "DeveloperCompact" = "חבר בצוות המפתחים של אקסטרה-גרם.";
-"Supporter" = "**%1$@** תמך בפיתוח של **exteraGram** וקיבל תג בלעדי.";
-"OfficialChannel" = "**%1$@** הוא המשאב הרשמי של **exteraGram**.";
+"Supporter" = "**%1$@** תמך בפיתוח של **GlowGram** וקיבל תג בלעדי.";
+"OfficialChannel" = "**%1$@** הוא המשאב הרשמי של **GlowGram**.";
 "NoSuchSetting" = "נראה שהגדרה כזו לא קיימת.";
 "SettingLinkToSavedMessages" = "קישור להגדרה נשלח אל **הודעות שמורות**.";
 "SettingLinkToUser" = "קישור להגדרה נשלח אל **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "מזג אוויר";
 "WeatherSettingsInfo" = "בחר כיצד לקבוע את המיקום עבור תצוגת מזג האוויר בחיפוש.";
 "WeatherLocation" = "זיהוי מיקום";
-"WeatherLocationPermissionNo" = "ל-exteraGram יש גישה למיקומך כדי להציג את מזג האוויר הנוכחי.";
+"WeatherLocationPermissionNo" = "ל-GlowGram יש גישה למיקומך כדי להציג את מזג האוויר הנוכחי.";
 "WeatherLocationPermissionGrant" = "הענקת הרשאה";
 "WeatherLocationServicesEnable" = "הפעל מיקום";
 "WeatherPillTopInfo" = "הגדרות ווידג'ט מזג אוויר עבור Pill Stack.";
@@ -402,7 +402,7 @@
 "PauseOnMinimizeVideo" = "וידאו";
 "PauseOnMinimizeVoice" = "קול";
 "PauseOnMinimizeRound" = "מעוגל";
-"PauseOnMinimizeInfo" = "משהה את הפעלת המדיה כאשר המכשיר נעול או כאשר exteraGram ממוזער.";
+"PauseOnMinimizeInfo" = "משהה את הפעלת המדיה כאשר המכשיר נעול או כאשר GlowGram ממוזער.";
 "SwipeToPip" = "החלקה ל-PIP (מרובע קטן)";
 "UnmuteWithVolumeButtons" = "בטל השתקת סרטונים עם כפתורי הווליום";
 "UnmuteWithVolumeButtonsInfo" = "לחיצה על כפתור עוצמת קול תבטל את השתקת הווידאו במקום לשנות את עוצמת הקול של המערכת.";
@@ -427,8 +427,8 @@
 "ExportInvalid" = "מצטערים, התחלת ייצוא נתונים חדש, ולכן ייצוא נתונים זה בוטל.";
 "DeleteAccount" = "מחק חשבון";
 "ResetSettings" = "אפס הגדרות";
-"ResetPreferences" = "העדפות **exteraGram** אופסו.";
-"ResetPreferencesInfo" = "האם אתה בטוח שברצונך לאפס את **כל** העדפות exteraGram לברירת המחדל שלהן?";
+"ResetPreferences" = "העדפות **GlowGram** אופסו.";
+"ResetPreferencesInfo" = "האם אתה בטוח שברצונך לאפס את **כל** העדפות GlowGram לברירת המחדל שלהן?";
 "SupportDevelopment" = "תמוך בפיתוח";
 "SupportDevelopmentInfo" = "על ידי תמיכה בפרויקט, אתם לא רק תורמים לפיתוחו אלא גם מקבלים תג ייחודי.";
 "MakeDonation" = "תרום";
@@ -449,9 +449,9 @@
 "BoostyPeopleCount_few" = "%1$d אנשים";
 "BoostyPeopleCount_many" = "%1$d אנשים";
 "BoostyPeopleCount_other" = "%1$d אנשים";
-"BoostyInfo" = "תמכו באופן פעיל ב- **exteraGram** ב- **Boosty**.";
+"BoostyInfo" = "תמכו באופן פעיל ב- **GlowGram** ב- **Boosty**.";
 "BoostyInfo2" = "תודה על תמיכתך!";
-"PluginsNotSupported" = "התקנת תוספים זמינה רק בגרסה המלאה של exteraGram.";
+"PluginsNotSupported" = "התקנת תוספים זמינה רק בגרסה המלאה של GlowGram.";
 "Plugins" = "תוספים";
 "PluginsEngine" = "מנוע תוספים";
 "EnablePluginsEngine" = "הפעלת מנוע תוספים";
@@ -566,7 +566,7 @@
 "WifiSuccess" = "התחבר בהצלחה ל-Wi-Fi.";
 "AreYouSureToLogin" = "האם אתה בטוח שאתה רוצה להתחבר לחשבון זה ממכשיר אחר?";
 "PageBlocked" = "הדף חסום";
-"PageBlockedDescription" = "exteraGram מנע את טעינת הדף הבא:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram מנע את טעינת הדף הבא:\n**%1$@**";
 "PageBlockedGoBack" = "חזור";
 "PageBlockedProceed" = "המשך";
 "SetAsBadge" = "הגדר כתג";
@@ -593,7 +593,7 @@
 "EmojiSavedHint" = "האימוג'י נשמר בגלריה.";
 "GifGallerySavedHint" = "ה-GIF נשמר לגלריה.";
 "MutualContactInfo" = "קשר זה הוא הדדי.";
-"LocalPremiumEmojiHint" = "אין לך מנוי ל- **טלגרם פרימיום**, כך שרק משתמשי **exteraGram** יוכלו לראות את האימוג'י הזה.";
+"LocalPremiumEmojiHint" = "אין לך מנוי ל- **טלגרם פרימיום**, כך שרק משתמשי **GlowGram** יוכלו לראות את האימוג'י הזה.";
 "HideContactsTab" = "הסתר את לשונית אנשי הקשר";
 "ShowContactsTab" = "הצג את לשונית אנשי הקשר";
 "ContactsTabWasShownTitle" = "הכרטיסייה **אנשי קשר** גלויה כעת.";

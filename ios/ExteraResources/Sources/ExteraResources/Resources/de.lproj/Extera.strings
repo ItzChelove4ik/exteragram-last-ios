@@ -1,13 +1,13 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram Einstellungen";
+"Preferences" = "GlowGram Einstellungen";
 "AboutExteraDescription" = "Ein experimenteller Telegram client basierend auf dem offiziellen Quellcode!";
 "Crowdin" = "Übersetzen";
 "Website" = "Webseite";
 "Categories" = "Kategorien";
-"Developer" = "**%1$@** ist ein Mitglied des **exteraGram** Entwicklungsteams.";
-"DeveloperCompact" = "Mitglied des **exteraGram**-Entwicklungsteams.";
-"Supporter" = "**%1$@** hat die Entwicklung von **exteraGram** unterstützt und ein exklusives Abzeichen erhalten.";
-"OfficialChannel" = "**%1$@** ist die offizielle Ressource von **exteraGram**.";
+"Developer" = "**%1$@** ist ein Mitglied des **GlowGram** Entwicklungsteams.";
+"DeveloperCompact" = "Mitglied des **GlowGram**-Entwicklungsteams.";
+"Supporter" = "**%1$@** hat die Entwicklung von **GlowGram** unterstützt und ein exklusives Abzeichen erhalten.";
+"OfficialChannel" = "**%1$@** ist die offizielle Ressource von **GlowGram**.";
 "NoSuchSetting" = "Es scheint, dass eine solche Einstellung nicht existiert.";
 "SettingLinkToSavedMessages" = "Setting link ** **.";
 "SettingLinkToUser" = "Setting link \"%1$@\"\".\"";
@@ -348,7 +348,7 @@
 "ExportInvalid" = "Entschuldigung, Sie haben einen neuen Datenexport gestartet, daher wurde dieser Datenexport abgebrochen.";
 "DeleteAccount" = "Benutzerkonto löschen";
 "ResetSettings" = "Einstellungen zurücksetzen";
-"ResetPreferences" = "** exteraGram ** Einstellungen wurden zurückgesetzt.";
+"ResetPreferences" = "** GlowGram ** Einstellungen wurden zurückgesetzt.";
 "ResetPreferencesInfo" = "Sind Sie sicher, dass Sie ** alle ** Exteragramm-Einstellungen auf ihre Standardeinstellungen zurücksetzen möchten?";
 "SupportDevelopment" = "Entwicklung unterstützen";
 "SupportDevelopmentInfo" = "Indem Sie das Projekt unterstützen, tragen Sie nicht nur zu seiner Entwicklung bei, sondern erhalten auch ein einzigartiges Abzeichen.";
@@ -370,9 +370,9 @@
 "BoostyPeopleCount_few" = "%1$d Personen";
 "BoostyPeopleCount_many" = "%1$d Personen";
 "BoostyPeopleCount_other" = "%1$d Personen";
-"BoostyInfo" = "Unterstützen Sie **exteraGram** aktiv auf **Boosty**.";
+"BoostyInfo" = "Unterstützen Sie **GlowGram** aktiv auf **Boosty**.";
 "BoostyInfo2" = "Vielen Dank für Ihre Unterstützung!";
-"PluginsNotSupported" = "Die Plugin-Installation ist nur in der **Vollversion** von **exteraGram** verfügbar.";
+"PluginsNotSupported" = "Die Plugin-Installation ist nur in der **Vollversion** von **GlowGram** verfügbar.";
 "Plugins" = "Plugin";
 "EnablePluginsEngine" = "Plugins Engine aktivieren";
 "PluginsInfo" = "Sie finden Plugins in @exteraPlugins.";
@@ -457,7 +457,7 @@
 "WifiSuccess" = "Erfolgreich mit WLAN verbunden.";
 "AreYouSureToLogin" = "Sind Sie sicher, dass Sie sich auf einem anderen Gerät bei diesem Konto anmelden möchten?";
 "PageBlocked" = "Seite blockiert";
-"PageBlockedDescription" = "exteraGram hat das Laden der folgenden Seite verhindert:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram hat das Laden der folgenden Seite verhindert:\n**%1$@**";
 "PageBlockedGoBack" = "Gehe zurück";
 "PageBlockedProceed" = "Fortfahren";
 "SetAsBadge" = "Als Abzeichen festlegen";
@@ -484,7 +484,7 @@
 "EmojiSavedHint" = "Emoji in der Galerie gespeichert.";
 "GifGallerySavedHint" = "GIF in der Galerie gespeichert.";
 "MutualContactInfo" = "Dieser Kontakt ist beiderseitig.";
-"LocalPremiumEmojiHint" = "Sie haben kein **Telegram Premium**-Abonnement, daher können nur **exteraGram** Benutzer dieses Emoji sehen.";
+"LocalPremiumEmojiHint" = "Sie haben kein **Telegram Premium**-Abonnement, daher können nur **GlowGram** Benutzer dieses Emoji sehen.";
 "HideContactsTab" = "Kontakte-Tab ausblenden";
 "ShowContactsTab" = "Kontakte-Tab einblenden";
 "ContactsTabWasShownTitle" = "Der Tab **Kontakte** ist jetzt sichtbar.";

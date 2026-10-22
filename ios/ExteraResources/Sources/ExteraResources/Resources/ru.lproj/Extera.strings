@@ -1,15 +1,15 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"exteraAppName" = "exteraGram";
-"Preferences" = "Настройки exteraGram";
+"exteraAppName" = "GlowGram";
+"Preferences" = "Настройки GlowGram";
 "Links" = "Ссылки";
 "AboutExteraDescription" = "Экспериментальный Telegram-клиент, основанный на официальном исходном коде!";
 "Crowdin" = "Перевод";
 "Website" = "Веб-сайт";
 "Categories" = "Категории";
-"Developer" = "**%1$@** является членом команды разработчиков **exteraGram**.";
-"DeveloperCompact" = "Участник команды разработчиков **exteraGram**.";
-"Supporter" = "**%1$@** поддержал(а) разработку **exteraGram** и получил(а) уникальный значок.";
-"OfficialChannel" = "**%1$@** является официальным ресурсом **exteraGram**.";
+"Developer" = "**%1$@** является членом команды разработчиков **GlowGram**.";
+"DeveloperCompact" = "Участник команды разработчиков **GlowGram**.";
+"Supporter" = "**%1$@** поддержал(а) разработку **GlowGram** и получил(а) уникальный значок.";
+"OfficialChannel" = "**%1$@** является официальным ресурсом **GlowGram**.";
 "NoSuchSetting" = "Похоже, что такой настройки пока нет.";
 "SettingLinkToSavedMessages" = "Ссылка на настройку отправлена в **Избранное**.";
 "SettingLinkToUser" = "Ссылка на настройку отправлена **%1$@**.";
@@ -27,7 +27,7 @@
 "WeatherPill" = "Погода";
 "WeatherSettingsInfo" = "Выберите способ определения местоположения для получения данных о погоде.";
 "WeatherLocation" = "Определение местоположения";
-"WeatherLocationPermissionNo" = "Для отображения погоды exteraGram требуется доступ к вашей геопозиции.";
+"WeatherLocationPermissionNo" = "Для отображения погоды GlowGram требуется доступ к вашей геопозиции.";
 "WeatherLocationPermissionGrant" = "Предоставить доступ";
 "WeatherLocationServicesEnable" = "Включить геолокацию";
 "WeatherPillTopInfo" = "Настройки виджета погоды для Pill Stack.";
@@ -338,7 +338,7 @@
 "SwipeToPip" = "Картинка-в-картинке по свайпу";
 "UnmuteWithVolumeButtons" = "Включение звука кнопками громкости";
 "UnmuteWithVolumeButtonsInfo" = "Нажатие кнопки громкости будет включать звук в видео вместо изменения системной громкости.";
-"PluginsNotSupported" = "Установка плагинов доступна только в **Full**-версии **exteraGram**.";
+"PluginsNotSupported" = "Установка плагинов доступна только в **Full**-версии **GlowGram**.";
 "Plugins" = "Плагины";
 "PluginsEngine" = "Система плагинов";
 "EnablePluginsEngine" = "Включить систему плагинов";
@@ -452,8 +452,8 @@
 "AnalyticsInfo" = "Когда эти опции включены, данные об устройстве собираются и отправляются в Google Analytics и Crashlytics, что позволяет нам вести статистику использования и отслеживать ошибки в приложении. \n\nОднако если опции выключены, сбор данных прекращается, а отправленные данные мгновенно удаляются.";
 "DeleteAccount" = "Удалить аккаунт";
 "ResetSettings" = "Сбросить настройки";
-"ResetPreferences" = "Настройки **exteraGram** были сброшены.";
-"ResetPreferencesInfo" = "Вы уверены, что хотите сбросить **все** настройки exteraGram до стандартных?";
+"ResetPreferences" = "Настройки **GlowGram** были сброшены.";
+"ResetPreferencesInfo" = "Вы уверены, что хотите сбросить **все** настройки GlowGram до стандартных?";
 "LoginQrTitle" = "Вход по QR-коду";
 "LoginQrSubtitle" = "Используйте другое устройство, чтобы отсканировать этот QR-код.";
 "SelectNumber" = "Выберите номер телефона";
@@ -463,7 +463,7 @@
 "WifiSuccess" = "Успешно подключено к сети Wi-Fi.";
 "AreYouSureToLogin" = "Вы уверены, что хотите войти в этот аккаунт на другом устройстве?";
 "PageBlocked" = "Страница заблокирована";
-"PageBlockedDescription" = "exteraGram предотвратил загрузку следующей страницы:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram предотвратил загрузку следующей страницы:\n**%1$@**";
 "PageBlockedGoBack" = "Назад";
 "PageBlockedProceed" = "Продолжить";
 "BlockAds" = "Блокировка рекламы";
@@ -596,7 +596,7 @@
 "BoostyPeopleCount_few" = "%1$d человека";
 "BoostyPeopleCount_many" = "%1$d человек";
 "BoostyPeopleCount_other" = "%1$d человек";
-"BoostyInfo" = "Активно поддерживают **exteraGram** на **Boosty**.";
+"BoostyInfo" = "Активно поддерживают **GlowGram** на **Boosty**.";
 "BoostyInfo2" = "Спасибо за вашу поддержку!";
 "CopyTitle" = "Копировать название";
 "CopyCallback" = "Копировать Callback-данные";
@@ -615,7 +615,7 @@
 "EmojiSavedHint" = "Эмодзи сохранён в галерею.";
 "GifGallerySavedHint" = "GIF сохранена в галерею.";
 "MutualContactInfo" = "Этот контакт является взаимным.";
-"LocalPremiumEmojiHint" = "У вас нет подписки **Telegram Premium**, поэтому этот эмодзи будут видеть только пользователи **exteraGram**.";
+"LocalPremiumEmojiHint" = "У вас нет подписки **Telegram Premium**, поэтому этот эмодзи будут видеть только пользователи **GlowGram**.";
 "HideContactsTab" = "Скрыть вкладку «Контакты»";
 "ShowContactsTab" = "Отображать вкладку «Контакты»";
 "ContactsTabWasShownTitle" = "Вкладка «Контакты» добавлена.";

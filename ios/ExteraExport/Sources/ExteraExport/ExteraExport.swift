@@ -49,7 +49,7 @@ public struct ExteraExportDocument: Codable, Equatable, Sendable {
     public init(peerId: String, title: String, exportedAt: Date, snapshotMaxMessageId: Int32?, omittedEphemeralMessages: Int,
                 messages: [ExteraExportMessage]) {
         schemaVersion = 1
-        generator = "exteraGram iOS"
+        generator = "GlowGram iOS"
         self.peerId = peerId; self.title = title
         self.exportedAt = ExteraExportEncoder.utcDate(exportedAt)
         scope = "All cloud history returned for this peer up to snapshotMaxMessageId"

@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "Předvolby exteraGramu";
+"Preferences" = "Předvolby GlowGramu";
 "Links" = "Odkazy";
 "AboutExteraDescription" = "Experimentální klient Telegramu založený na oficiálním zdrojovém kódu!";
 "Crowdin" = "Přeložit";
 "Website" = "Webové stránky";
 "Categories" = "Kategorie";
-"Developer" = "**%1$@** je členem vývojového týmu **exteraGram**.";
-"DeveloperCompact" = "Člen vývojového týmu **exteraGram**.";
-"Supporter" = "**%1$@** podpořil vývoj **exteraGramu** a získal exkluzivní odznak.";
-"OfficialChannel" = "**%1$@** je oficiální zdroj **exteraGram**.";
+"Developer" = "**%1$@** je členem vývojového týmu **GlowGram**.";
+"DeveloperCompact" = "Člen vývojového týmu **GlowGram**.";
+"Supporter" = "**%1$@** podpořil vývoj **GlowGramu** a získal exkluzivní odznak.";
+"OfficialChannel" = "**%1$@** je oficiální zdroj **GlowGram**.";
 "NoSuchSetting" = "Zdá se, že takové nastavení neexistuje.";
 "SettingLinkToSavedMessages" = "Odkaz na nastavení odeslán do **Uložených zpráv**.";
 "SettingLinkToUser" = "Odkaz na nastavení odeslán uživateli **%1$@**.";
@@ -26,7 +26,7 @@
 "WeatherPill" = "Počasí";
 "WeatherSettingsInfo" = "Zvolte, jak určit polohu pro zobrazení počasí ve vyhledávání.";
 "WeatherLocation" = "Detekce polohy";
-"WeatherLocationPermissionNo" = "exteraGram potřebuje přístup k vaší poloze pro zobrazení aktuálního počasí.";
+"WeatherLocationPermissionNo" = "GlowGram potřebuje přístup k vaší poloze pro zobrazení aktuálního počasí.";
 "WeatherLocationPermissionGrant" = "Udělit oprávnění";
 "WeatherLocationServicesEnable" = "Povolit polohu";
 "WeatherPillTopInfo" = "Nastavení widgetu počasí pro zásobník pilulek.";
@@ -339,7 +339,7 @@
 "PauseOnMinimize" = "Automatická pauza";
 "PauseOnMinimizeVoice" = "Hlas";
 "PauseOnMinimizeRound" = "Kruhová";
-"PauseOnMinimizeInfo" = "Pozastaví přehrávání médií, když je zařízení uzamčeno nebo je exteraGram minimalizováno.";
+"PauseOnMinimizeInfo" = "Pozastaví přehrávání médií, když je zařízení uzamčeno nebo je GlowGram minimalizováno.";
 "SwipeToPip" = "Přejetím do režimu PiP";
 "UnmuteWithVolumeButtons" = "Zrušit ztlumení videí tlačítky hlasitosti";
 "UnmuteWithVolumeButtonsInfo" = "Stisknutím tlačítka hlasitosti se video ztlumí, místo změny systémové hlasitosti.";
@@ -364,8 +364,8 @@
 "ExportInvalid" = "Omlouváme se, zahájili jste nový export dat, takže tento export dat byl zrušen.";
 "DeleteAccount" = "Smazat účet";
 "ResetSettings" = "Obnovit nastavení";
-"ResetPreferences" = "Předvolby **exteraGram** byly obnoveny.";
-"ResetPreferencesInfo" = "Opravdu chcete obnovit **všechny** předvolby exteraGram na výchozí?";
+"ResetPreferences" = "Předvolby **GlowGram** byly obnoveny.";
+"ResetPreferencesInfo" = "Opravdu chcete obnovit **všechny** předvolby GlowGram na výchozí?";
 "SupportDevelopment" = "Podpořit vývoj";
 "SupportDevelopmentInfo" = "Podporou projektu nejen přispíváte k jeho vývoji, ale také získáte unikátní odznak.";
 "MakeDonation" = "Přispět";
@@ -386,9 +386,9 @@
 "BoostyPeopleCount_few" = "%1$d lidé";
 "BoostyPeopleCount_many" = "%1$d lidí";
 "BoostyPeopleCount_other" = "%1$d lidí";
-"BoostyInfo" = "Aktivně podporujte **exteraGram** na **Boosty**.";
+"BoostyInfo" = "Aktivně podporujte **GlowGram** na **Boosty**.";
 "BoostyInfo2" = "Děkujeme za vaši podporu!";
-"PluginsNotSupported" = "Instalace pluginů je dostupná pouze v **plné** verzi **exteraGram**.";
+"PluginsNotSupported" = "Instalace pluginů je dostupná pouze v **plné** verzi **GlowGram**.";
 "Plugins" = "Pluginy";
 "PluginsEngine" = "Engine pluginů";
 "EnablePluginsEngine" = "Povolit engine pluginů";
@@ -476,7 +476,7 @@
 "WifiSuccess" = "Úspěšně připojeno k Wi-Fi.";
 "AreYouSureToLogin" = "Opravdu se chcete přihlásit k tomuto účtu na jiném zařízení?";
 "PageBlocked" = "Stránka zablokována";
-"PageBlockedDescription" = "exteraGram zabránil načtení následující stránky:\n**%1$@**";
+"PageBlockedDescription" = "GlowGram zabránil načtení následující stránky:\n**%1$@**";
 "PageBlockedGoBack" = "Zpět";
 "PageBlockedProceed" = "Pokračovat";
 "SetAsBadge" = "Nastavit jako odznak";
@@ -504,7 +504,7 @@
 "EmojiSavedHint" = "Emoji uloženo do galerie.";
 "GifGallerySavedHint" = "GIF uložen do galerie.";
 "MutualContactInfo" = "Tento kontakt je vzájemný.";
-"LocalPremiumEmojiHint" = "Nemáte předplatné **Telegram Premium**, takže toto emoji uvidí pouze uživatelé **exteraGram**.";
+"LocalPremiumEmojiHint" = "Nemáte předplatné **Telegram Premium**, takže toto emoji uvidí pouze uživatelé **GlowGram**.";
 "HideContactsTab" = "Skrýt kartu Kontakty";
 "ShowContactsTab" = "Zobrazit kartu Kontakty";
 "ContactsTabWasShownTitle" = "Karta **Kontakty** je nyní viditelná.";

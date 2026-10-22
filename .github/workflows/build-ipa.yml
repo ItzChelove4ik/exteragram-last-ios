@@ -16,8 +16,15 @@ jobs:
   build:
     runs-on: macos-26
     timeout-minutes: 180
+    env:
+      TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+      TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
     steps:
       - uses: actions/checkout@v4
+      - name: Check Telegram API configuration
+        run: python3 scripts/build_configuration.py --check
+      - name: Test Telegram API configuration
+        run: python3 -m unittest discover -s tests -v
       - name: Select available Xcode 26
         run: |
           python3 - <<'PY'
@@ -36,16 +43,15 @@ jobs:
             swift test --package-path "$package"
           done
       - name: Fetch pinned Telegram and integrate port
-        run: python3 -u scripts/prepare_upstream.py
+        run: |
+          python3 -m pip install --disable-pip-version-check -r scripts/requirements.txt
+          python3 -u scripts/prepare_upstream.py
       - name: Compile unsigned arm64 IPA
-        env:
-          TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
-          TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
         run: python3 -u scripts/build_ipa.py --build-number "${{ github.run_number }}"
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: exteraGram-Lite-unsigned-IPA
+          name: GlowGram-unsigned-IPA
           path: artifacts/*.ipa
           if-no-files-found: error
           retention-days: 90
@@ -54,6 +60,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "build-${{ github.run_number }}" artifacts/*.ipa \
-            --title "exteraGram Lite вЂ” build ${{ github.run_number }}" \
+            --title "GlowGram build ${{ github.run_number }}" \
             --target "${{ github.sha }}" \
-            --notes "Unsigned arm64 IPA based on the pinned Telegram iOS source with the included exteraGram Lite port. Sign before installing. Feature parity with Android is incomplete; App Groups and push notifications depend on your signing profile."
+            --notes "Unsigned arm64 IPA based on the pinned Telegram iOS source with GlowGram features ported from exteraGram Lite. Sign before installing. Feature parity with Android is incomplete; App Groups and push notifications depend on your signing profile."

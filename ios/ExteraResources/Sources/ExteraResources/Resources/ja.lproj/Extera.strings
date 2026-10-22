@@ -1,14 +1,14 @@
 /* Generated from supplied APK localization; see provenance.json. */
-"Preferences" = "exteraGram 設定";
+"Preferences" = "GlowGram 設定";
 "Links" = "リンク";
 "AboutExteraDescription" = "公式ソースコードをベースにした実験的なTelegramクライアントです！";
 "Crowdin" = "翻訳";
 "Website" = "ウェブサイト";
 "Categories" = "カテゴリ";
-"Developer" = "**%1$@** は **exteraGram** 開発チームのメンバーです。";
-"DeveloperCompact" = "**exteraGram** 開発チームのメンバー。";
-"Supporter" = "**%1$@** は **exteraGram** の開発を支援し、ユニークなバッジを受け取りました。";
-"OfficialChannel" = "**%1$@** は **exteraGram** の公式リソースです。";
+"Developer" = "**%1$@** は **GlowGram** 開発チームのメンバーです。";
+"DeveloperCompact" = "**GlowGram** 開発チームのメンバー。";
+"Supporter" = "**%1$@** は **GlowGram** の開発を支援し、ユニークなバッジを受け取りました。";
+"OfficialChannel" = "**%1$@** は **GlowGram** の公式リソースです。";
 "NoSuchSetting" = "そのような設定は存在しないようです。";
 "SettingLinkToSavedMessages" = "**保存済みメッセージ**に送信されるリンクを設定します。";
 "SettingLinkToUser" = "設定リンクが **%1$@** に送信されました。";
@@ -26,7 +26,7 @@
 "WeatherPill" = "天気";
 "WeatherSettingsInfo" = "検索時の天気表示に使用する位置情報の決定方法を選択します。";
 "WeatherLocation" = "位置情報の検出";
-"WeatherLocationPermissionNo" = "現在の天気を表示するには、exteraGramが位置情報へのアクセスを必要とします。";
+"WeatherLocationPermissionNo" = "現在の天気を表示するには、GlowGramが位置情報へのアクセスを必要とします。";
 "WeatherLocationPermissionGrant" = "許可する";
 "WeatherLocationServicesEnable" = "位置情報を有効にする";
 "WeatherPillTopInfo" = "ピルスタック用の天気ウィジェット設定。";
@@ -333,7 +333,7 @@
 "PauseOnMinimizeVideo" = "ビデオ";
 "PauseOnMinimizeVoice" = "音声";
 "PauseOnMinimizeRound" = "ラウンド";
-"PauseOnMinimizeInfo" = "デバイスがロックされているか、exteraGramが最小化されている場合、メディアの再生を一時停止します。";
+"PauseOnMinimizeInfo" = "デバイスがロックされているか、GlowGramが最小化されている場合、メディアの再生を一時停止します。";
 "SwipeToPip" = "スワイプしてPiP";
 "UnmuteWithVolumeButtons" = "音量ボタンでビデオのミュートを解除";
 "UnmuteWithVolumeButtonsInfo" = "音量ボタンを押すと、システム音量を変更する代わりにビデオのミュートが解除されます。";
@@ -358,8 +358,8 @@
 "ExportInvalid" = "申し訳ありませんが、新しいデータエクスポートを開始したため、このデータエクスポートはキャンセルされました。";
 "DeleteAccount" = "アカウントを削除";
 "ResetSettings" = "設定をリセット";
-"ResetPreferences" = "**exteraGram** の設定がリセットされました。";
-"ResetPreferencesInfo" = "**すべての** exteraGram の設定をデフォルトにリセットしてもよろしいですか？";
+"ResetPreferences" = "**GlowGram** の設定がリセットされました。";
+"ResetPreferencesInfo" = "**すべての** GlowGram の設定をデフォルトにリセットしてもよろしいですか？";
 "SupportDevelopment" = "開発を支援";
 "SupportDevelopmentInfo" = "プロジェクトを支援することで、開発に貢献するだけでなく、ユニークなバッジも入手できます。";
 "MakeDonation" = "寄付する";
@@ -380,9 +380,9 @@
 "BoostyPeopleCount_few" = "%1$d人";
 "BoostyPeopleCount_many" = "%1$d人";
 "BoostyPeopleCount_other" = "%1$d人";
-"BoostyInfo" = "**Boosty** で **exteraGram** を積極的にサポートしてください。";
+"BoostyInfo" = "**Boosty** で **GlowGram** を積極的にサポートしてください。";
 "BoostyInfo2" = "ご支援ありがとうございます！";
-"PluginsNotSupported" = "プラグインのインストールは **exteraGram** の **Full** バージョンでのみ利用可能です。";
+"PluginsNotSupported" = "プラグインのインストールは **GlowGram** の **Full** バージョンでのみ利用可能です。";
 "Plugins" = "プラグイン";
 "PluginsEngine" = "プラグインエンジン";
 "EnablePluginsEngine" = "プラグインエンジンを有効にする";
@@ -472,7 +472,7 @@
 "WifiSuccess" = "Wi-Fiに正常に接続しました。";
 "AreYouSureToLogin" = "別のデバイスでこのアカウントにログインしてもよろしいですか？";
 "PageBlocked" = "ページがブロックされました";
-"PageBlockedDescription" = "exteraGramは次のページの読み込みをブロックしました:\n**%1$@**";
+"PageBlockedDescription" = "GlowGramは次のページの読み込みをブロックしました:\n**%1$@**";
 "PageBlockedGoBack" = "戻る";
 "PageBlockedProceed" = "続行";
 "SetAsBadge" = "バッジとして設定";
@@ -499,7 +499,7 @@
 "EmojiSavedHint" = "絵文字がギャラリーに保存されました。";
 "GifGallerySavedHint" = "GIFをギャラリーに保存しました。";
 "MutualContactInfo" = "この連絡先は相互です。";
-"LocalPremiumEmojiHint" = "**Telegram Premium**サブスクリプションをお持ちでないため、この絵文字は**exteraGram**ユーザーのみが表示できます。";
+"LocalPremiumEmojiHint" = "**Telegram Premium**サブスクリプションをお持ちでないため、この絵文字は**GlowGram**ユーザーのみが表示できます。";
 "HideContactsTab" = "連絡先タブを非表示";
 "ShowContactsTab" = "連絡先タブを表示";
 "ContactsTabWasShownTitle" = "**連絡先** タブが表示されました。";

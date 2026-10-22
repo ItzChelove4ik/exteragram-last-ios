@@ -17,7 +17,7 @@ public enum ExteraSettings {
     public static let archiveOnPull = ExteraPreference<Bool>(key: "archiveOnPull", defaultValue: false)
     public static let disableUnarchiveSwipe = ExteraPreference<Bool>(key: "disableUnarchiveSwipe", defaultValue: true)
     public static let doNotUseProxy = ExteraPreference<Int32>(key: "doNotUseProxy", defaultValue: 0)
-    public static let customSavePath = ExteraPreference<String>(key: "customSavePath", defaultValue: "exteraGram")
+    public static let customSavePath = ExteraPreference<String>(key: "customSavePath", defaultValue: "GlowGram")
     public static let editingIconPackId = ExteraPreference<String?>(key: "editingIconPackId", defaultValue: nil)
     public static let avatarCorners = ExteraPreference<Float>(key: "avatarCorners", defaultValue: 28.0)
     public static let singleCornerRadius = ExteraPreference<Bool>(key: "singleCornerRadius", defaultValue: false)

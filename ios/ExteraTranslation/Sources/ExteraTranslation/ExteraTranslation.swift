@@ -168,7 +168,7 @@ public actor ExteraTranslationClient {
         components.percentEncodedQuery = components.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
         guard let url = components.url else { throw ExteraTranslationError.invalidLanguage }
         var request = URLRequest(url: url, timeoutInterval: 30)
-        request.setValue("exteraGram-Lite-iOS/1", forHTTPHeaderField: "User-Agent")
+        request.setValue("GlowGram-iOS/1", forHTTPHeaderField: "User-Agent")
         if provider == .yandex {
             request.httpMethod = "POST"
             request.setValue("application/x-www-form-urlencoded; charset=UTF-8", forHTTPHeaderField: "Content-Type")
