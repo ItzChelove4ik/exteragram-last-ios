@@ -1,0 +1,20 @@
+[
+  {
+    "path": "submodules/TranslateUI/Sources/TranslateScreen.swift",
+    "old": "import TelegramUIPreferences\n",
+    "new": "import TelegramUIPreferences\nimport ExteraPreferences\nimport ExteraTranslation\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TranslateUI/Sources/TranslateScreen.swift",
+    "old": "    let translationConfiguration = TranslationConfiguration.with(appConfiguration: context.currentAppConfiguration.with { $0 })\n    var useSystemTranslation = false\n    switch translationConfiguration.manual {\n    case .system:\n        if #available(iOS 18.0, *) {\n            useSystemTranslation = true\n        }\n    default:\n        break\n    }\n    \n    if useSystemTranslation {\n        presentSystemTranslateScreen(context: context, text: text)\n    } else {\n    }",
+    "new": "    let provider = ExteraTranslationProvider(rawValue: ExteraPreferences.standard.value(for: ExteraSettings.translationProvider)) ?? .google\n    presentExteraTranslation(context: context, text: text, entities: entities, canCopy: canCopy, fromLanguage: fromLanguage, toLanguage: toLanguage, provider: provider, replaceText: replaceText, wasDismissed: wasDismissed)",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TranslateUI/BUILD",
+    "old": "        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "new": "        \"//submodules/ExteraTranslation:ExteraTranslation\",\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "occurrences": 1
+  }
+]

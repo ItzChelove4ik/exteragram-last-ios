@@ -1,0 +1,8 @@
+[
+  {
+    "path": "MODULE.bazel",
+    "old": "http_archive(\n    name = \"wasi_sdk_macos\",\n    urls = [\"https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-33/wasi-sdk-33.0-arm64-macos.tar.gz\"],\n    sha256 = \"85c997a2665ead91673b5bb88b7d0df3fc8900df3bfa244f720d478187bbdc78\",\n    strip_prefix = \"wasi-sdk-33.0-arm64-macos\",\n    build_file_content = _WASI_SDK_BUILD,\n)",
+    "new": "extera_wasi_sdk = use_repo_rule(\"//build-system/ExteraBuildTools:wasi_sdk.bzl\", \"extera_wasi_sdk\")\nextera_wasi_sdk(name = \"wasi_sdk_macos\")",
+    "occurrences": 1
+  }
+]

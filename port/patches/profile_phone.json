@@ -1,0 +1,62 @@
+[
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/BUILD",
+    "old": "        \"//submodules/UrlWhitelist\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/UrlWhitelist\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoHeaderNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoProfileItems.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoSettingsItems.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoHeaderNode.swift",
+    "old": "                var subtitle = formatPhoneNumber(context: self.context, number: user.phone ?? \"\")\n                \n                if let mainUsername = user.addressName, !mainUsername.isEmpty {\n                    subtitle = \"\\(subtitle) • @\\(mainUsername)\"\n                }",
+    "new": "                var subtitle = ExteraPreferences.standard.value(for: ExteraSettings.hidePhoneNumber) ? \"\" : formatPhoneNumber(context: self.context, number: user.phone ?? \"\")\n                \n                if let mainUsername = user.addressName, !mainUsername.isEmpty {\n                    subtitle = subtitle.isEmpty ? \"@\\(mainUsername)\" : \"\\(subtitle) • @\\(mainUsername)\"\n                }",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoProfileItems.swift",
+    "old": "        if let phone = user.phone {\n",
+    "new": "        if let phone = user.phone, user.id != context.account.peerId || !ExteraPreferences.standard.value(for: ExteraSettings.hidePhoneNumber) {\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoSettingsItems.swift",
+    "old": "label: .text(user.phone.flatMap({ formatPhoneNumber(context: context, number: $0) }) ?? \"\")",
+    "new": "label: .text(ExteraPreferences.standard.value(for: ExteraSettings.hidePhoneNumber) ? \"\" : (user.phone.flatMap({ formatPhoneNumber(context: context, number: $0) }) ?? \"\"))",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoSettingsItems.swift",
+    "old": "            let phoneNumber = formatPhoneNumber(context: context, number: peer.phone ?? \"\")",
+    "new": "            let phoneNumber = ExteraPreferences.standard.value(for: ExteraSettings.hidePhoneNumber) ? presentationData.strings.Settings_PhoneNumber : formatPhoneNumber(context: context, number: peer.phone ?? \"\")",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoScreen.swift",
+    "old": "    override public func viewDidAppear(_ animated: Bool) {\n        super.viewDidAppear(animated)\n",
+    "new": "    override public func viewDidAppear(_ animated: Bool) {\n        super.viewDidAppear(animated)\n        // Local display preferences may have changed in the pushed settings screen.\n        if let (layout, navigationHeight) = self.validLayout {\n            self.controllerNode.containerLayoutUpdated(layout: layout, navigationHeight: navigationHeight, transition: .immediate)\n        }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoHeaderNode.swift",
+    "old": "                if case let .user(user) = peer, let phone = user.phone {\n",
+    "new": "                if case let .user(user) = peer, let phone = user.phone, user.id != self.context.account.peerId || !ExteraPreferences.standard.value(for: ExteraSettings.hidePhoneNumber) {\n",
+    "occurrences": 1
+  }
+]

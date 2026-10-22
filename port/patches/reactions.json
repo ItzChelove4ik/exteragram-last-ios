@@ -1,0 +1,146 @@
+[
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageAnimatedStickerItemNode/Sources/ChatMessageAnimatedStickerItemNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageAnimatedStickerItemNode/Sources/ChatMessageAnimatedStickerItemNode.swift",
+    "old": "mergedMessageReactions(attributes: item.message.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: item.message, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageAttachedContentNode/Sources/ChatMessageAttachedContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageBubbleItemNode/Sources/ChatMessageBubbleItemNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageBubbleItemNode/Sources/ChatMessageBubbleItemNode.swift",
+    "old": "mergedMessageReactions(attributes: item.message.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: item.message, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageBubbleItemNode/Sources/ChatMessageBubbleItemNode.swift",
+    "old": "mergedMessageReactions(attributes: firstMessage.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: firstMessage, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageContactBubbleContentNode/Sources/ChatMessageContactBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageFactCheckBubbleContentNode/Sources/ChatMessageFactCheckBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageGiveawayBubbleContentNode/Sources/ChatMessageGiveawayBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInstantVideoItemNode/Sources/ChatMessageInstantVideoItemNode.swift",
+    "old": "mergedMessageReactions(attributes: item.message.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: item.message, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInteractiveFileNode/Sources/ChatMessageInteractiveFileNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInteractiveInstantVideoNode/Sources/ChatMessageInteractiveInstantVideoNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageMapBubbleContentNode/Sources/ChatMessageMapBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageMediaBubbleContentNode/Sources/ChatMessageMediaBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessagePollBubbleContentNode/Sources/ChatMessagePollBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageReactionsFooterContentNode/Sources/ChatMessageReactionsFooterContentNode.swift",
+    "old": "mergedMessageReactions(attributes: item.message.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: item.message, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageRestrictedBubbleContentNode/Sources/ChatMessageRestrictedBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageRichDataBubbleContentNode/Sources/ChatMessageRichDataBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageRichDataBubbleContentNode/Sources/ChatMessageRichDataBubbleContentNode.swift",
+    "old": "mergedMessageReactions(attributes: item.message.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: item.message, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageStickerItemNode/Sources/ChatMessageStickerItemNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageStickerItemNode/Sources/ChatMessageStickerItemNode.swift",
+    "old": "mergedMessageReactions(attributes: item.message.attributes, isTags:",
+    "new": "exteraVisibleMessageReactions(message: item.message, isTags:",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageTextBubbleContentNode/Sources/ChatMessageTextBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageTodoBubbleContentNode/Sources/ChatMessageTodoBubbleContentNode.swift",
+    "old": "mergedMessageReactionsAndPeers(",
+    "new": "exteraVisibleMessageReactionsAndPeers(",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageItemCommon/BUILD",
+    "old": "    deps = [\n        \"//submodules/Display\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/Postbox\",\n        \"//submodules/Display\",",
+    "occurrences": 1
+  }
+]

@@ -1,0 +1,8 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.swift text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+BUILD text eol=lf
+*.bzl text eol=lf

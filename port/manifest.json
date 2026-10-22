@@ -1,0 +1,9 @@
+{
+  "upstream_repository": "TelegramMessenger/Telegram-iOS",
+  "upstream_commit": "f1dd7a2dbd02cbbf513e75d5695d8d36d1cf5838",
+  "android_version": "12.10.6",
+  "android_variant": "Lite",
+  "android_sha256": "adbead84d31057fbe2d58433fe4f51f09463eb0c007d82ae28df2344462777ed",
+  "signing": "unsigned_device_ipa_for_local_signing",
+  "full_feature_parity_verified": false
+}

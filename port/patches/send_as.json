@@ -1,0 +1,44 @@
+[
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/Sources/ChatTextInputPanelNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/BUILD",
+    "old": "    deps = [\n        \"//submodules/Display\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/Display\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/Sources/ChatTextInputPanelNode.swift",
+    "old": "    public let sendAsAvatarReferenceNode: ContextReferenceContentNode",
+    "new": "    public let sendAsAvatarReferenceNode: ContextReferenceContentNode\n    private let exteraSendAsReferenceNode = ContextReferenceContentNode()",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/Sources/ChatTextInputPanelNode.swift",
+    "old": "        if let sendAsPeers = interfaceState.sendAsPeers, !sendAsPeers.isEmpty && interfaceState.editMessageState == nil {",
+    "new": "        if !ExteraPreferences.standard.value(for: ExteraSettings.hideSendAsPeer), let sendAsPeers = interfaceState.sendAsPeers, !sendAsPeers.isEmpty && interfaceState.editMessageState == nil {",
+    "occurrences": 3
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/Sources/ChatTextInputPanelNode.swift",
+    "old": "self.accessoryItemButtons = updatedButtons",
+    "new": "self.accessoryItemButtons = updatedButtons\n                self.updateExteraSendAsGestures()",
+    "occurrences": 2
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/Sources/ChatTextInputPanelNode.swift",
+    "old": "    @objc func sendAsAvatarButtonPressed() {",
+    "new": "    private func updateExteraSendAsGestures() {\n        let enabled = ExteraPreferences.standard.value(for: ExteraSettings.hideSendAsPeer)\n            && self.presentationInterfaceState?.sendAsPeers?.isEmpty == false\n            && self.presentationInterfaceState?.editMessageState == nil\n        for (item, button) in self.accessoryItemButtons {\n            let isInput: Bool\n            if case .input = item { isInput = true } else { isInput = false }\n            var gestures = (button.gestureRecognizers ?? []).filter { $0.name == \"ExteraSendAsLongPress\" }\n            if isInput && gestures.isEmpty {\n                let gesture = UILongPressGestureRecognizer(target: self, action: #selector(self.exteraSendAsLongPressed(_:)))\n                gesture.name = \"ExteraSendAsLongPress\"\n                button.addGestureRecognizer(gesture)\n                gestures.append(gesture)\n            }\n            for gesture in gestures { gesture.isEnabled = enabled && isInput }\n        }\n    }\n\n    @objc private func exteraSendAsLongPressed(_ gesture: UILongPressGestureRecognizer) {\n        guard gesture.state == .began,\n              ExteraPreferences.standard.value(for: ExteraSettings.hideSendAsPeer),\n              let state = self.presentationInterfaceState, state.editMessageState == nil,\n              state.sendAsPeers?.isEmpty == false, let button = gesture.view,\n              let current = self.accessoryItemButtons.first(where: { $0.1 === button }),\n              case .input = current.0 else { return }\n        if self.exteraSendAsReferenceNode.supernode == nil {\n            self.exteraSendAsReferenceNode.isUserInteractionEnabled = false\n            self.addSubnode(self.exteraSendAsReferenceNode)\n        }\n        self.exteraSendAsReferenceNode.frame = self.view.convert(button.bounds, from: button)\n        self.interfaceInteraction?.openSendAsPeer(self.exteraSendAsReferenceNode, nil)\n    }\n\n    @objc func sendAsAvatarButtonPressed() {",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatTextInputPanelNode/Sources/ChatTextInputPanelNode.swift",
+    "old": "        var removeAccessoryButtons: [AccessoryItemIconButton]?",
+    "new": "        self.updateExteraSendAsGestures()\n        var removeAccessoryButtons: [AccessoryItemIconButton]?",
+    "occurrences": 1
+  }
+]

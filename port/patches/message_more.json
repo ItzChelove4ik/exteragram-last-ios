@@ -1,0 +1,68 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/Chat/ChatControllerLoadDisplayNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/BUILD",
+    "old": "        \"//third-party/recaptcha:RecaptchaEnterprise\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//third-party/recaptcha:RecaptchaEnterprise\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/Chat/ChatControllerLoadDisplayNode.swift",
+    "old": "        historyNode.beganDragging = { [weak self] in\n            guard let self else {\n                return\n            }\n",
+    "new": "        historyNode.beganDragging = { [weak self] in\n            guard let self else {\n                return\n            }\n            if ExteraPreferences.standard.value(for: ExteraSettings.hideKeyboardOnScroll) {\n                self.chatDisplayNode.dismissInput()\n            }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatEmptyNode/Sources/ChatEmptyNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatEmptyNode/BUILD",
+    "old": "    deps = [\n",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatEmptyNode/Sources/ChatEmptyNode.swift",
+    "old": "        if let item = self.stickerItem, previousCustomStickerFile == customStickerFile {",
+    "new": "        let hideGreetingSticker = ExteraPreferences.standard.value(for: ExteraSettings.disableGreetingSticker)\n        self.stickerNode.isHidden = hideGreetingSticker\n        if hideGreetingSticker {\n            self.disposable.set(nil)\n            self.didSetupSticker = false\n            self.stickerItem = nil\n            self.stickerNode.isVisibleInGrid = false\n            self.stickerNode.updateIsPanelVisible(false)\n            stickerSize = .zero\n        }\n        if !hideGreetingSticker, let item = self.stickerItem, previousCustomStickerFile == customStickerFile {",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatEmptyNode/Sources/ChatEmptyNode.swift",
+    "old": "        } else if !self.didSetupSticker || previousCustomStickerFile != customStickerFile {",
+    "new": "        } else if !hideGreetingSticker && (!self.didSetupSticker || previousCustomStickerFile != customStickerFile) {",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatEmptyNode/Sources/ChatEmptyNode.swift",
+    "old": "        let stickerSpacing: CGFloat = 5.0",
+    "new": "        let stickerSpacing: CGFloat = hideGreetingSticker ? 0.0 : 5.0",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatEmptyNode/Sources/ChatEmptyNode.swift",
+    "old": "    @objc private func stickerTapGesture(_ gestureRecognizer: UITapGestureRecognizer) {\n        guard let stickerItem = self.stickerItem else {",
+    "new": "    @objc private func stickerTapGesture(_ gestureRecognizer: UITapGestureRecognizer) {\n        guard !ExteraPreferences.standard.value(for: ExteraSettings.disableGreetingSticker), let stickerItem = self.stickerItem else {",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TextFormat/Sources/StringWithAppliedEntities.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TextFormat/Sources/StringWithAppliedEntities.swift",
+    "old": "    let baseQuoteTintColor = baseQuoteTintColor ?? baseColor",
+    "new": "    let text = ExteraPreferences.standard.value(for: ExteraSettings.filterZalgo) ? ExteraTextFilter.filterZalgo(text) : text\n    let baseQuoteTintColor = baseQuoteTintColor ?? baseColor",
+    "occurrences": 1
+  }
+]

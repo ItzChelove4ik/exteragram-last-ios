@@ -1,0 +1,128 @@
+[
+  {
+    "path": "submodules/TelegramPresentationData/Sources/NumericFormat.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramPresentationData/Sources/NumericFormat.swift",
+    "old": "public func compactNumericCountString(_ count: Int, decimalSeparator: String = \".\", showDecimalPart: Bool = true) -> String {\n",
+    "new": "public func compactNumericCountString(_ count: Int, decimalSeparator: String = \".\", showDecimalPart: Bool = true) -> String {\n    if ExteraPreferences.standard.value(for: ExteraSettings.disableNumberRounding) {\n        return String(count)\n    }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramPresentationData/BUILD",
+    "old": "    deps = [\n        \"//submodules/TelegramCore:TelegramCore\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/TelegramCore:TelegramCore\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TextFormat/Sources/DateFormat.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TextFormat/Sources/DateFormat.swift",
+    "old": "    return stringForShortTimestamp(hours: timeinfo.tm_hour, minutes: timeinfo.tm_min, seconds: withSeconds ? timeinfo.tm_sec : nil, dateTimeFormat: dateTimeFormat)",
+    "new": "    let showSeconds = withSeconds || ExteraPreferences.standard.value(for: ExteraSettings.formatTimeWithSeconds)\n    return stringForShortTimestamp(hours: timeinfo.tm_hour, minutes: timeinfo.tm_min, seconds: showSeconds ? timeinfo.tm_sec : nil, dateTimeFormat: dateTimeFormat)",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TextFormat/BUILD",
+    "old": "    deps = [\n        \"//submodules/SSignalKit/SwiftSignalKit\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/SSignalKit/SwiftSignalKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageDateAndStatusNode/Sources/ChatMessageDateAndStatusNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageDateAndStatusNode/Sources/ChatMessageDateAndStatusNode.swift",
+    "old": "                    updatedDateText = \"\\(arguments.presentationData.strings.Conversation_MessageEditedLabel) \\(updatedDateText)\"",
+    "new": "                    let editedLabel = ExteraPreferences.standard.value(for: ExteraSettings.replaceEditedWithIcon) ? \"✎\" : arguments.presentationData.strings.Conversation_MessageEditedLabel\n                    updatedDateText = \"\\(editedLabel) \\(updatedDateText)\"",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageDateAndStatusNode/BUILD",
+    "old": "    deps = [\n        \"//submodules/AsyncDisplayKit\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/AsyncDisplayKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageBubbleItemNode/Sources/ChatMessageBubbleItemNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageBubbleItemNode/Sources/ChatMessageBubbleItemNode.swift",
+    "old": "        if isUnsupportedContent {\n            needsShareButton = false\n            needsSummarizeButton = false\n            allowFullWidth = true\n        }\n\n        var tmpWidth: CGFloat",
+    "new": "        if isUnsupportedContent {\n            needsShareButton = false\n            needsSummarizeButton = false\n            allowFullWidth = true\n        }\n\n        // Sponsored-message action buttons have separate semantics from forwarding.\n        if !isAd && ExteraPreferences.standard.value(for: ExteraSettings.hideShareButton) {\n            needsShareButton = false\n        }\n\n        var tmpWidth: CGFloat",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageBubbleItemNode/BUILD",
+    "old": "    deps = [\n        \"//submodules/AsyncDisplayKit\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/AsyncDisplayKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageStickerItemNode/Sources/ChatMessageStickerItemNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageStickerItemNode/Sources/ChatMessageStickerItemNode.swift",
+    "old": "            if Namespaces.Message.allEphemeral.contains(item.message.id.namespace) || Namespaces.Message.allWelcomeMessages.contains(item.message.id.namespace) {\n                needsShareButton = false\n            }\n",
+    "new": "            if Namespaces.Message.allEphemeral.contains(item.message.id.namespace) || Namespaces.Message.allWelcomeMessages.contains(item.message.id.namespace) {\n                needsShareButton = false\n            }\n            if ExteraPreferences.standard.value(for: ExteraSettings.hideShareButton) {\n                needsShareButton = false\n            }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageStickerItemNode/BUILD",
+    "old": "    deps = [\n        \"//submodules/AsyncDisplayKit\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/AsyncDisplayKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageAnimatedStickerItemNode/Sources/ChatMessageAnimatedStickerItemNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageAnimatedStickerItemNode/Sources/ChatMessageAnimatedStickerItemNode.swift",
+    "old": "            if Namespaces.Message.allEphemeral.contains(item.message.id.namespace) || Namespaces.Message.allWelcomeMessages.contains(item.message.id.namespace) {\n                needsShareButton = false\n            }\n",
+    "new": "            if Namespaces.Message.allEphemeral.contains(item.message.id.namespace) || Namespaces.Message.allWelcomeMessages.contains(item.message.id.namespace) {\n                needsShareButton = false\n            }\n            if ExteraPreferences.standard.value(for: ExteraSettings.hideShareButton) {\n                needsShareButton = false\n            }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageAnimatedStickerItemNode/BUILD",
+    "old": "    deps = [\n        \"//submodules/AsyncDisplayKit\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/AsyncDisplayKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInstantVideoItemNode/Sources/ChatMessageInstantVideoItemNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInstantVideoItemNode/Sources/ChatMessageInstantVideoItemNode.swift",
+    "old": "            if let subject = item.associatedData.subject, case .messageOptions = subject {\n                needsShareButton = false\n            }\n            \n            var layoutInsets = layoutConstants.instantVideo.insets",
+    "new": "            if let subject = item.associatedData.subject, case .messageOptions = subject {\n                needsShareButton = false\n            }\n            if ExteraPreferences.standard.value(for: ExteraSettings.hideShareButton) {\n                needsShareButton = false\n            }\n            \n            var layoutInsets = layoutConstants.instantVideo.insets",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInstantVideoItemNode/BUILD",
+    "old": "    deps = [\n        \"//submodules/AsyncDisplayKit\",",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/AsyncDisplayKit\",",
+    "occurrences": 1
+  }
+]

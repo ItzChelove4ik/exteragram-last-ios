@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+build/
+artifacts/
+__pycache__/
+*.pyc
+.DS_Store
+*.ipa
+*.xcarchive/
+*.mobileprovision
+*.p12
+*.p8
+.env

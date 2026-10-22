@@ -1,0 +1,80 @@
+[
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoScreen.swift",
+    "old": "enum PeerInfoSettingsSection {\n",
+    "new": "enum PeerInfoSettingsSection {\n    case exteraGram\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoSettingsItems.swift",
+    "old": "    let notificationsWarning: Bool\n",
+    "new": "    items[.advanced]!.append(PeerInfoScreenDisclosureItem(id: 9001, text: \"exteraGram Lite\", icon: PresentationResourcesSettings.appearance, action: {\n        interaction.openSettings(.exteraGram)\n    }))\n\n    let notificationsWarning: Bool\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/PeerInfo/PeerInfoScreen/Sources/PeerInfoScreenSettingsActions.swift",
+    "old": "        switch section {\n",
+    "new": "        switch section {\n        case .exteraGram:\n            push(exteraGramPreferencesController(context: self.context))\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/SettingsUI/BUILD",
+    "old": "        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/ExteraResources:ExteraResources\",\n        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/ChatListUI/BUILD",
+    "old": "        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/Display/BUILD",
+    "old": "    \t\"//submodules/ObjCRuntimeUtils:ObjCRuntimeUtils\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n    \t\"//submodules/ObjCRuntimeUtils:ObjCRuntimeUtils\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/ChatListUI/Sources/ChatListControllerNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/ChatListUI/Sources/ChatListController.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/Display/Source/HapticFeedback.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/ChatListUI/Sources/ChatListControllerNode.swift",
+    "old": "func shouldDisplayStoriesInChatListHeader(storySubscriptions: EngineStorySubscriptions, isHidden: Bool) -> Bool {\n",
+    "new": "func shouldDisplayStoriesInChatListHeader(storySubscriptions: EngineStorySubscriptions, isHidden: Bool) -> Bool {\n    if ExteraPreferences.standard.value(for: ExteraSettings.hideStories) {\n        return false\n    }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/ChatListUI/Sources/ChatListController.swift",
+    "old": "    override public func viewDidAppear(_ animated: Bool) {\n        super.viewDidAppear(animated)\n",
+    "new": "    override public func viewDidAppear(_ animated: Bool) {\n        super.viewDidAppear(animated)\n        self.requestLayout(transition: .immediate)\n        if ExteraPreferences.standard.value(for: ExteraSettings.hideStories) {\n            self.chatListDisplayNode.scrollToTopIfStoriesAreExpanded()\n        }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/Display/Source/HapticFeedback.swift",
+    "old": "    private func withImpl(_ f: (HapticFeedbackImpl) -> Void) {\n",
+    "new": "    private func withImpl(_ f: (HapticFeedbackImpl) -> Void) {\n        guard ExteraPreferences.standard.value(for: ExteraSettings.inAppVibration) else { return }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/Display/Source/HapticFeedback.swift",
+    "old": "        try self.engine.start()\n        try self.player.start(atTime: 0)\n",
+    "new": "        if ExteraPreferences.standard.value(for: ExteraSettings.inAppVibration) {\n            try self.engine.start()\n            try self.player.start(atTime: 0)\n        }\n",
+    "occurrences": 1
+  }
+]

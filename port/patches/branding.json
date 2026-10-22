@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Telegram/BUILD",
+    "old": "    <key>CFBundleDisplayName</key>\n    <string>Telegram</string>",
+    "new": "    <key>CFBundleDisplayName</key>\n    <string>exteraGram Lite</string>",
+    "occurrences": 2
+  },
+  {
+    "path": "Telegram/BUILD",
+    "old": "    <key>CFBundleIdentifier</key>\n    <string>{telegram_bundle_id}</string>\n    <key>CFBundleName</key>\n    <string>Telegram</string>",
+    "new": "    <key>CFBundleIdentifier</key>\n    <string>{telegram_bundle_id}</string>\n    <key>CFBundleName</key>\n    <string>exteraGram Lite</string>",
+    "occurrences": 1
+  }
+]

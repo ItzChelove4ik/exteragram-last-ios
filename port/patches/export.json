@@ -1,0 +1,20 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/ChatInterfaceStateContextMenus.swift",
+    "old": "        var didRateAudioTranscription = false",
+    "new": "        if !chatPresentationInterfaceState.copyProtectionEnabled, let exportAction = exteraExportContextMenuItem(context: context, message: message, controllerInteraction: controllerInteraction, locale: chatPresentationInterfaceState.strings.baseLanguageCode) {\n            actions.append(exportAction)\n        }\n\n        var didRateAudioTranscription = false",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/BUILD",
+    "old": "        \"//submodules/Media/LocalAudioTranscription:LocalAudioTranscription\",",
+    "new": "        \"//submodules/ExteraExport:ExteraExport\",\n        \"//submodules/Media/LocalAudioTranscription:LocalAudioTranscription\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/BUILD",
+    "old": "        \"//submodules/MediaPreuploadRegistry:MediaPreuploadRegistry\",",
+    "new": "        \"//submodules/ExteraExport:ExteraExport\",\n        \"//submodules/MediaPreuploadRegistry:MediaPreuploadRegistry\",",
+    "occurrences": 1
+  }
+]

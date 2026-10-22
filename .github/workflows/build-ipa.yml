@@ -1,0 +1,59 @@
+name: Build IPA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ipa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select available Xcode 26
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, subprocess
+          candidates = list(Path('/Applications').glob('Xcode_26*.app'))
+          if not candidates:
+              raise SystemExit('Xcode 26 is required')
+          selected = max(candidates, key=lambda p: tuple(map(int, re.findall(r'\d+', p.name))))
+          subprocess.run(['sudo', 'xcode-select', '-s', str(selected / 'Contents/Developer')], check=True)
+          PY
+          xcodebuild -version
+      - name: Test port modules
+        run: |
+          for package in ios/Extera*; do
+            swift test --package-path "$package"
+          done
+      - name: Fetch pinned Telegram and integrate port
+        run: python3 -u scripts/prepare_upstream.py
+      - name: Compile unsigned arm64 IPA
+        env:
+          TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+          TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+        run: python3 -u scripts/build_ipa.py --build-number "${{ github.run_number }}"
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: exteraGram-Lite-unsigned-IPA
+          path: artifacts/*.ipa
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish downloadable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "build-${{ github.run_number }}" artifacts/*.ipa \
+            --title "exteraGram Lite вЂ” build ${{ github.run_number }}" \
+            --target "${{ github.sha }}" \
+            --notes "Unsigned arm64 IPA based on the pinned Telegram iOS source with the included exteraGram Lite port. Sign before installing. Feature parity with Android is incomplete; App Groups and push notifications depend on your signing profile."

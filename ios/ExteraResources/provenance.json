@@ -1,0 +1,253 @@
+{
+  "apk_sha256": "adbead84d31057fbe2d58433fe4f51f09463eb0c007d82ae28df2344462777ed",
+  "locales": [
+    {
+      "locale": "ar",
+      "source_member": "assets/extera_locales/values-ar/extera.xml",
+      "source_entries": 396,
+      "output_entries": 396,
+      "sha256": "5d0f475ab35dd00cca1c69adf674b16373d3c442a72d0966c4a3e7ab2fb0b172"
+    },
+    {
+      "locale": "az",
+      "source_member": "assets/extera_locales/values-az/extera.xml",
+      "source_entries": 144,
+      "output_entries": 144,
+      "sha256": "3d5c967954b53ce68bacd9dbdc36b63cd3fac2047a0c88b301f1c93914e8bfb9"
+    },
+    {
+      "locale": "be",
+      "source_member": "assets/extera_locales/values-be/extera.xml",
+      "source_entries": 574,
+      "output_entries": 574,
+      "sha256": "4a11b87c8f426c0f4e28324487f943bd43197969f4837a0e37fbf57f78f45e7e"
+    },
+    {
+      "locale": "ca",
+      "source_member": "assets/extera_locales/values-ca/extera.xml",
+      "source_entries": 562,
+      "output_entries": 562,
+      "sha256": "d615e1d61968ea0cadc1d248939d6bed6d767b8acd52716be1b57cf39d5a0fa0"
+    },
+    {
+      "locale": "cs",
+      "source_member": "assets/extera_locales/values-cs/extera.xml",
+      "source_entries": 563,
+      "output_entries": 563,
+      "sha256": "430c91161d346d1958dcdf211e9c0355479fc74bd19a597c498c8accca610cfd"
+    },
+    {
+      "locale": "de",
+      "source_member": "assets/extera_locales/values-de/extera.xml",
+      "source_entries": 542,
+      "output_entries": 542,
+      "sha256": "1671d916abaef9bfc159ceea80bfc4a17e228b65b9951f7d18923de30d16ff50"
+    },
+    {
+      "locale": "es",
+      "source_member": "assets/extera_locales/values-es/extera.xml",
+      "source_entries": 556,
+      "output_entries": 556,
+      "sha256": "1f20922fc8deec851a4673443d202b1ef3fefc0e085f1227193e6fb38d50048d"
+    },
+    {
+      "locale": "fa",
+      "source_member": "assets/extera_locales/values-fa/extera.xml",
+      "source_entries": 612,
+      "output_entries": 612,
+      "sha256": "03a0f969dbb07e9977f03d490ae7d176f4dc245b44a38205a94b804cc6cbcee9"
+    },
+    {
+      "locale": "fi",
+      "source_member": "assets/extera_locales/values-fi/extera.xml",
+      "source_entries": 569,
+      "output_entries": 569,
+      "sha256": "620316dd9bcdcabda040b053042e408eaa9a830024124d0b4f88263a50bc5ab9"
+    },
+    {
+      "locale": "fr",
+      "source_member": "assets/extera_locales/values-fr/extera.xml",
+      "source_entries": 551,
+      "output_entries": 551,
+      "sha256": "bbc374075f817a97f8270541e9eb7656b3f470378df4e1e15f0f60918224849a"
+    },
+    {
+      "locale": "hr",
+      "source_member": "assets/extera_locales/values-hr/extera.xml",
+      "source_entries": 564,
+      "output_entries": 564,
+      "sha256": "3a614c8d47190d8389266204b4c89f09f610579a30198bcb10733ac2f5320994"
+    },
+    {
+      "locale": "hu",
+      "source_member": "assets/extera_locales/values-hu/extera.xml",
+      "source_entries": 569,
+      "output_entries": 569,
+      "sha256": "fdb3ca14d701f4c39e2334ced4e1b3d3a57e300548d81f00cef4af89d61fda66"
+    },
+    {
+      "locale": "id",
+      "source_member": "assets/extera_locales/values-in/extera.xml",
+      "source_entries": 547,
+      "output_entries": 547,
+      "sha256": "c1b9440a684f4e6245f369b893a66df2aed32ee249cb2d33f9012b20659171e4"
+    },
+    {
+      "locale": "it",
+      "source_member": "assets/extera_locales/values-it/extera.xml",
+      "source_entries": 557,
+      "output_entries": 557,
+      "sha256": "de34602a9d1922f33a0d8c067d027155c2e2efdc0e2e6cbf2a1dbaaa2d135372"
+    },
+    {
+      "locale": "he",
+      "source_member": "assets/extera_locales/values-iw/extera.xml",
+      "source_entries": 653,
+      "output_entries": 653,
+      "sha256": "c1c8f3cb7d840d3fec382ed497c6ffdb08a522167a3901d4e49353715cfae5c7"
+    },
+    {
+      "locale": "ja",
+      "source_member": "assets/extera_locales/values-ja/extera.xml",
+      "source_entries": 558,
+      "output_entries": 558,
+      "sha256": "57d2675c1f5efa5afe17fa031e25b656a263048c128da5924b3e5f6d0ccbbe46"
+    },
+    {
+      "locale": "kk",
+      "source_member": "assets/extera_locales/values-kk/extera.xml",
+      "source_entries": 576,
+      "output_entries": 576,
+      "sha256": "759eb4ad1c0b8530fdc4de9e0de424c0dc1c9ac789a07933ddb2cc06e0f70f3c"
+    },
+    {
+      "locale": "ko",
+      "source_member": "assets/extera_locales/values-ko/extera.xml",
+      "source_entries": 570,
+      "output_entries": 570,
+      "sha256": "d3101a1148ff86a6e819b5926db8986b9b87b73fd33788f7f8ccaff92d1e8dd0"
+    },
+    {
+      "locale": "ms",
+      "source_member": "assets/extera_locales/values-ms/extera.xml",
+      "source_entries": 560,
+      "output_entries": 560,
+      "sha256": "f6bd4feedac69bdcace737f5a49828f9fbd4ec0c37b83b289df85ff1c4a8a06f"
+    },
+    {
+      "locale": "nb",
+      "source_member": "assets/extera_locales/values-nb/extera.xml",
+      "source_entries": 562,
+      "output_entries": 562,
+      "sha256": "926cf56a80afba6effe8c2468b46c87396b4fbe87d2bfb3087a7a4a2dafd14f7"
+    },
+    {
+      "locale": "nl",
+      "source_member": "assets/extera_locales/values-nl/extera.xml",
+      "source_entries": 550,
+      "output_entries": 550,
+      "sha256": "672c9b0be270c893446045c698b36a97af0fde2e3d344cf4c05bf77777ce574d"
+    },
+    {
+      "locale": "pl",
+      "source_member": "assets/extera_locales/values-pl/extera.xml",
+      "source_entries": 678,
+      "output_entries": 678,
+      "sha256": "75912e93b9d4c61b59b5e701765098e79b68e95221a482f5ef9b7adf8a336fea"
+    },
+    {
+      "locale": "pt-BR",
+      "source_member": "assets/extera_locales/values-pt-rBR/extera.xml",
+      "source_entries": 647,
+      "output_entries": 647,
+      "sha256": "a9c830a1a8baeb6d69367e8cc6e8ecc6cd33ba0a000225f0e245642c1e434207"
+    },
+    {
+      "locale": "ro",
+      "source_member": "assets/extera_locales/values-ro/extera.xml",
+      "source_entries": 561,
+      "output_entries": 561,
+      "sha256": "cb9436bde3d9087165c0ce1f0ee67b4f23f6d47e5241d588b0f77654f940555f"
+    },
+    {
+      "locale": "ru",
+      "source_member": "assets/extera_locales/values-ru/extera.xml",
+      "source_entries": 678,
+      "output_entries": 678,
+      "sha256": "40999ede06801d65dec39ec82e1389e1eb118c7d6e01d801d4896c55efcd4bb9"
+    },
+    {
+      "locale": "sk",
+      "source_member": "assets/extera_locales/values-sk/extera.xml",
+      "source_entries": 564,
+      "output_entries": 564,
+      "sha256": "703be59400d0d2498de49c745e5b3affd061548379b3dd555a0d5889e1ac3680"
+    },
+    {
+      "locale": "sr",
+      "source_member": "assets/extera_locales/values-sr/extera.xml",
+      "source_entries": 559,
+      "output_entries": 559,
+      "sha256": "8afa0bba9adedaee1c3c1e157eb8b0e8750f26fd01cc56a3d0122ae4ad64d55c"
+    },
+    {
+      "locale": "sv",
+      "source_member": "assets/extera_locales/values-sv/extera.xml",
+      "source_entries": 557,
+      "output_entries": 557,
+      "sha256": "d450a17445306e8c60a7b3918b58f2c00b714b07a897b1eda21f79c015faf1fc"
+    },
+    {
+      "locale": "tr",
+      "source_member": "assets/extera_locales/values-tr/extera.xml",
+      "source_entries": 648,
+      "output_entries": 648,
+      "sha256": "4c6d1dc9d643114c310b785f53c25b6847173bcecc63a306e3d9dd5004d401c6"
+    },
+    {
+      "locale": "uk",
+      "source_member": "assets/extera_locales/values-uk/extera.xml",
+      "source_entries": 666,
+      "output_entries": 666,
+      "sha256": "16b700c1ea388e1beaaddc3090a92d25a8c3af10a148c81b2475b38357aeae57"
+    },
+    {
+      "locale": "uz",
+      "source_member": "assets/extera_locales/values-uz/extera.xml",
+      "source_entries": 633,
+      "output_entries": 633,
+      "sha256": "0d27ce56fa64efe98595fd77a8b0147782b3c3c6d02e63e40af1d33fec7ed580"
+    },
+    {
+      "locale": "zh-Hans",
+      "source_member": "assets/extera_locales/values-zh-rCN/extera.xml",
+      "source_entries": 580,
+      "output_entries": 580,
+      "sha256": "3e7d139681ddb3f1a3f1359f3279e3da23f45977b650d203c8ad335ddbac512d"
+    },
+    {
+      "locale": "zh-Hant",
+      "source_member": "assets/extera_locales/values-zh-rTW/extera.xml",
+      "source_entries": 144,
+      "output_entries": 144,
+      "sha256": "4e14be8cb97e5b3e9b64f619b31882d41cb3659442c31dabda36dd3d1d53e835"
+    },
+    {
+      "locale": "en",
+      "source_member": "assets/extera_locales/values/extera.xml",
+      "source_entries": 715,
+      "output_entries": 715,
+      "sha256": "f0599f29c964eb84de24b8d72f33f0b2739696ba2ebf95626228dd41af81035c"
+    }
+  ],
+  "format_issues": [],
+  "roundtrip_validation": "passed",
+  "apple_compiler_validation": {
+    "status": "passed",
+    "platform": "GitHub macOS 26",
+    "tests": 5,
+    "port_commit": "8c28d4fb598cbbf15b7af3dd012d5e5c5ca8c58c",
+    "workflow_run": "https://github.com/w3b-code/exteragram-lite-ios/actions/runs/39465848539",
+    "scope": "Swift package tests; device application build and physical iPhone checks remain pending"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "artifact": "exteraGram-lite-universal-20261004.apk",
+  "artifact_sha256": "adbead84d31057fbe2d58433fe4f51f09463eb0c007d82ae28df2344462777ed",
+  "evidence_type": "focused static decompilation; runtime unverified",
+  "tool": "jadx-headless-mcp-0.7.1-all.jar",
+  "tool_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+  "observations": {
+    "ExportSettings.format": "Json",
+    "ExportSettings.singlePeerFrom": 0,
+    "ExportSettings.singlePeerTill": 0,
+    "ExportSettings.media.type": 1,
+    "ExportSettings.media.sizeLimit": 8388608,
+    "AbstractWriter.Format": [
+      "Html",
+      "Json",
+      "HtmlAndJson"
+    ],
+    "JsonWriter.files": [
+      "result.json",
+      "info.json",
+      "messagesN.json"
+    ],
+    "JsonWriter.messages_per_numbered_file": 100,
+    "ExportRequestsController": [
+      "offset/limit messages.getHistory",
+      "InvokeWithTakeoutWrapper",
+      "FinishTakeoutSession"
+    ]
+  },
+  "unknowns": [
+    "No Android export was executed.",
+    "Transitive JADX ConstructorVisitor error in HtmlWriter.getTextFromAction; exact service-action HTML behavior unresolved.",
+    "Exact Android JSON serializer schema was not reconstructed; the iOS schema is explicitly different."
+  ],
+  "ios_adaptation": [
+    "All available cloud history for one supported peer up to a first-page upper ID bound.",
+    "Text and document/photo metadata only; no attachment binaries or Takeout account export.",
+    "Explicit unsupported secret/forum/monoforum peers, migration history excluded, ephemeral messages counted and omitted.",
+    "RPC and pagination failures cannot become empty successful end pages.",
+    "100000 record and 20 MiB conservative content budget fail explicitly without partial-success output."
+  ]
+}

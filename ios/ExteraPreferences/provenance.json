@@ -1,0 +1,1141 @@
+{
+  "apk_sha256": "adbead84d31057fbe2d58433fe4f51f09463eb0c007d82ae28df2344462777ed",
+  "included": [
+    {
+      "property": "translationProvider",
+      "storage_key": "translationProvider",
+      "swift_type": "Int32",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "0aa7"
+    },
+    {
+      "property": "disableNumberRounding",
+      "storage_key": "disableNumberRounding",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0ab6"
+    },
+    {
+      "property": "formatTimeWithSeconds",
+      "storage_key": "formatTimeWithSeconds",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0ac3"
+    },
+    {
+      "property": "relativeLastSeen",
+      "storage_key": "relativeLastSeen",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0ad0"
+    },
+    {
+      "property": "inAppVibration",
+      "storage_key": "inAppVibration",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0add"
+    },
+    {
+      "property": "disableNotificationDelay",
+      "storage_key": "disableNotificationDelay",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0aea"
+    },
+    {
+      "property": "filterZalgo",
+      "storage_key": "filterZalgo",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0af7"
+    },
+    {
+      "property": "downloadSpeedBoost",
+      "storage_key": "downloadSpeedBoost",
+      "swift_type": "Int32",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "0b04"
+    },
+    {
+      "property": "uploadSpeedBoost",
+      "storage_key": "uploadSpeedBoost",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0b11"
+    },
+    {
+      "property": "hidePhoneNumber",
+      "storage_key": "hidePhoneNumber",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0b1e"
+    },
+    {
+      "property": "showIdAndDc",
+      "storage_key": "showIdAndDc",
+      "swift_type": "Int32",
+      "default": 1,
+      "dex_constructor_code_unit_offset": "0b2b"
+    },
+    {
+      "property": "hideArchiveFolder",
+      "storage_key": "hideArchiveFolder",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0b38"
+    },
+    {
+      "property": "archiveOnPull",
+      "storage_key": "archiveOnPull",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0b45"
+    },
+    {
+      "property": "disableUnarchiveSwipe",
+      "storage_key": "disableUnarchiveSwipe",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0b52"
+    },
+    {
+      "property": "doNotUseProxy",
+      "storage_key": "doNotUseProxy",
+      "swift_type": "Int32",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "0b5f"
+    },
+    {
+      "property": "customSavePath",
+      "storage_key": "customSavePath",
+      "swift_type": "String",
+      "default": "exteraGram",
+      "dex_constructor_code_unit_offset": "0b6e"
+    },
+    {
+      "property": "editingIconPackId",
+      "storage_key": "editingIconPackId",
+      "swift_type": "String?",
+      "default": null,
+      "dex_constructor_code_unit_offset": "0b98"
+    },
+    {
+      "property": "avatarCorners",
+      "storage_key": "avatarCorners",
+      "swift_type": "Float",
+      "default": 28.0,
+      "dex_constructor_code_unit_offset": "0bb5"
+    },
+    {
+      "property": "singleCornerRadius",
+      "storage_key": "singleCornerRadius",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0bc2"
+    },
+    {
+      "property": "forceSnow",
+      "storage_key": "forceSnow",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0bde"
+    },
+    {
+      "property": "hideActionBarStatus",
+      "storage_key": "hideActionBarStatus",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0beb"
+    },
+    {
+      "property": "centerTitle",
+      "storage_key": "centerTitle",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0bfa"
+    },
+    {
+      "property": "hideStories",
+      "storage_key": "hideStories",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0c09"
+    },
+    {
+      "property": "hideFloatingButton",
+      "storage_key": "hideFloatingButton",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0c18"
+    },
+    {
+      "property": "hideDialogsSearchBar",
+      "storage_key": "hideDialogsSearchBar",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0c27"
+    },
+    {
+      "property": "senderMiniAvatars",
+      "storage_key": "senderMiniAvatars",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0c36"
+    },
+    {
+      "property": "titleText",
+      "storage_key": "titleText",
+      "swift_type": "Int32",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "0c45"
+    },
+    {
+      "property": "hideAllChats",
+      "storage_key": "hideAllChats",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0c76"
+    },
+    {
+      "property": "squareFab",
+      "storage_key": "squareFab",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0c85"
+    },
+    {
+      "property": "sectionRadius",
+      "storage_key": "sectionRadius",
+      "swift_type": "Float",
+      "default": 20.0,
+      "dex_constructor_code_unit_offset": "0c96"
+    },
+    {
+      "property": "sectionsSeparatedHeadersPreference",
+      "storage_key": "sectionsSeparatedHeaders",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0ca8"
+    },
+    {
+      "property": "newLoadingStyle",
+      "storage_key": "newLoadingStyle",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0cb7"
+    },
+    {
+      "property": "newSliderStyle",
+      "storage_key": "newSliderStyle",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0cc6"
+    },
+    {
+      "property": "newSwitchStyle",
+      "storage_key": "newSwitchStyle",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0cd5"
+    },
+    {
+      "property": "newChatHeaderStyle",
+      "storage_key": "newChatHeaderStyle",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0ce4"
+    },
+    {
+      "property": "newNavigationBarStyle",
+      "storage_key": "newNavigationBarStyle",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0cf3"
+    },
+    {
+      "property": "newFabStyle",
+      "storage_key": "newFabStyle",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0d02"
+    },
+    {
+      "property": "tabletMode",
+      "storage_key": "tabletMode",
+      "swift_type": "Int32",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "0d11"
+    },
+    {
+      "property": "useSystemFonts",
+      "storage_key": "useSystemFonts",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0d20"
+    },
+    {
+      "property": "gooeyAvatarAnimation",
+      "storage_key": "gooeyAvatarAnimation",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0d2f"
+    },
+    {
+      "property": "customThemes",
+      "storage_key": "customThemes",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0d3e"
+    },
+    {
+      "property": "predictiveBackIntensity",
+      "storage_key": "predictiveBackIntensity",
+      "swift_type": "Float",
+      "default": 1.0,
+      "dex_constructor_code_unit_offset": "0d4f"
+    },
+    {
+      "property": "glassMessageMenu",
+      "storage_key": "glassMessageMenu",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0d80"
+    },
+    {
+      "property": "forceBlur",
+      "storage_key": "forceBlur",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0d8f"
+    },
+    {
+      "property": "eventType",
+      "storage_key": "eventType",
+      "swift_type": "Int32",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "0d9e"
+    },
+    {
+      "property": "navigationDrawer",
+      "storage_key": "navigationDrawer",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0dad"
+    },
+    {
+      "property": "immersiveDrawerAnimation",
+      "storage_key": "immersiveDrawerAnimation",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0dbc"
+    },
+    {
+      "property": "showFeedTab",
+      "storage_key": "showFeedTab",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0dcb"
+    },
+    {
+      "property": "showFeedUnreadCounter",
+      "storage_key": "showFeedUnreadCounter",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0dda"
+    },
+    {
+      "property": "stickerSize",
+      "storage_key": "stickerSize",
+      "swift_type": "Float",
+      "default": 12.0,
+      "dex_constructor_code_unit_offset": "0df9"
+    },
+    {
+      "property": "replyColors",
+      "storage_key": "replyColors",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0e19"
+    },
+    {
+      "property": "replyEmoji",
+      "storage_key": "replyEmoji",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0e28"
+    },
+    {
+      "property": "replyBackground",
+      "storage_key": "replyBackground",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0e37"
+    },
+    {
+      "property": "stickerShape",
+      "storage_key": "stickerShape",
+      "swift_type": "Int32",
+      "default": 1,
+      "dex_constructor_code_unit_offset": "0e46"
+    },
+    {
+      "property": "unlimitedRecentStickers",
+      "storage_key": "unlimitedRecentStickers",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0e55"
+    },
+    {
+      "property": "hideReactionsInPrivateChats",
+      "storage_key": "hideReactionsInPrivateChats",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0e64"
+    },
+    {
+      "property": "hideReactionsInChannels",
+      "storage_key": "hideReactionsInChannels",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0e73"
+    },
+    {
+      "property": "hideReactionsInGroups",
+      "storage_key": "hideReactionsInGroups",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0e82"
+    },
+    {
+      "property": "swipeActions",
+      "storage_key": "swipeActions",
+      "swift_type": "String",
+      "default": "2",
+      "dex_constructor_code_unit_offset": "0eb1"
+    },
+    {
+      "property": "swipeActionsLoop",
+      "storage_key": "swipeActionsLoop",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0ec0"
+    },
+    {
+      "property": "swipeActionsReversed",
+      "storage_key": "swipeActionsReversed",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0ecf"
+    },
+    {
+      "property": "bottomButton",
+      "storage_key": "bottomButton",
+      "swift_type": "Int32",
+      "default": 2,
+      "dex_constructor_code_unit_offset": "0ede"
+    },
+    {
+      "property": "widePostsInFeed",
+      "storage_key": "widePostsInFeed",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0eed"
+    },
+    {
+      "property": "widePostsInChannels",
+      "storage_key": "widePostsInChannels",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0efc"
+    },
+    {
+      "property": "telegramAiEditor",
+      "storage_key": "telegramAiEditor",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f0b"
+    },
+    {
+      "property": "telegramAiSummaries",
+      "storage_key": "telegramAiSummaries",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f1a"
+    },
+    {
+      "property": "telegramAiInstantViewSummaries",
+      "storage_key": "telegramAiInstantViewSummaries",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f29"
+    },
+    {
+      "property": "quickAdminShortcuts",
+      "storage_key": "quickAdminShortcuts",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f38"
+    },
+    {
+      "property": "quickTransitionForChannels",
+      "storage_key": "quickTransitionForChannels",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f47"
+    },
+    {
+      "property": "quickTransitionForTopics",
+      "storage_key": "quickTransitionForTopics",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f56"
+    },
+    {
+      "property": "disableGreetingSticker",
+      "storage_key": "disableGreetingSticker",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0f65"
+    },
+    {
+      "property": "hideKeyboardOnScroll",
+      "storage_key": "hideKeyboardOnScroll",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f74"
+    },
+    {
+      "property": "addCommaAfterMention",
+      "storage_key": "addCommaAfterMention",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f83"
+    },
+    {
+      "property": "inlineMathResult",
+      "storage_key": "inlineMathResult",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0f92"
+    },
+    {
+      "property": "disableMarkdown",
+      "storage_key": "disableMarkdown",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0fa1"
+    },
+    {
+      "property": "hideSendAsPeer",
+      "storage_key": "hideSendAsPeer",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0fb0"
+    },
+    {
+      "property": "removeMessageTail",
+      "storage_key": "removeMessageTail",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0fbf"
+    },
+    {
+      "property": "replaceEditedWithIcon",
+      "storage_key": "replaceEditedWithIcon",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0fce"
+    },
+    {
+      "property": "showOnlineStatus",
+      "storage_key": "showOnlineStatus",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0fdd"
+    },
+    {
+      "property": "showForwardsCount",
+      "storage_key": "showForwardsCount",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "0fec"
+    },
+    {
+      "property": "hideShareButton",
+      "storage_key": "hideShareButton",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "0ffb"
+    },
+    {
+      "property": "showResultsBeforeVoting",
+      "storage_key": "showResultsBeforeVoting",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "100a"
+    },
+    {
+      "property": "showCopyPhotoButton",
+      "storage_key": "showCopyPhotoButton",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1019"
+    },
+    {
+      "property": "showSaveMessageButton",
+      "storage_key": "showSaveMessageButton",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1028"
+    },
+    {
+      "property": "showRepeatMessageButton",
+      "storage_key": "showRepeatMessageButton",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1037"
+    },
+    {
+      "property": "showClearButton",
+      "storage_key": "showClearButton",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1046"
+    },
+    {
+      "property": "showHistoryButton",
+      "storage_key": "showHistoryButton",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1055"
+    },
+    {
+      "property": "showReportButton",
+      "storage_key": "showReportButton",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1064"
+    },
+    {
+      "property": "showGenerateButton",
+      "storage_key": "showGenerateButton",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1073"
+    },
+    {
+      "property": "showDetailsButton",
+      "storage_key": "showDetailsButton",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1082"
+    },
+    {
+      "property": "groupMessageMenu",
+      "storage_key": "groupMessageMenu",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1091"
+    },
+    {
+      "property": "recognitionLanguage",
+      "storage_key": "recognitionLanguage",
+      "swift_type": "String",
+      "default": "none",
+      "dex_constructor_code_unit_offset": "10a3"
+    },
+    {
+      "property": "postprocessingWithAi",
+      "storage_key": "postprocessingWithAi",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "10b2"
+    },
+    {
+      "property": "extendedFramesPerSecond",
+      "storage_key": "extendedFramesPerSecond",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "10db"
+    },
+    {
+      "property": "cameraStabilization",
+      "storage_key": "cameraStabilization",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "10ea"
+    },
+    {
+      "property": "cameraMirrorMode",
+      "storage_key": "cameraMirrorMode",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "10f9"
+    },
+    {
+      "property": "rememberLastUsedCamera",
+      "storage_key": "rememberLastUsedCamera",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1119"
+    },
+    {
+      "property": "startWithWideAngleCamera",
+      "storage_key": "startWithWideAngleCamera",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1128"
+    },
+    {
+      "property": "zoomSlider",
+      "storage_key": "zoomSlider",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1137"
+    },
+    {
+      "property": "staticZoom",
+      "storage_key": "staticZoom",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1146"
+    },
+    {
+      "property": "alwaysSendInHD",
+      "storage_key": "alwaysSendInHD",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "1155"
+    },
+    {
+      "property": "hideCameraTile",
+      "storage_key": "hideCameraTile",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1164"
+    },
+    {
+      "property": "doubleTapSeekDuration",
+      "storage_key": "doubleTapSeekDuration",
+      "swift_type": "Int32",
+      "default": 1,
+      "dex_constructor_code_unit_offset": "1173"
+    },
+    {
+      "property": "preferOriginalQuality",
+      "storage_key": "preferOriginalQuality",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1182"
+    },
+    {
+      "property": "swipeToPip",
+      "storage_key": "swipeToPip",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1191"
+    },
+    {
+      "property": "unmuteWithVolumeButtons",
+      "storage_key": "unmuteWithVolumeButtons",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "11a0"
+    },
+    {
+      "property": "pauseOnMinimizeVideo",
+      "storage_key": "pauseOnMinimizeVideo",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "11af"
+    },
+    {
+      "property": "pauseOnMinimizeVoice",
+      "storage_key": "pauseOnMinimizeVoice",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "11be"
+    },
+    {
+      "property": "pauseOnMinimizeRound",
+      "storage_key": "pauseOnMinimizeRound",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "11cd"
+    },
+    {
+      "property": "useGoogleAnalytics",
+      "storage_key": "useGoogleAnalytics",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "11ef"
+    },
+    {
+      "property": "enableAdBlock",
+      "storage_key": "enableAdBlock",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "11fe"
+    },
+    {
+      "property": "updateScheduleTimestamp",
+      "storage_key": "updateScheduleTimestamp",
+      "swift_type": "Int64",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "1212"
+    },
+    {
+      "property": "sdkUpdateScheduleTimestamp",
+      "storage_key": "sdkUpdateScheduleTimestamp",
+      "swift_type": "Int64",
+      "default": 0,
+      "dex_constructor_code_unit_offset": "1221"
+    },
+    {
+      "property": "targetLang",
+      "storage_key": "targetLang",
+      "swift_type": "String",
+      "default": "app",
+      "dex_constructor_code_unit_offset": "1232"
+    },
+    {
+      "property": "flashWarmth",
+      "storage_key": "flashWarmth",
+      "swift_type": "Float",
+      "default": 0.5,
+      "dex_constructor_code_unit_offset": "1243"
+    },
+    {
+      "property": "flashIntensity",
+      "storage_key": "flashIntensity",
+      "swift_type": "Float",
+      "default": 1.0,
+      "dex_constructor_code_unit_offset": "1252"
+    },
+    {
+      "property": "pluginsDevMode",
+      "storage_key": "pluginsDevMode",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1276"
+    },
+    {
+      "property": "pluginsSafeMode",
+      "storage_key": "pluginsSafeMode",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1285"
+    },
+    {
+      "property": "pluginsCompactView",
+      "storage_key": "pluginsCompactView",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "1294"
+    },
+    {
+      "property": "pluginsPySdkAutoUpdate",
+      "storage_key": "pluginsPySdkAutoUpdate",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "12a3"
+    },
+    {
+      "property": "pluginsPySdkBetaVersions",
+      "storage_key": "pluginsPySdkBetaVersions",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "12b2"
+    },
+    {
+      "property": "pluginsDisableArtOpts",
+      "storage_key": "pluginsDisableArtOpts",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "12c1"
+    },
+    {
+      "property": "pluginsUnknownSources",
+      "storage_key": "pluginsUnknownSources",
+      "swift_type": "Bool",
+      "default": false,
+      "dex_constructor_code_unit_offset": "12d0"
+    },
+    {
+      "property": "pinnedPlugins",
+      "storage_key": "pinnedPlugins",
+      "swift_type": "Set<String>",
+      "default": [],
+      "dex_constructor_code_unit_offset": "12e3"
+    },
+    {
+      "property": "useSystemIconShape",
+      "storage_key": "useSystemIconShape",
+      "swift_type": "Bool",
+      "default": true,
+      "dex_constructor_code_unit_offset": "12f2"
+    }
+  ],
+  "swift_compilation": {
+    "status": "passed",
+    "scope": "Swift package on macOS; full iOS application pending",
+    "port_commit": "25b698f8d371d27b1e138a0766e70fa7db32c8a8",
+    "workflow_run": "https://github.com/w3b-code/exteragram-lite-ios/actions/runs/39470628322"
+  },
+  "swift_tests": {
+    "status": "passed",
+    "platform": "GitHub macOS 26",
+    "tests": 11,
+    "port_commit": "8c28d4fb598cbbf15b7af3dd012d5e5c5ca8c58c",
+    "workflow_run": "https://github.com/w3b-code/exteragram-lite-ios/actions/runs/39465848539",
+    "scope": "Swift package tests; device application build and physical iPhone checks remain pending"
+  },
+  "completed_additional_preferences": [
+    {
+      "property": "iconPack",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "iconPack",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/IconPackType;.DEFAULT:Lcom/exteragram/messenger/IconPackType;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "dividerStyle",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "dividerStyle",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/DividerStyle;.LINE:Lcom/exteragram/messenger/DividerStyle;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "tabIcons",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "tabIcons",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/TabIconsMode;.TITLES_ONLY:Lcom/exteragram/messenger/TabIconsMode;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "tabCounterMode",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "tabCounterMode",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/TabCounterMode;.ALL:Lcom/exteragram/messenger/TabCounterMode;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "transitionAnimation",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "transitionAnimation",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/TransitionAnimation;.SPRING:Lcom/exteragram/messenger/TransitionAnimation;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "glassOutlineStyle",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "glassOutlineStyle",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/GlassOutlineStyle;.GLARE:Lcom/exteragram/messenger/GlassOutlineStyle;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "stickerTimeMode",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "stickerTimeMode",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/StickerTimeMode;.DEFAULT:Lcom/exteragram/messenger/StickerTimeMode;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "doubleTapAction",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "doubleTapAction",
+      "source_default": 1,
+      "status": "implemented_clamp_0_through_9_on_fetch_and_persistence"
+    },
+    {
+      "property": "doubleTapActionOutOwner",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "doubleTapActionOutOwner",
+      "source_default": 1,
+      "status": "implemented_clamp_0_through_9_on_fetch_and_persistence"
+    },
+    {
+      "property": "cameraType",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "cameraType",
+      "source_default": {
+        "condition": "SharedConfig.getDevicePerformanceClass() == 2",
+        "then": "CameraType.CAMERA_X",
+        "else": "CameraType.CAMERA_1"
+      },
+      "status": "implemented_explicit_android_performance_policy_factory_ios_backend_mapping_pending"
+    },
+    {
+      "property": "videoMessagesCamera",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "videoMessagesCamera",
+      "source_default": {
+        "enum_reference": "Lcom/exteragram/messenger/VideoMessagesCamera;.FRONT:Lcom/exteragram/messenger/VideoMessagesCamera;"
+      },
+      "status": "implemented_typed_enum_with_original_ordinals"
+    },
+    {
+      "property": "useGoogleCrashlytics",
+      "reason": "enum_sanitizer_or_dynamic_default_requires_port_decision",
+      "storage_key": "useGoogleCrashlytics",
+      "source_default": {
+        "unknown": "Lorg/telegram/messenger/BuildVars;.isBetaApp:()Z"
+      },
+      "status": "implemented_apk_release_default_false",
+      "source_dependency": "BuildVars.DEBUG_VERSION=false"
+    }
+  ],
+  "excluded": [],
+  "definition_count": 137,
+  "enum_ordinals": {
+    "CameraType": [
+      {
+        "name": "CAMERA_1",
+        "ordinal": 0
+      },
+      {
+        "name": "CAMERA_2",
+        "ordinal": 1
+      },
+      {
+        "name": "CAMERA_X",
+        "ordinal": 2
+      }
+    ],
+    "DividerStyle": [
+      {
+        "name": "HIDDEN",
+        "ordinal": 0
+      },
+      {
+        "name": "LINE",
+        "ordinal": 1
+      },
+      {
+        "name": "SEGMENTS",
+        "ordinal": 2
+      }
+    ],
+    "GlassOutlineStyle": [
+      {
+        "name": "GLARE",
+        "ordinal": 0
+      },
+      {
+        "name": "SOLID",
+        "ordinal": 1
+      },
+      {
+        "name": "HIDDEN",
+        "ordinal": 2
+      }
+    ],
+    "IconPackType": [
+      {
+        "name": "DEFAULT",
+        "ordinal": 0
+      },
+      {
+        "name": "SOLAR",
+        "ordinal": 1
+      },
+      {
+        "name": "REMIX",
+        "ordinal": 2
+      }
+    ],
+    "StickerTimeMode": [
+      {
+        "name": "DEFAULT",
+        "ordinal": 0
+      },
+      {
+        "name": "SIDE",
+        "ordinal": 1
+      },
+      {
+        "name": "HIDDEN",
+        "ordinal": 2
+      }
+    ],
+    "TabCounterMode": [
+      {
+        "name": "ALL",
+        "ordinal": 0
+      },
+      {
+        "name": "UNMUTED",
+        "ordinal": 1
+      },
+      {
+        "name": "HIDDEN",
+        "ordinal": 2
+      }
+    ],
+    "TabIconsMode": [
+      {
+        "name": "ICONS_AND_TITLES",
+        "ordinal": 0
+      },
+      {
+        "name": "TITLES_ONLY",
+        "ordinal": 1
+      },
+      {
+        "name": "ICONS_ONLY",
+        "ordinal": 2
+      }
+    ],
+    "TransitionAnimation": [
+      {
+        "name": "DEFAULT",
+        "ordinal": 0
+      },
+      {
+        "name": "AOSP",
+        "ordinal": 1
+      },
+      {
+        "name": "SPRING",
+        "ordinal": 2
+      }
+    ],
+    "VideoMessagesCamera": [
+      {
+        "name": "FRONT",
+        "ordinal": 0
+      },
+      {
+        "name": "REAR",
+        "ordinal": 1
+      },
+      {
+        "name": "ASK",
+        "ordinal": 2
+      }
+    ]
+  },
+  "normalization_and_cache": "BasePref load-once cache, explicit invalidation, skip same loaded value, cache assignment before sanitized persistence.",
+  "source_notes": [
+    "Source APK SHA-256 unchanged; jadx 0.7.1 hash verified by analysis driver.",
+    "Recovered enum ordinals and sanitizer with focused static JADX decompilation; no APK code executed.",
+    "Original Android camera enum identities are retained for config compatibility; do not select an iOS backend implicitly.",
+    "No telemetry SDK is linked; useGoogleCrashlytics preserves only this release APK preference default.",
+    "API credential fields were not reused and are not included in this provenance."
+  ]
+}

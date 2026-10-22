@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TextFormat/Sources/ChatTextInputAttributes.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TextFormat/Sources/ChatTextInputAttributes.swift",
+    "old": "public func convertMarkdownToAttributes(_ text: NSAttributedString) -> NSAttributedString {\n",
+    "new": "public func convertMarkdownToAttributes(_ text: NSAttributedString) -> NSAttributedString {\n    if ExteraPreferences.standard.value(for: ExteraSettings.disableMarkdown) {\n        return text\n    }\n",
+    "occurrences": 1
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "        let maybeAppGroupUrl = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroupName)",
+    "new": "        let maybeAppGroupUrl = exteraSideloadContainerURL(appGroupIdentifier: appGroupName)",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "        configuration.sharedContainerIdentifier = appGroupName",
+    "new": "        if FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroupName) != nil {\n            configuration.sharedContainerIdentifier = appGroupName\n        }",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/PasscodeCore/Sources/Passcode.swift",
+    "old": "        query[kSecAttrAccessGroup as String] = try account.hasPrefix(\"biometric.\") ? self.environment.privateAccessGroup() : self.environment.sharedAccessGroup()",
+    "new": "        let sharedGroup = try self.environment.sharedAccessGroup()\n        let hasSharedContainer = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: sharedGroup) != nil\n        if !self.environment.isMainApp || hasSharedContainer {\n            query[kSecAttrAccessGroup as String] = try account.hasPrefix(\"biometric.\") ? self.environment.privateAccessGroup() : sharedGroup\n        }\n        // Without App Groups, only the main app may use its default private\n        // keychain group. Extensions must never create unrelated passcode keys.",
+    "occurrences": 1
+  },
+  {
+    "path": "Telegram/Share/ShareRootController.swift",
+    "old": "            guard let appGroupUrl = maybeAppGroupUrl else {\n                return\n            }",
+    "new": "            guard let appGroupUrl = maybeAppGroupUrl else {\n                self.extensionContext?.cancelRequest(withError: NSError(domain: \"ExteraSideload\", code: 1, userInfo: [NSLocalizedDescriptionKey: \"This signing profile does not allow shared app storage. Open the app to send files.\"]))\n                return\n            }",
+    "occurrences": 1
+  },
+  {
+    "path": "Telegram/NotificationService/Sources/NotificationService.swift",
+    "old": "        self.impl = nil\n\n        let content = self.content\n\n        self.impl = QueueLocalObject(queue: queue, generate: { [weak self] in",
+    "new": "        self.impl = nil\n\n        // A re-signed extension without App Groups cannot open the main app's\n        // account database. Deliver the original notification immediately instead\n        // of waiting for the service-extension timeout or creating a private DB.\n        guard let identifier = Bundle.main.bundleIdentifier,\n              let separator = identifier.range(of: \".\", options: [.backwards]),\n              FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: \"group.\\(identifier[..<separator.lowerBound])\") != nil else {\n            self.contentHandler = nil\n            self.initialContent = nil\n            contentHandler(request.content)\n            return\n        }\n\n        let content = self.content\n\n        self.impl = QueueLocalObject(queue: queue, generate: { [weak self] in",
+    "occurrences": 1
+  }
+]

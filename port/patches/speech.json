@@ -1,0 +1,26 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/ChatInterfaceStateContextMenus.swift",
+    "old": "        var audioTranscription: AudioTranscriptionMessageAttribute?",
+    "new": "        if !chatPresentationInterfaceState.copyProtectionEnabled && !message.isCopyProtected(), let speechAction = exteraSpeechContextMenuItem(context: context, message: message, controllerInteraction: controllerInteraction, locale: chatPresentationInterfaceState.strings.baseLanguageCode) {\n            actions.append(speechAction)\n        }\n\n        var audioTranscription: AudioTranscriptionMessageAttribute?",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/BUILD",
+    "old": "        \"//submodules/Media/ConvertOpusToAAC:ConvertOpusToAAC\",",
+    "new": "        \"//submodules/ExteraSpeech:ExteraSpeech\",\n        \"//submodules/Media/ConvertOpusToAAC:ConvertOpusToAAC\",",
+    "occurrences": 1
+  },
+  {
+    "path": "Telegram/Telegram-iOS/InfoBazel.plist",
+    "old": "\t<key>NSMicrophoneUsageDescription</key>",
+    "new": "\t<key>NSSpeechRecognitionUsageDescription</key>\n\t<string>Transcribes downloaded voice messages on this iPhone using on-device speech recognition.</string>\n\t<key>NSMicrophoneUsageDescription</key>",
+    "occurrences": 1
+  },
+  {
+    "path": "Telegram/Telegram-iOS/Info.plist",
+    "old": "\t<key>NSMicrophoneUsageDescription</key>",
+    "new": "\t<key>NSSpeechRecognitionUsageDescription</key>\n\t<string>Transcribes downloaded voice messages on this iPhone using on-device speech recognition.</string>\n\t<key>NSMicrophoneUsageDescription</key>",
+    "occurrences": 1
+  }
+]
