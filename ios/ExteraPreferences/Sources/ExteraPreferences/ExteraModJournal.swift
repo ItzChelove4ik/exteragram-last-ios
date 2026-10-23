@@ -39,7 +39,7 @@ public final class ExteraModJournal: @unchecked Sendable {
         var deleted: [DeletedRecord] = []
         var totals: ObservatoryTotals = ObservatoryTotals(sent: 0, received: 0, hourHistogram: Array(repeating: 0, count: 24), days: [:])
         var foregroundSecondsToday: Double = 0.0
-        var foregroundDayKey: String = Self.dayKey(Date())
+        var foregroundDayKey: String = ExteraModJournal.dayKey(Date())
     }
 
     private var store: Store
@@ -123,7 +123,7 @@ public final class ExteraModJournal: @unchecked Sendable {
         mutate { store in
             store.totals.sent += 1
             store.totals.hourHistogram[max(0, min(23, Calendar.current.component(.hour, from: date)))] += 1
-            Self.rollDayIfNeeded(&store, date: date).sent += 1
+            Self.updateCurrentDay(&store, date: date) { $0.sent += 1 }
         }
     }
 
@@ -132,7 +132,7 @@ public final class ExteraModJournal: @unchecked Sendable {
         mutate { store in
             store.totals.sent += count
             store.totals.hourHistogram[max(0, min(23, Calendar.current.component(.hour, from: date)))] += count
-            Self.rollDayIfNeeded(&store, date: date).sent += count
+            Self.updateCurrentDay(&store, date: date) { $0.sent += count }
         }
     }
 
@@ -140,13 +140,13 @@ public final class ExteraModJournal: @unchecked Sendable {
         mutate { store in
             store.totals.received += 1
             store.totals.hourHistogram[max(0, min(23, Calendar.current.component(.hour, from: date)))] += 1
-            Self.rollDayIfNeeded(&store, date: date).received += 1
+            Self.updateCurrentDay(&store, date: date) { $0.received += 1 }
         }
     }
 
     public func recordForegroundSeconds(_ seconds: Double, at date: Date = Date()) {
         mutate { store in
-            Self.rollDayIfNeeded(&store, date: date).secondsInApp += max(0, seconds)
+            Self.updateCurrentDay(&store, date: date) { $0.secondsInApp += max(0, seconds) }
         }
     }
 
@@ -163,20 +163,18 @@ public final class ExteraModJournal: @unchecked Sendable {
         }, immediate: true)
     }
 
-    @discardableResult
-    private static func rollDayIfNeeded(_ store: inout Store, date: Date) -> ObservatoryDay {
+
+    /// Mutates the current day bucket in place, creating it when missing.
+    private static func updateCurrentDay(_ store: inout Store, date: Date, _ f: (inout ObservatoryDay) -> Void) {
         let key = dayKey(date)
         if store.foregroundDayKey != key {
             store.foregroundDayKey = key
             store.foregroundSecondsToday = 0.0
-            if store.totals.days[key] == nil {
-                store.totals.days[key] = ObservatoryDay(sent: 0, received: 0, secondsInApp: 0)
-            }
         }
         if store.totals.days[key] == nil {
             store.totals.days[key] = ObservatoryDay(sent: 0, received: 0, secondsInApp: 0)
         }
-        return store.totals.days[key]!
+        f(&store.totals.days[key]!)
     }
 
     /// Total bytes used by the journal file, used by the /clean command report.
