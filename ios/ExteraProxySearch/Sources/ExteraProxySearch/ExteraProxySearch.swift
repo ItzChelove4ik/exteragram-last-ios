@@ -1,4 +1,5 @@
 import Foundation
+import Network
 #if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
@@ -134,91 +135,33 @@ public actor ExteraProxyValidator {
     public func measureLatency(host: String, port: Int32) async -> Double? {
         let timeout = self.connectTimeout
         return await withCheckedContinuation { continuation in
-            DispatchQueue.global(qos: .userInitiated).async {
-                var stream: CFReadStream?
-                var output: CFWriteStream?
-                CFStreamCreatePairWithSocketToHost(nil, host as CFString, UInt32(port), &stream, &output)
-                guard let readStream = stream, let writeStream = output else {
-                    continuation.resume(returning: nil)
-                    return
-                }
-                let read = readStream as NSStream
-                let write = writeStream as NSStream
-                read.setProperty(kCFStreamPropertySocketSecurityLevelNone, forKey: NSStreamSocketSecurityLevelKey)
-                write.setProperty(kCFStreamPropertySocketSecurityLevelNone, forKey: NSStreamSocketSecurityLevelKey)
-                let start = CFAbsoluteTimeGetCurrent()
-                var opened = false
-                var failed = false
-                let lock = NSLock()
-                let finish: (Double?) -> Void = { latency in
-                    lock.lock()
-                    defer { lock.unlock() }
-                    if opened { return }
-                    opened = true
-                    read.close()
-                    write.close()
-                    read.remove(from: .main, forMode: .default)
-                    write.remove(from: .main, forMode: .default)
-                    read.delegate = nil
-                    write.delegate = nil
-                    continuation.resume(returning: latency)
-                }
-                let delegate = ProxyStreamDelegate {
-                    failed = true
+            let started = CFAbsoluteTimeGetCurrent()
+            let connection = NWConnection(host: NWEndpoint.Host(host), port: NWEndpoint.Port(rawValue: UInt16(clamping: port))!, using: .tcp)
+            var settled = false
+            let settleLock = NSLock()
+            let finish: (Double?) -> Void = { latency in
+                settleLock.lock()
+                let already = settled
+                settled = true
+                settleLock.unlock()
+                guard !already else { return }
+                connection.cancel()
+                continuation.resume(returning: latency)
+            }
+            connection.stateUpdateHandler = { state in
+                switch state {
+                case .ready:
+                    finish((CFAbsoluteTimeGetCurrent() - started) * 1000.0)
+                case .failed, .cancelled:
                     finish(nil)
-                }
-                read.delegate = delegate
-                write.delegate = delegate
-                read.schedule(in: .main, forMode: .default)
-                write.schedule(in: .main, forMode: .default)
-                read.open()
-                write.open()
-                DispatchQueue.main.asyncAfter(deadline: .now() + timeout) {
-                    if !opened {
-                        finish(nil)
-                    }
-                }
-                // Success is signalled by the delegate on the output stream.
-                delegate.onOpen = {
-                    let elapsed = (CFAbsoluteTimeGetCurrent() - start) * 1000.0
-                    finish(elapsed)
-                }
-                _ = failed
-            }
-        }
-    }
-
-    private final class ProxyStreamDelegate: NSObject, NSStreamDelegate, @unchecked Sendable {
-        var onOpen: (() -> Void)?
-        let onFail: () -> Void
-        private let lock = NSLock()
-        private var finished = false
-
-        init(onFail: @escaping () -> Void) {
-            self.onFail = onFail
-        }
-
-        func stream(_ aStream: NSStream, handle eventCode: NSStreamEvent) {
-            lock.lock()
-            let already = finished
-            if eventCode == .openCompleted || eventCode == .hasSpaceAvailable || eventCode == .hasBytesAvailable {
-                if !already {
-                    finished = true
-                }
-            } else if eventCode == .errorOccurred || eventCode == .endEncountered {
-                if !already {
-                    finished = true
+                default:
+                    break
                 }
             }
-            lock.unlock()
-            switch eventCode {
-            case .openCompleted:
-                onOpen?()
-            case .errorOccurred, .endEncountered:
-                onFail()
-            default:
-                break
+            DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + timeout) {
+                finish(nil)
             }
+            connection.start(queue: DispatchQueue.global(qos: .userInitiated))
         }
     }
 
