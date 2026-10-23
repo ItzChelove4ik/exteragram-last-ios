@@ -91,9 +91,9 @@ public enum ExteraMuteDuration: CaseIterable, Sendable {
     public static func parse(_ text: String) -> ExteraMuteDuration? {
         let normalized = text.lowercased().trimmingCharacters(in: .whitespaces)
         switch normalized {
-        case "1", "1m", "1 min", "1мин", "мин", "1 минута", "минута", "1мин", "мин": return .oneMinute
-        case "5", "5m", "5 min", "5мин", "5 минут", "минуты", "5 мин.": return .fiveMinutes
-        case "30", "30m", "30 min", "30мин", "30 минут", "30 мин.": return .thirtyMinutes
+        case "1", "1m", "1min", "1 min", "1мин", "мин", "1 минута", "минута": return .oneMinute
+        case "5", "5m", "5min", "5 min", "5мин", "5 минут", "минуты", "5 мин", "5 мин.": return .fiveMinutes
+        case "30", "30m", "30min", "30 min", "30мин", "30 минут", "30 мин", "30 мин.": return .thirtyMinutes
         case "60", "1h", "1 hour", "1ч", "1 час", "час", "60 мин", "60мин": return .oneHour
         default: return nil
         }
