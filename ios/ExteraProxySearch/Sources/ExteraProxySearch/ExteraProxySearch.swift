@@ -181,33 +181,28 @@ public actor ExteraProxyValidator {
     public func validateAll(candidates: [ExteraProxyCandidate], concurrency: Int = 6) -> AsyncStream<ExteraProxyValidation> {
         AsyncStream { continuation in
             let task = Task {
-                var iterator = candidates.makeIterator()
-                var active: Int = 0
-                let queue = DispatchQueue.global(qos: .userInitiated)
-                let group = DispatchGroup()
-                let lock = NSLock()
-                func launchNext() {
-                    lock.lock()
-                    let next = iterator.next()
-                    lock.unlock()
-                    guard let candidate = next else { return }
-                    group.enter()
-                    queue.async {
-                        let semaphoreCheck = Task { [weak self] () -> ExteraProxyValidation? in
-                            guard let self else { return nil }
-                            return await self.validate(candidate: candidate)
+                var buffer = candidates
+                var inFlight = 0
+                let limit = max(1, concurrency)
+                let allDone = { inFlight == 0 && buffer.isEmpty }
+                while !allDone {
+                    while inFlight < limit, !buffer.isEmpty {
+                        let candidate = buffer.removeFirst()
+                        inFlight += 1
+                        Task { [weak self] in
+                            let validation: ExteraProxyValidation
+                            if let self {
+                                validation = await self.validate(candidate: candidate)
+                            } else {
+                                validation = ExteraProxyValidation(candidateId: candidate.id, state: .dead)
+                            }
+                            continuation.yield(validation)
+                            inFlight -= 1
                         }
-                        let result = semaphoreCheck.result.value ?? ExteraProxyValidation(candidateId: candidate.id, state: .dead)
-                        continuation.yield(result)
-                        group.leave()
-                        launchNext()
                     }
-                    active += 1
+                    // Let concurrent validations run before refilling slots.
+                    try? await Task.sleep(nanoseconds: 50_000_000)
                 }
-                for _ in 0..<min(concurrency, max(candidates.count, 1)) {
-                    launchNext()
-                }
-                group.wait()
                 continuation.finish()
             }
             continuation.onTermination = { _ in
@@ -237,7 +232,7 @@ public actor ExteraProxyListFetcher {
     public func fetchAll() async throws -> [ExteraProxyCandidate] {
         var result: [ExteraProxyCandidate] = []
         var seen = Set<String>()
-        await withThrowingTaskGroup(of: (ExteraProxyCandidate.Source, String).self) { group in
+        try await withThrowingTaskGroup(of: (ExteraProxyCandidate.Source, String).self) { group in
             for url in self.listURLs {
                 group.addTask {
                     let (data, response) = try await self.fetch(url: url)
