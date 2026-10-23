@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/ChatInterfaceStateContextMenus.swift",
+    "old": "        var audioTranscription: AudioTranscriptionMessageAttribute?\n        if !chatPresentationInterfaceState.copyProtectionEnabled, let exportAction = exteraExportContextMenuItem(context: context, message: message, controllerInteraction: controllerInteraction, locale: chatPresentationInterfaceState.strings.baseLanguageCode) {\n            actions.append(exportAction)\n        }\n",
+    "new": "        var audioTranscription: AudioTranscriptionMessageAttribute?\n        if !chatPresentationInterfaceState.copyProtectionEnabled, let exportAction = exteraExportContextMenuItem(context: context, message: message, controllerInteraction: controllerInteraction, locale: chatPresentationInterfaceState.strings.baseLanguageCode) {\n            actions.append(exportAction)\n        }\n\n        // GlowGram mod: Translate action in the message context menu.\n        if !chatPresentationInterfaceState.copyProtectionEnabled, !message.isCopyProtected(), !message.text.isEmpty {\n            let translateTitle = ExteraLocalization.text(\"ModTranslateAction\", languageCode: chatPresentationInterfaceState.strings.baseLanguageCode, table: \"ExteraPort\")\n            actions.append(.action(ContextMenuActionItem(text: translateTitle, icon: { theme in\n                generateTintedImage(image: UIImage(systemName: \"character.book.closed\"), color: theme.contextMenu.primaryColor)\n            }, action: { _, finish in\n                finish(.default)\n                ExteraModTranslation.present(context: context, message: message)\n            })))\n        }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/ChatInterfaceStateContextMenus.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraResources\nimport ExteraTranslation\n",
+    "occurrences": 1
+  }
+]

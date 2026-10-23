@@ -127,4 +127,50 @@ public enum ExteraSettings {
     public static let pluginsUnknownSources = ExteraPreference<Bool>(key: "pluginsUnknownSources", defaultValue: false)
     public static let pinnedPlugins = ExteraPreference<Set<String>>(key: "pinnedPlugins", defaultValue: Set<String>())
     public static let useSystemIconShape = ExteraPreference<Bool>(key: "useSystemIconShape", defaultValue: true)
+
+    // MARK: - GlowGram mod features
+    // Ghost Mode suppresses online presence, read receipts, typing activity
+    // and last-seen reporting all at once.
+    public static let ghostModeEnabled = ExteraPreference<Bool>(key: "ghostModeEnabled", defaultValue: false)
+    // AFK Mode hides only online status and read receipts; typing stays visible.
+    public static let afkModeEnabled = ExteraPreference<Bool>(key: "afkModeEnabled", defaultValue: false)
+    // Auto-translate every incoming message using the configured provider.
+    public static let autoTranslateIncoming = ExteraPreference<Bool>(key: "autoTranslateIncoming", defaultValue: false)
+    // Target language code for the Translate action (independent of translator choice).
+    public static let modTranslationTarget = ExteraPreference<String>(key: "modTranslationTarget", defaultValue: "en")
+    // Video message (round video) playback speed multiplier, 1.0 = normal.
+    public static let roundVideoSpeed = ExteraPreference<Float>(key: "roundVideoSpeed", defaultValue: 1.0)
+    // Round video playback quality preference.
+    public static let roundVideoPreferQuality = ExteraPreference<Bool>(key: "roundVideoPreferQuality", defaultValue: true)
+    // Auto-rotate round video messages to match device orientation.
+    public static let roundVideoAutoRotate = ExteraPreference<Bool>(key: "roundVideoAutoRotate", defaultValue: false)
+    // Profile banner image stored as base64 JPEG in local storage.
+    public static let profileBanner = ExteraPreference<String?>(key: "profileBanner", defaultValue: nil)
+    // Custom main-menu background image stored as base64 JPEG.
+    public static let customChatListBackground = ExteraPreference<String?>(key: "customChatListBackground", defaultValue: nil)
+    // Transparency of chat rows drawn over the custom background, 0.0...1.0.
+    public static let chatListBackgroundDimming = ExteraPreference<Float>(key: "chatListBackgroundDimming", defaultValue: 0.35)
+    // Keep a local log of deleted and edited messages.
+    public static let keepDeletedLog = ExteraPreference<Bool>(key: "keepDeletedLog", defaultValue: true)
+    // Privacy Lens: blur message text while the screen is being shared/recorded.
+    public static let privacyLensBlurMessages = ExteraPreference<Bool>(key: "privacyLensBlurMessages", defaultValue: false)
+    // Privacy Lens: require Face ID / passcode to open selected chats.
+    public static let privacyLensProtectChats = ExteraPreference<Bool>(key: "privacyLensProtectChats", defaultValue: false)
+    // Privacy Lens: hide message previews in system push notifications.
+    public static let privacyLensHidePushPreview = ExteraPreference<Bool>(key: "privacyLensHidePushPreview", defaultValue: false)
+    // Privacy Lens: close sensitive screens automatically when the app goes to background.
+    public static let privacyLensBlurOnBackground = ExteraPreference<Bool>(key: "privacyLensBlurOnBackground", defaultValue: false)
+    // Set of chat peer ids protected by Privacy Lens (JSON-encoded int64 set).
+    public static let privacyLensProtectedPeerIds = ExteraPreference<Set<Int64>>(key: "privacyLensProtectedPeerIds", defaultValue: Set<Int64>())
+    // Chat Observatory collects local-only usage statistics.
+    public static let chatObservatoryEnabled = ExteraPreference<Bool>(key: "chatObservatoryEnabled", defaultValue: true)
+    // Smile mode: the mod deletes its own outgoing text-only messages,
+    // keeping only emoji-only messages.
+    public static let smileModeEnabled = ExteraPreference<Bool>(key: "smileModeEnabled", defaultValue: false)
+    // Muted peers for the /mute chat command: peer id -> mute expiry timestamp.
+    public static let mutedPeerExpiries = ExteraPreference<[Int64: Double]>(key: "mutedPeerExpiries", defaultValue: [Int64: Double]())
+    // Locally banned peers for /ban: their incoming messages are hidden locally.
+    public static let locallyBannedPeerIds = ExteraPreference<Set<Int64>>(key: "locallyBannedPeerIds", defaultValue: Set<Int64>())
+    // Mod command prefix status flag flipped by /smile mode and /clean.
+    public static let modCommandsEnabled = ExteraPreference<Bool>(key: "modCommandsEnabled", defaultValue: true)
 }

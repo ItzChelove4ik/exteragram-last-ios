@@ -1,0 +1,26 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/ApplicationContext.swift",
+    "old": "        self.removeNotificationsDisposable = (context.account.stateManager.appliedIncomingReadMessages\n        |> deliverOnMainQueue).start(next: { [weak self] ids in\n            if let strongSelf = self {\n                strongSelf.context.sharedContext.applicationBindings.clearMessageNotifications(ids)\n            }\n        })\n",
+    "new": "        self.removeNotificationsDisposable = (context.account.stateManager.appliedIncomingReadMessages\n        |> deliverOnMainQueue).start(next: { [weak self] ids in\n            if let strongSelf = self {\n                strongSelf.context.sharedContext.applicationBindings.clearMessageNotifications(ids)\n            }\n        })\n        \n        // GlowGram mod: incoming-message observer (observatory + auto-translate).\n        self.exteraModIncomingObserver = ExteraModIncomingMessagesObserver(context: context)\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/ApplicationContext.swift",
+    "old": "    private var removeNotificationsDisposable: Disposable?\n",
+    "new": "    private var removeNotificationsDisposable: Disposable?\n    private var exteraModIncomingObserver: ExteraModIncomingMessagesObserver?\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/ApplicationContext.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/ChatController.swift",
+    "old": "            if commit || !isScheduledMessages {\n                self.commitPurposefulAction()\n                \n                let _ = (enqueueMessages(account: self.context.account, peerId: peerId, messages: self.transformEnqueueMessages(messages, postpone: postpone))\n",
+    "new": "            if commit || !isScheduledMessages {\n                self.commitPurposefulAction()\n                \n                // GlowGram mod: Chat Observatory outgoing counter.\n                if ExteraPreferences.standard.value(for: ExteraSettings.chatObservatoryEnabled) {\n                    ExteraModJournal.shared.recordMessageSent(count: messages.count)\n                }\n                \n                // GlowGram mod: smile mode deletes own text-only outgoing messages.\n                if ExteraSmileModeLocal.shouldDeleteOutgoing(messages: messages) {\n                    return\n                }\n                \n                let _ = (enqueueMessages(account: self.context.account, peerId: peerId, messages: self.transformEnqueueMessages(messages, postpone: postpone))\n",
+    "occurrences": 1
+  }
+]

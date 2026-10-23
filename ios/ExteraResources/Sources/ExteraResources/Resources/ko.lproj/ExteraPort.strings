@@ -1,0 +1,4 @@
+/* Native iOS port interface strings; separate from recovered APK resources. */
+"HideReactionsInChannels" = "Hide Reactions in Channels";
+"HideReactionsInGroups" = "Hide Reactions in Groups";
+"HideReactionsInPrivateChats" = "Hide Reactions in Private Chats";

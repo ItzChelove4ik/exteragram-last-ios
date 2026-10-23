@@ -20,7 +20,7 @@
   {
     "path": "submodules/SettingsUI/BUILD",
     "old": "        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
-    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/ExteraResources:ExteraResources\",\n        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/ExteraResources:ExteraResources\",\n        \"//submodules/ExteraProxySearch:ExteraProxySearch\",\n        \"//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit\",",
     "occurrences": 1
   },
   {

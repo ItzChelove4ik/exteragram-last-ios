@@ -18,7 +18,8 @@ def apply_patches(destination):
     # Order is explicit because several patches extend the same BUILD/source file.
     order = ["branding", "interface", "message_features", "message_more",
              "composer", "profile_phone", "send_as", "reactions", "translation",
-             "speech", "export", "sideload", "authorization", "unsigned_rules", "wasi_host"]
+             "speech", "export", "sideload", "authorization", "unsigned_rules", "wasi_host",
+             "ghost_mode", "ghost_read", "deleted_log", "mod_commands", "translate_menu", "auto_translate", "observatory_observer", "round_video", "chat_list_background", "privacy_lens", "privacy_lens_chat", "privacy_push", "privacy_capture", "profile_banner"]
     prepared = {}
     total = 0
     for name in order:

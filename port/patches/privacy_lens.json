@@ -1,0 +1,20 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "    func handleDidEnterBackground() {\n        let _ = (self.sharedContextPromise.get()\n",
+    "new": "    func handleDidEnterBackground() {\n        // GlowGram mod Privacy Lens: blur the whole window when the app\n        // leaves the foreground while the option is enabled.\n        ExteraPrivacyLensControllerHooks.applyBackgroundBlur()\n        let _ = (self.sharedContextPromise.get()\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "import UIKit\nimport SwiftSignalKit\n",
+    "new": "import UIKit\nimport SwiftSignalKit\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "    func handleWillEnterForeground() {\n",
+    "new": "    func handleWillEnterForeground() {\n        ExteraPrivacyLensControllerHooks.removeBackgroundBlur()\n",
+    "occurrences": 1
+  }
+]

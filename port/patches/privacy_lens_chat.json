@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/ChatController.swift",
+    "old": "    override public func viewDidAppear(_ animated: Bool) {\n",
+    "new": "    override public func viewDidAppear(_ animated: Bool) {\n        // GlowGram mod Privacy Lens: Face ID gate for protected chats.\n        if !self.exteraPrivacyLensAuthorized, let peerId = self.chatLocation.peerId, ExteraPrivacyLensControllerHooks.isChatProtected(peerId: peerId.toInt64()) {\n            self.exteraPrivacyLensAuthorized = false\n            self.view.isUserInteractionEnabled = false\n            ExteraPrivacyLensControllerHooks.authorizeProtectedChat(completion: { [weak self] granted in\n                guard let self else { return }\n                self.view.isUserInteractionEnabled = true\n                if granted {\n                    self.exteraPrivacyLensAuthorized = true\n                } else {\n                    self.dismiss()\n                }\n            })\n        }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/ChatController.swift",
+    "old": "    var didSetupDropToPaste: Bool = false\n",
+    "new": "    var didSetupDropToPaste: Bool = false\n    var exteraPrivacyLensAuthorized = false\n",
+    "occurrences": 1
+  }
+]

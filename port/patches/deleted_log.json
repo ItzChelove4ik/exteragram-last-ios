@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TelegramCore/Sources/State/AccountStateManagementUtils.swift",
+    "old": "            case let .DeleteMessages(ids):\n                _internal_deleteMessages(transaction: transaction, mediaBox: mediaBox, ids: ids, manualAddMessageThreadStatsDifference: { id, add, remove in\n",
+    "new": "            case let .DeleteMessages(ids):\n                ExteraModJournalHooks.recordDeletion(transaction: transaction, ids: ids)\n                _internal_deleteMessages(transaction: transaction, mediaBox: mediaBox, ids: ids, manualAddMessageThreadStatsDifference: { id, add, remove in\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/Sources/State/AccountStateManagementUtils.swift",
+    "old": "            case let .EditMessage(id, message):\n                var generatedEvent: (reactionAuthor: Peer, reaction: MessageReaction.Reaction, message: Message, timestamp: Int32)?\n                transaction.updateMessage(id, update: { previousMessage in\n",
+    "new": "            case let .EditMessage(id, message):\n                ExteraModJournalHooks.recordDeletion(transaction: transaction, ids: [id])\n                var generatedEvent: (reactionAuthor: Peer, reaction: MessageReaction.Reaction, message: Message, timestamp: Int32)?\n                transaction.updateMessage(id, update: { previousMessage in\n",
+    "occurrences": 1
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInteractiveInstantVideoNode/Sources/ChatMessageInteractiveInstantVideoNode.swift",
+    "old": "    public func play() {\n        self.videoNode?.play()\n    }\n    \n    public func pause() {\n        self.videoNode?.pause()\n    }\n",
+    "new": "    public func play() {\n        self.videoNode?.play()\n        self.exteraApplyModPlaybackRate()\n    }\n    \n    public func pause() {\n        self.videoNode?.pause()\n    }\n    \n    // GlowGram mod: round video playback rate from mod settings.\n    func exteraApplyModPlaybackRate() {\n        let speed = ExteraPreferences.standard.value(for: ExteraSettings.roundVideoSpeed)\n        if abs(speed - 1.0) > 0.01 {\n            self.videoNode?.setBaseRate(Double(speed))\n        }\n    }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInteractiveInstantVideoNode/Sources/ChatMessageInteractiveInstantVideoNode.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Components/Chat/ChatMessageInteractiveInstantVideoNode/BUILD",
+    "old": "    deps = [\n",
+    "new": "    deps = [\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n",
+    "occurrences": 1
+  }
+]

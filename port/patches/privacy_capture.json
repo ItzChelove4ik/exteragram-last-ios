@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "    func handleDidEnterBackground() {\n        // GlowGram mod Privacy Lens: blur the whole window when the app\n        // leaves the foreground while the option is enabled.\n        ExteraPrivacyLensControllerHooks.applyBackgroundBlur()\n",
+    "new": "    func handleDidEnterBackground() {\n        // GlowGram mod Privacy Lens: blur the whole window when the app\n        // leaves the foreground while the option is enabled.\n        ExteraPrivacyLensControllerHooks.applyBackgroundBlur()\n        ExteraPrivacyLensControllerHooks.applyCaptureBlur()\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/AppDelegate.swift",
+    "old": "    func handleWillEnterForeground() {\n        ExteraPrivacyLensControllerHooks.removeBackgroundBlur()\n",
+    "new": "    func handleWillEnterForeground() {\n        ExteraPrivacyLensControllerHooks.removeBackgroundBlur()\n        ExteraPrivacyLensControllerHooks.removeCaptureBlur()\n        ExteraScreenCaptureMonitor.start()\n",
+    "occurrences": 1
+  }
+]

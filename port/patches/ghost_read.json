@@ -1,0 +1,26 @@
+[
+  {
+    "path": "submodules/TelegramCore/Sources/State/SynchronizePeerReadState.swift",
+    "old": "func synchronizePeerReadState(network: Network, postbox: Postbox, stateManager: AccountStateManager, peerId: PeerId, push: Bool, validate: Bool) -> Signal<Never, PeerReadStateValidationError> {\n    var signal: Signal<Never, PeerReadStateValidationError> = .complete()\n    if push {\n        signal = signal\n        |> then(pushPeerReadState(network: network, postbox: postbox, stateManager: stateManager, peerId: peerId, willValidate: validate))\n    }\n",
+    "new": "func synchronizePeerReadState(network: Network, postbox: Postbox, stateManager: AccountStateManager, peerId: PeerId, push: Bool, validate: Bool) -> Signal<Never, PeerReadStateValidationError> {\n    var signal: Signal<Never, PeerReadStateValidationError> = .complete()\n    if push {\n        // Ghost/AFK mode: never report read state to the server. The local\n        // marker still moves (the user sees chats as read locally), but no\n        // messages.readHistory request leaves the device while the mode is on.\n        if ExteraModCoreHooks.shouldSuppressReadReports() {\n            push = false\n            validate = false\n        }\n        signal = signal\n        |> then(pushPeerReadState(network: network, postbox: postbox, stateManager: stateManager, peerId: peerId, willValidate: validate))\n    }\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/Sources/State/ManagedLocalInputActivities.swift",
+    "old": "            if let inputPeer = apiInputPeer(peer) {\n                var flags: Int32 = 0\n                let topMessageId = threadId.flatMap { Int32(clamping: $0) }\n                if topMessageId != nil {\n                    flags |= 1 << 0\n                }\n                return network.request(Api.functions.messages.setTyping(flags: flags, peer: inputPeer, topMsgId: topMessageId, action: actionFromActivity(activity)))\n",
+    "new": "            if let inputPeer = apiInputPeer(peer) {\n                if ExteraModCoreHooks.shouldSuppressTyping() {\n                    return .complete()\n                }\n                var flags: Int32 = 0\n                let topMessageId = threadId.flatMap { Int32(clamping: $0) }\n                if topMessageId != nil {\n                    flags |= 1 << 0\n                }\n                return network.request(Api.functions.messages.setTyping(flags: flags, peer: inputPeer, topMsgId: topMessageId, action: actionFromActivity(activity)))\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/Sources/State/AccountViewTracker.swift",
+    "old": "                    if let account = self.account {\n                        let signal = (account.postbox.transaction { transaction -> Signal<Void, NoError> in\n                            if let peer = transaction.getPeer(peerId), let inputPeer = apiInputPeer(peer) {\n                                let request: Signal<Bool, MTRpcError>\n                                switch inputPeer {\n",
+    "new": "                    if let account = self.account {\n                        let signal = (account.postbox.transaction { transaction -> Signal<Void, NoError> in\n                            if ExteraModCoreHooks.shouldSuppressReadReports() {\n                                return .complete()\n                            }\n                            if let peer = transaction.getPeer(peerId), let inputPeer = apiInputPeer(peer) {\n                                let request: Signal<Bool, MTRpcError>\n                                switch inputPeer {\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/Sources/State/AccountViewTracker.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  }
+]

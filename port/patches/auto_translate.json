@@ -1,0 +1,14 @@
+[
+  {
+    "path": "submodules/TelegramCore/Sources/State/AccountStateManager.swift",
+    "old": "                    for id in events.addedIncomingMessageIds {\n                        let (messages, notify, _, _, threadData) = messagesForNotification(transaction: transaction, id: id, alwaysReturnMessage: false)\n",
+    "new": "                    for id in events.addedIncomingMessageIds {\n                        let (messages, notify, _, _, threadData) = messagesForNotification(transaction: transaction, id: id, alwaysReturnMessage: false)\n                        // GlowGram mod: local Chat Observatory counters and\n                        // auto-translation run on incoming messages here.\n                        ExteraModIncomingHook.handle(transaction: transaction, messageIds: [id])\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/Sources/State/AccountStateManager.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  }
+]

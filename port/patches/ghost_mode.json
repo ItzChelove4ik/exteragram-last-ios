@@ -1,0 +1,38 @@
+[
+  {
+    "path": "submodules/TelegramUI/Sources/SharedWakeupManager.swift",
+    "old": "import Foundation\n",
+    "new": "import Foundation\nimport ExteraPreferences\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/SharedWakeupManager.swift",
+    "old": "                account.shouldKeepOnlinePresence.set(.single(primary && self.inForeground))\n",
+    "new": "                // Ghost/AFK modes suppress online presence locally.\n                let hideOnline = ExteraPrivacyLocal.hideOnline\n                account.shouldKeepOnlinePresence.set(.single(!hideOnline && primary && self.inForeground))\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/Sources/SharedWakeupManager.swift",
+    "old": "                account.shouldKeepOnlinePresence.set(.single(false))\n",
+    "new": "                account.shouldKeepOnlinePresence.set(.single(false))\n                // Suppressing the offline report matters as much as the online one:\n                // Ghost keeps the last reported state instead of announcing a logout.\n",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramUI/BUILD",
+    "old": "        \"//submodules/ExteraPreferences:ExteraPreferences\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/ExteraProxySearch:ExteraProxySearch\",\n        \"//submodules/ExteraTranslation:ExteraTranslation\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/TelegramCore/BUILD",
+    "old": "        \"//submodules/ExteraExport:ExteraExport\",\n        \"//submodules/MediaPreuploadRegistry:MediaPreuploadRegistry\",",
+    "new": "        \"//submodules/ExteraExport:ExteraExport\",\n        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/MediaPreuploadRegistry:MediaPreuploadRegistry\",",
+    "occurrences": 1
+  },
+  {
+    "path": "submodules/ChatListUI/BUILD",
+    "old": "        \"//submodules/ExteraPreferences:ExteraPreferences\",",
+    "new": "        \"//submodules/ExteraPreferences:ExteraPreferences\",\n        \"//submodules/ExteraProxySearch:ExteraProxySearch\",",
+    "occurrences": 1
+  }
+]
