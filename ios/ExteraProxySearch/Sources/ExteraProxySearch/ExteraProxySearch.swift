@@ -185,7 +185,7 @@ public actor ExteraProxyValidator {
                 var inFlight = 0
                 let limit = max(1, concurrency)
                 let allDone = { inFlight == 0 && buffer.isEmpty }
-                while !allDone {
+                while !allDone() {
                     while inFlight < limit, !buffer.isEmpty {
                         let candidate = buffer.removeFirst()
                         inFlight += 1
