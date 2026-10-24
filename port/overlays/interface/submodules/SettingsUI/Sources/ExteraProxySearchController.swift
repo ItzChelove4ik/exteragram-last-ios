@@ -18,7 +18,7 @@ final class ExteraProxyArguments {
     }
 }
 
-private struct ProxySearchState {
+private struct ProxySearchState: Equatable {
     var candidates: [ExteraProxyCandidate] = []
     var validations: [String: ExteraProxyValidation] = [:]
     var searching = false

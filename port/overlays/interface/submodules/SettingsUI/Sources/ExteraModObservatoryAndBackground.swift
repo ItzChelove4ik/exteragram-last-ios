@@ -110,7 +110,7 @@ func exteraChatListBackgroundController(context: AccountContext) -> ViewControll
     let arguments = BackgroundArguments(
         chooseImage: {
             ExteraModImagePicker.pickImage { image in
-                if let data = ExteraModImagePicker.jpegData(from: image, maxDimension: 1280) {
+                if let image, let data = ExteraModImagePicker.jpegData(from: image, maxDimension: 1280) {
                     setPreference(data.base64EncodedString(), for: ExteraSettings.customChatListBackground)
                 }
             }
@@ -181,7 +181,7 @@ func exteraProfileBannerController(context: AccountContext) -> ViewController {
     let arguments = BannerArguments(
         chooseImage: {
             ExteraModImagePicker.pickImage { image in
-                if let data = ExteraModImagePicker.jpegData(from: image, maxDimension: 1600) {
+                if let image, let data = ExteraModImagePicker.jpegData(from: image, maxDimension: 1600) {
                     setPreference(data.base64EncodedString(), for: ExteraSettings.profileBanner)
                 }
             }
