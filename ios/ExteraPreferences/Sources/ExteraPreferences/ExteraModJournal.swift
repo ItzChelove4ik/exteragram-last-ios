@@ -14,6 +14,17 @@ public final class ExteraModJournal: @unchecked Sendable {
         public let timestamp: Int32
         public let edited: Bool
         public let previousText: String?
+
+        public init(peerId: Int64, messageId: Int64, namespace: Int32, text: String, author: String, timestamp: Int32, edited: Bool, previousText: String?) {
+            self.peerId = peerId
+            self.messageId = messageId
+            self.namespace = namespace
+            self.text = text
+            self.author = author
+            self.timestamp = timestamp
+            self.edited = edited
+            self.previousText = previousText
+        }
     }
 
     public struct ObservatoryDay: Codable, Equatable, Sendable {

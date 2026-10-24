@@ -4,7 +4,6 @@ import ExteraPreferences
 
 /// Watches UIScreen.isCaptured and applies the Privacy Lens blur while
 /// the screen is recorded or mirrored, independent of background events.
-@MainActor
 final class ExteraScreenCaptureMonitor {
     private static var observer: NSObjectProtocol?
 

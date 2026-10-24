@@ -53,7 +53,7 @@ func exteraDeletedLogController(context: AccountContext) -> ViewController {
     return ItemListController(context: context, state: signal)
 }
 
-private final class EmptyModArguments {}
+final class EmptyModArguments {}
 
 /// Privacy Lens settings: per-scenario contextual privacy rules.
 func exteraPrivacyLensController(context: AccountContext) -> ViewController {

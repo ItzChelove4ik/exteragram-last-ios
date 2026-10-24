@@ -235,7 +235,17 @@ private final class ExteraModMenuEntry: ItemListNodeEntry {
     let content: Content
     let section: ItemListSectionId
 
+    init(stableId: Int32, content: Content, section: ItemListSectionId) {
+        self.stableId = stableId
+        self.content = content
+        self.section = section
+    }
+
     var index: Int32 { return self.stableId }
+
+    static func == (lhs: ExteraModMenuEntry, rhs: ExteraModMenuEntry) -> Bool {
+        return lhs === rhs
+    }
 
     static func < (lhs: ExteraModMenuEntry, rhs: ExteraModMenuEntry) -> Bool {
         return lhs.stableId < rhs.stableId

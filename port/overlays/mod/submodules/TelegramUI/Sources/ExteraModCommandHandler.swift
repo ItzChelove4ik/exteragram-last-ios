@@ -8,12 +8,14 @@ import TelegramPresentationData
 import AccountContext
 import PresentationDataUtils
 import ExteraPreferences
+import ExteraResources
+import AlertUI
+import TemporaryCachedPeerDataManager
 import ExteraTranslation
 
 /// Executes GlowGram mod chat commands. Commands are intercepted before the
 /// text message is ever enqueued, so nothing reaches the server.
-@MainActor
-final class ExteraModCommandHandler {
+public final class ExteraModCommandHandler {
     private let context: AccountContext
     private let controller: ChatControllerImpl
     private var lastOwnText: String?
@@ -103,7 +105,7 @@ final class ExteraModCommandHandler {
                         banned.insert(peerId.toInt64())
                     }
                     try? store.set(banned, for: ExteraSettings.locallyBannedPeerIds)
-                    self.notice("ModBannedLocally", arguments: [peer.displayTitle])
+                    self.notice("ModBannedLocally", arguments: [peer.debugDisplayTitle])
                 }
                 completion()
             }
@@ -114,7 +116,7 @@ final class ExteraModCommandHandler {
                 var banned = store.value(for: ExteraSettings.locallyBannedPeerIds)
                 if let address = address, let peer = peer {
                     banned.remove(peer.id.toInt64())
-                    self.notice("ModUnbannedLocally", arguments: [peer.displayTitle])
+                    self.notice("ModUnbannedLocally", arguments: [peer.debugDisplayTitle])
                 } else if let peerId = self.controller.chatLocation.peerId {
                     banned.remove(peerId.toInt64())
                     self.notice("ModUnbannedLocally", arguments: [""])
@@ -161,7 +163,7 @@ final class ExteraModCommandHandler {
     private func sendText(_ text: String) {
         let peerId = controller.chatLocation.peerId
         guard let peerId = peerId else { return }
-        let message = EnqueueMessage.message(text: text, attributes: [], inlineStickers: [:], mediaReference: nil, threadId: controller.chatLocation.threadId, replyToMessageId: nil, replyToStoryId: nil, localGroupingKey: nil, correlationId: nil, bubbleUpEmojiOrStickersets: [:])
+        let message = EnqueueMessage.message(text: text, attributes: [], inlineStickers: [:], mediaReference: nil, threadId: controller.chatLocation.threadId, replyToMessageId: nil, replyToStoryId: nil, localGroupingKey: nil, correlationId: nil, bubbleUpEmojiOrStickersets: [])
         let _ = enqueueMessages(account: context.account, peerId: peerId, messages: [message]).start()
         noteOwnOutgoingMessage(text: text)
     }
@@ -224,7 +226,7 @@ final class ExteraModCommandHandler {
             let _ = (context.engine.contacts.searchLocalPeers(query: cleaned)
             |> take(1)
             |> deliverOnMainQueue).startStandalone(next: { peers in
-                let exact = peers.first { $0.peer.addressName == cleaned } ?? peers.first
+                let exact = peers.first { $0.peer?.addressName == cleaned } ?? peers.first
                 completion(exact?.peer)
             })
         } else if let peerId = controller.chatLocation.peerId {
@@ -245,15 +247,15 @@ final class ExteraModCommandHandler {
                 return
             }
             var lines: [String] = []
-            lines.append(peer.displayTitle)
-            if let user = peer as? TelegramUser {
+            lines.append(peer.debugDisplayTitle)
+            if case let .user(user) = peer {
                 if let name = user.addressName, !name.isEmpty {
                     lines.append("@\(name)")
                 }
                 if let phone = user.phone {
                     lines.append("+\(phone)")
                 }
-                if let premium = user.isPremium, premium {
+                if user.isPremium {
                     lines.append("Premium")
                 }
             }

@@ -43,6 +43,11 @@ final class ExteraModSimpleEntry: ItemListNodeEntry {
 
     var index: Int32 { return self.stableId }
 
+    static func == (lhs: ExteraModSimpleEntry, rhs: ExteraModSimpleEntry) -> Bool {
+        // Each refresh creates new entries, including fresh action closures.
+        return lhs === rhs
+    }
+
     static func < (lhs: ExteraModSimpleEntry, rhs: ExteraModSimpleEntry) -> Bool {
         return lhs.stableId < rhs.stableId
     }

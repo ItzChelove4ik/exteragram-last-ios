@@ -30,10 +30,10 @@ enum ExteraModJournalHooks {
         guard ExteraPreferences.standard.value(for: ExteraSettings.keepDeletedLog) else { return }
         let record = ExteraModJournal.DeletedRecord(
             peerId: previous.id.peerId.toInt64(),
-            messageId: previous.id.id,
+            messageId: Int64(previous.id.id),
             namespace: previous.id.namespace,
             text: updatedText,
-            author: previous.author?.displayTitle ?? "",
+            author: previous.author?.debugDisplayTitle ?? "",
             timestamp: max(previous.timestamp, Int32(Date().timeIntervalSince1970)),
             edited: true,
             previousText: previous.text
@@ -46,16 +46,16 @@ enum ExteraModJournalHooks {
     private static func record(from message: Message, edited: Bool, previousText: String?) -> ExteraModJournal.DeletedRecord? {
         let authorName: String
         if let author = message.author {
-            authorName = author.displayTitle
+            authorName = author.debugDisplayTitle
         } else if message.flags.contains(.Incoming) {
-            authorName = message.peers[message.id.peerId]?.displayTitle ?? ""
+            authorName = message.peers[message.id.peerId]?.debugDisplayTitle ?? ""
         } else {
             authorName = ""
         }
         let text = message.text.isEmpty ? (message.media.first(where: { $0 is TelegramMediaFile }) as? TelegramMediaFile).flatMap { $0.fileName ?? "📎" } ?? "📎" : message.text
         return ExteraModJournal.DeletedRecord(
             peerId: message.id.peerId.toInt64(),
-            messageId: message.id.id,
+            messageId: Int64(message.id.id),
             namespace: message.id.namespace,
             text: text,
             author: authorName,

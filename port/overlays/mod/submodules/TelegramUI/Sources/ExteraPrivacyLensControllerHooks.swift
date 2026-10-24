@@ -5,7 +5,6 @@ import LocalAuthentication
 
 /// Privacy Lens runtime: screen-capture blur, background blur, Face ID gate
 /// for protected chats, and push preview hiding.
-@MainActor
 enum ExteraPrivacyLensControllerHooks {
     private static var blurView: UIVisualEffectView?
 

@@ -1,5 +1,5 @@
 import XCTest
-@testable import ExteraPreferences
+import ExteraPreferences
 
 final class ExteraModCoreTests: XCTestCase {
     func testGhostModeHidesEverything() {

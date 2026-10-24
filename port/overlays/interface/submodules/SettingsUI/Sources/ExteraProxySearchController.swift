@@ -11,7 +11,7 @@ import ExteraPreferences
 import ExteraResources
 import ExteraProxySearch
 
-private final class ExteraProxyArguments {
+final class ExteraProxyArguments {
     let connect: (ExteraProxyCandidate) -> Void
     init(connect: @escaping (ExteraProxyCandidate) -> Void) {
         self.connect = connect
@@ -57,12 +57,12 @@ private extension String {
 /// candidate with a TCP ping, and connects the chosen proxy through the
 /// app's proxy settings.
 func exteraProxySearchController(context: AccountContext) -> ViewController {
-    let state = Atomic<ProxySearchState>(value: ProxySearchState())
-    let statePromise = ValuePromise<ProxySearchState>(state.with { $0 })
+    let searchState = Atomic<ProxySearchState>(value: ProxySearchState())
+    let statePromise = ValuePromise<ProxySearchState>(searchState.with { $0 })
     let searchTask = Atomic<Task<Void, Never>?>(value: nil)
 
     func beginSearch() {
-        statePromise.set(state.with { current in
+        statePromise.set(searchState.modify { current in
             var updated = current
             updated.searching = true
             updated.candidates = []
@@ -73,7 +73,7 @@ func exteraProxySearchController(context: AccountContext) -> ViewController {
             do {
                 let candidates = try await ExteraProxyListFetcher.shared.fetchAll()
                 let sorted = candidates.sorted { $0.host < $1.host }
-                statePromise.set(state.with { current in
+                statePromise.set(searchState.modify { current in
                     var updated = current
                     updated.candidates = sorted
                     for candidate in sorted {
@@ -84,7 +84,7 @@ func exteraProxySearchController(context: AccountContext) -> ViewController {
                 let stream = await ExteraProxyValidator.shared.validateAll(candidates: sorted, concurrency: 6)
                 for await validation in stream {
                     if Task.isCancelled { break }
-                    statePromise.set(state.with { current in
+                    statePromise.set(searchState.modify { current in
                         var updated = current
                         updated.validations[validation.candidateId] = validation
                         return updated
@@ -93,7 +93,7 @@ func exteraProxySearchController(context: AccountContext) -> ViewController {
             } catch {
                 // A network failure keeps the previous list; the state resets below.
             }
-            statePromise.set(state.with { current in
+            statePromise.set(searchState.modify { current in
                 var updated = current
                 updated.searching = false
                 return updated
@@ -122,7 +122,7 @@ func exteraProxySearchController(context: AccountContext) -> ViewController {
                         searchTask.with { task in
                             task?.cancel()
                         }
-                        statePromise.set(state.with { current in
+                        statePromise.set(searchState.modify { current in
                             var updated = current
                             updated.searching = false
                             return updated

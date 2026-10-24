@@ -1,4 +1,5 @@
 import Foundation
+import Postbox
 import UIKit
 import Display
 import SwiftSignalKit
@@ -14,7 +15,6 @@ import TranslateUI
 /// Presentation entry point for the mod's Translate action on a message.
 /// Reuses the fork's translation sheet with the mod-configured target
 /// language and selected provider.
-@MainActor
 enum ExteraModTranslation {
     static func present(context: AccountContext, message: Message) {
         let presentationData = context.sharedContext.currentPresentationData.with { $0 }
@@ -68,7 +68,7 @@ enum ExteraModTranslation {
                         if let forwardInfo = currentMessage.forwardInfo {
                             storeForwardInfo = StoreMessageForwardInfo(authorId: forwardInfo.author?.id, sourceId: forwardInfo.source?.id, sourceMessageId: forwardInfo.sourceMessageId, date: forwardInfo.date, authorSignature: forwardInfo.authorSignature, psaType: forwardInfo.psaType, flags: forwardInfo.flags)
                         }
-                        return .update(StoreMessage(id: currentMessage.id, customStableId: nil, globallyUniqueId: currentMessage.globallyUniqueId, groupingKey: currentMessage.groupingKey, threadId: currentMessage.threadId, timestamp: currentMessage.timestamp, flags: StoreMessageFlags(currentMessage.flags), tags: currentMessage.tags, globalTags: currentMessage.globalTags, localTags: currentMessage.localTags, forwardInfo: storeForwardInfo, authorId: currentMessage.author?.id, text: currentMessage.text, attributes: attributes, media: currentMessage.media))
+                        return .update(StoreMessage(id: .Id(currentMessage.id), customStableId: nil, globallyUniqueId: currentMessage.globallyUniqueId, groupingKey: currentMessage.groupingKey, threadId: currentMessage.threadId, timestamp: currentMessage.timestamp, flags: StoreMessageFlags(currentMessage.flags), tags: currentMessage.tags, globalTags: currentMessage.globalTags, localTags: currentMessage.localTags, forwardInfo: storeForwardInfo, authorId: currentMessage.author?.id, text: currentMessage.text, attributes: attributes, media: currentMessage.media))
                     })
                 }).start()
             } catch {
