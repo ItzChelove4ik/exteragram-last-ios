@@ -12,7 +12,6 @@ final class ExteraModIncomingMessagesObserver {
     private var disposable: Disposable?
     private var seenMessageIds = Set<MessageId>()
     private var translationInFlight = Set<MessageId>()
-    private let translationLock = DispatchSemaphore(value: 1)
 
     init(context: AccountContext) {
         self.disposable = (context.account.stateManager.notificationMessages
@@ -64,22 +63,17 @@ final class ExteraModIncomingMessagesObserver {
         let provider = ExteraTranslationProvider(rawValue: store.value(for: ExteraSettings.translationProvider)) ?? .google
         guard provider != .telegram else { return }
 
-        translationLock.wait()
-        let alreadyRunning = translationInFlight.contains(message.id)
-        if !alreadyRunning {
-            translationInFlight.insert(message.id)
+        if translationInFlight.contains(message.id) {
+            return
         }
-        translationLock.signal()
-        guard !alreadyRunning else { return }
+        translationInFlight.insert(message.id)
 
         let client = ExteraTranslationClient()
         let messageId = message.id
         let text = message.text
-        Task { [weak context] in
+        Task { @MainActor [weak self, weak context] in
             defer {
-                self.translationLock.wait()
-                self.translationInFlight.remove(messageId)
-                self.translationLock.signal()
+                self?.translationInFlight.remove(messageId)
             }
             guard let context else { return }
             do {

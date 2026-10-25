@@ -42,7 +42,7 @@ public final class ExteraModCommandHandler {
         context.sharedContext.currentPresentationData.with { $0 }.strings.primaryComponent.languageCode
     }
 
-    private func notice(_ key: String, arguments: [CVarArg] = []) {
+    @MainActor private func notice(_ key: String, arguments: [CVarArg] = []) {
         let text = String(format: ExteraLocalization.text(key, languageCode: languageCode, table: "ExteraPort"), arguments: arguments)
         let presentationData = context.sharedContext.currentPresentationData.with { $0 }
         let controller = textAlertController(context: context, title: nil, text: text, actions: [

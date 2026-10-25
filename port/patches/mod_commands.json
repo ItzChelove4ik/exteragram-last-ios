@@ -20,7 +20,7 @@
   {
     "path": "submodules/TelegramUI/Sources/ChatController.swift",
     "old": "    let context: AccountContext\n    public internal(set) var chatLocation: ChatLocation\n    public internal(set) var subject: ChatControllerSubject?\n",
-    "new": "    let context: AccountContext\n    public internal(set) var chatLocation: ChatLocation\n    public internal(set) var subject: ChatControllerSubject?\n    @MainActor public internal(set) lazy var exteraModCommandHandler = ExteraModCommandHandler(context: self.context, controller: self)\n",
+    "new": "    let context: AccountContext\n    public internal(set) var chatLocation: ChatLocation\n    public internal(set) var subject: ChatControllerSubject?\n    public internal(set) lazy var exteraModCommandHandler = ExteraModCommandHandler(context: self.context, controller: self)\n",
     "occurrences": 1
   },
   {
