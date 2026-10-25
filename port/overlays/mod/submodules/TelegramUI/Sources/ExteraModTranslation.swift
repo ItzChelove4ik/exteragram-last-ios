@@ -30,7 +30,7 @@ enum ExteraModTranslation {
                 break
             }
         }
-        presentExteraTranslation(context: context, text: message.text, entities: entities, canCopy: !message.isCopyProtected(), fromLanguage: nil, toLanguage: target, provider: provider, replaceText: nil, wasDismissed: nil)
+        presentExteraTranslation(context: context, text: message.text, entities: entities, canCopy: !message.isCopyProtected(), fromLanguage: nil, toLanguage: target, provider: provider, replaceText: nil as ((String, [MessageTextEntity]) -> Void)?, wasDismissed: nil as (() -> Void)?)
     }
 
     /// Auto-translate hook for incoming messages. Runs silently and updates

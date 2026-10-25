@@ -8,7 +8,7 @@ import ExteraTranslation
 
 /// Called from the real selected-message translation entry point. The service
 /// receives only the text explicitly passed to this translation action.
-func presentExteraTranslation(context: AccountContext, text: String, entities: [MessageTextEntity], canCopy: Bool,
+public func presentExteraTranslation(context: AccountContext, text: String, entities: [MessageTextEntity], canCopy: Bool,
                               fromLanguage: String?, toLanguage: String?, provider: ExteraTranslationProvider,
                               replaceText: ((String, [MessageTextEntity]) -> Void)?, wasDismissed: (() -> Void)?) {
     guard let root = context.sharedContext.mainWindow?.viewController?.view.window?.rootViewController else {

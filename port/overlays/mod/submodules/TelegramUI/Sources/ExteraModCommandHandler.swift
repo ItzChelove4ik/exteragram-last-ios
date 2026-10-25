@@ -114,7 +114,7 @@ public final class ExteraModCommandHandler {
                 guard let self else { return }
                 let store = ExteraPreferences.standard
                 var banned = store.value(for: ExteraSettings.locallyBannedPeerIds)
-                if let address = address, let peer = peer {
+                if address != nil, let peer = peer {
                     banned.remove(peer.id.toInt64())
                     self.notice("ModUnbannedLocally", arguments: [peer.debugDisplayTitle])
                 } else if let peerId = self.controller.chatLocation.peerId {
@@ -186,7 +186,7 @@ public final class ExteraModCommandHandler {
                     if participant.peer.isDeleted || participant.peer.id == self?.context.account.peerId {
                         return nil
                     }
-                    return EnginePeer(participant.peer)
+                    return participant.peer
                 }
                 DispatchQueue.main.async {
                     guard let self, !completed else { return }

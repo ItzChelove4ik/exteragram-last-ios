@@ -30,7 +30,7 @@ enum ExteraPrivacyLensControllerHooks {
     }
 
     private static func installBlur() {
-        guard blurView == nil, let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
+        guard blurView == nil, let window = UIWindow.keyWindow() else { return }
         let effect = UIBlurEffect(style: .systemUltraThinMaterialDark)
         let view = UIVisualEffectView(effect: effect)
         view.frame = window.bounds
@@ -77,5 +77,24 @@ private enum ExteraPrivacyLensText {
             return "Разблокировать чат"
         }
         return "Unlock this chat"
+    }
+}
+
+extension UIWindow {
+    /// Key window across all connected scenes; iOS 15-safe replacement for
+    /// the deprecated UIApplication.shared.windows.
+    static func keyWindow() -> UIWindow? {
+        if #available(iOS 15.0, *) {
+            for scene in UIApplication.shared.connectedScenes {
+                if let windowScene = scene as? UIWindowScene {
+                    for window in windowScene.windows where window.isKeyWindow {
+                        return window
+                    }
+                }
+            }
+            return nil
+        } else {
+            return UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        }
     }
 }
