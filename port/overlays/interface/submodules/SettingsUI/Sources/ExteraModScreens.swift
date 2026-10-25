@@ -79,8 +79,6 @@ func exteraPrivacyLensController(context: AccountContext) -> ViewController {
         selectProtectedChats: {
             // Chat selection opens the standard chat picker; picked ids are
             // written to privacyLensProtectedPeerIds by the picker callback.
-            let presentationData = context.sharedContext.currentPresentationData.with { $0 }
-            let languageCode = presentationData.strings.primaryComponent.languageCode
             let current = Set(store.value(for: ExteraSettings.privacyLensProtectedPeerIds))
             let peerId = context.account.peerId.toInt64()
             var updated = current

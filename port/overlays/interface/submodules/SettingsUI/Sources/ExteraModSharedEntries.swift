@@ -87,7 +87,7 @@ final class ExteraModSimpleEntry: ItemListNodeEntry {
                     action()
                 }
             )
-        case let .slider(title, value, minimumValue, maximumValue, action):
+        case let .slider(title, value, _, _, _):
             return ItemListSwitchItem(
                 presentationData: presentationData,
                 systemStyle: .glass,
@@ -161,8 +161,7 @@ final class ExteraModSimpleEntry: ItemListNodeEntry {
                 disclosureStyle: .none,
                 action: {}
             )
-        case let .hourBar(hour, count, maxCount):
-            let languageCode = presentationData.strings.primaryComponent.languageCode
+        case let .hourBar(hour, count, _):
             let label = String(format: "%02d:00 — %d", hour, count)
             return ItemListTextItem(presentationData: presentationData, text: .plain(label), sectionId: self.section)
         case let .dayBar(label, count, maxCount):

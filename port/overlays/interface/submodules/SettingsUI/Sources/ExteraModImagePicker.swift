@@ -9,7 +9,7 @@ import UniformTypeIdentifiers
 enum ExteraModImagePicker {
     static func pickImage(completion: @escaping (UIImage?) -> Void) {
         DispatchQueue.main.async {
-            guard let root = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController else {
+            guard let root = UIWindow.keyWindow()?.rootViewController else {
                 completion(nil)
                 return
             }
@@ -136,5 +136,24 @@ private final class LegacyPickerDelegate: NSObject, UIImagePickerControllerDeleg
         delivered = true
         ExteraModImagePickerRetainer.release(self)
         completion(image)
+    }
+}
+
+extension UIWindow {
+    /// Key window across all connected scenes; iOS 15-safe replacement for
+    /// the deprecated UIApplication.shared.windows.
+    static func keyWindow() -> UIWindow? {
+        if #available(iOS 15.0, *) {
+            for scene in UIApplication.shared.connectedScenes {
+                if let windowScene = scene as? UIWindowScene {
+                    for window in windowScene.windows where window.isKeyWindow {
+                        return window
+                    }
+                }
+            }
+            return nil
+        } else {
+            return UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        }
     }
 }

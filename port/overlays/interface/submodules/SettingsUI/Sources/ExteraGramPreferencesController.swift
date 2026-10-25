@@ -44,10 +44,6 @@ public func exteraGramPreferencesController(context: AccountContext) -> ViewCont
     var presentController: ((ViewController) -> Void)?
     var pushController: ((ViewController) -> Void)?
 
-    let currentLocalization = { () -> String in
-        context.sharedContext.currentPresentationData.with { $0 }.strings.primaryComponent.languageCode
-    }
-
     func setPreference<Value: Codable & Equatable & Sendable>(_ value: Value, for preference: ExteraPreference<Value>) {
         try? store.set(value, for: preference)
         reload.set(revision.modify { $0 + 1 })
